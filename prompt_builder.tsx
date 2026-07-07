@@ -33,10 +33,28 @@ const recommendedModifiers: Record<AppType, Modifier[]> = {
   Other: [],
 };
 
+const getInitialPromptSource = (): 'Any' | 'DeepMind' | 'Develop:Brighton:2026' => {
+  const hash = window.location.hash.replace('#', '');
+  const parts = hash.split('/');
+  if (parts.length > 1) {
+    const source = decodeURIComponent(parts[1]);
+    if (source === 'DeepMind' || source === 'Develop:Brighton:2026') return source;
+  }
+  return 'Any';
+};
+
 const PromptBuilderPage = () => {
   const [appType, setAppType] = useState<AppType>('Tool');
+  const [source, setSource] = useState<'Any' | 'DeepMind' | 'Develop:Brighton:2026'>(getInitialPromptSource);
   const [target, setTarget] = useState<Target>('Gemini Canvas');
-  const [idea, setIdea] = useState('A simple breakout-style game where the paddle is controlled by your hand.');
+  const [idea, setIdea] = useState(() => {
+    const pending = window.sessionStorage.getItem('pendingIdea');
+    if (pending) {
+      window.sessionStorage.removeItem('pendingIdea');
+      return pending;
+    }
+    return 'A simple breakout-style game where the paddle is controlled by your hand.';
+  });
   const [modifiers, setModifiers] = useState<SelectedModifiers>(initialModifiers);
   const [isOtherModifierActive, setIsOtherModifierActive] = useState(false);
   const [otherModifierText, setOtherModifierText] = useState('');
@@ -47,6 +65,40 @@ const PromptBuilderPage = () => {
     centralizeGlobals: true,
   });
   const [copyButtonText, setCopyButtonText] = useState('Copy Prompt');
+
+  useEffect(() => {
+    const handleLoadIdea = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail) {
+        setIdea(customEvent.detail);
+      }
+    };
+    window.addEventListener('loadIdea', handleLoadIdea);
+    return () => window.removeEventListener('loadIdea', handleLoadIdea);
+  }, []);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      const parts = hash.split('/');
+      if (parts[0] === 'prompt') {
+        if (parts.length > 1) {
+          const src = decodeURIComponent(parts[1]);
+          if (src === 'DeepMind' || src === 'Develop:Brighton:2026') {
+            setSource(src);
+            return;
+          }
+        }
+        setSource('Any');
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handleSourceChange = (newSource: 'Any' | 'DeepMind' | 'Develop:Brighton:2026') => {
+    window.location.hash = newSource === 'Any' ? 'prompt' : `prompt/${encodeURIComponent(newSource)}`;
+  };
 
   const modifierOptions = useMemo(() => {
     const options: Record<string, { tool: string; canvasRecommended: boolean; aiStudioRecommended: boolean; }[]> = {};
@@ -231,8 +283,11 @@ Technical implementation details:
   }, []);
 
   const handleFeelingLucky = useCallback(() => {
-    // Filter by the selected app type
+    // Filter by the selected app type and source
     let availableIdeas = promptIdeas.filter(idea => idea.category === appType);
+    if (source !== 'Any') {
+      availableIdeas = availableIdeas.filter(idea => (idea.source || 'DeepMind') === source);
+    }
 
     // Filter by target environment compatibility
     if (target === 'Gemini Canvas') {
@@ -244,6 +299,9 @@ Technical implementation details:
     // Fallback if no ideas match the target environment
     if (availableIdeas.length === 0) {
       availableIdeas = promptIdeas.filter(idea => idea.category === appType);
+      if (source !== 'Any') {
+        availableIdeas = availableIdeas.filter(idea => (idea.source || 'DeepMind') === source);
+      }
       if (availableIdeas.length === 0) return; // No ideas for this category at all
     }
 
@@ -299,7 +357,7 @@ Technical implementation details:
         setIsOtherModifierActive(false);
         setOtherModifierText('');
     }
-  }, [appType, target, libraryToModifierMap]);
+  }, [appType, source, target, libraryToModifierMap]);
 
 
   const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
@@ -351,6 +409,24 @@ Technical implementation details:
                             onChange={e => setTarget(e.target.value as Target)}
                         />
                         <label htmlFor={`target-${t.replace(/\s+/g, '-')}`}>{t}</label>
+                    </div>
+                ))}
+            </div>
+          </div>
+          <div className="form-group">
+            <label>Idea Source Pool</label>
+            <div className="radio-group-container">
+                {(['Any', 'DeepMind', 'Develop:Brighton:2026'] as const).map(src => (
+                     <div key={src} className="radio-option">
+                        <input
+                            type="radio"
+                            id={`source-${src.replace(/[^a-zA-Z0-9]/g, '-')}`}
+                            name="source-env"
+                            value={src}
+                            checked={source === src}
+                            onChange={e => handleSourceChange(e.target.value as any)}
+                        />
+                        <label htmlFor={`source-${src.replace(/[^a-zA-Z0-9]/g, '-')}`}>{src}</label>
                     </div>
                 ))}
             </div>

@@ -1,275 +1,1024 @@
 
 import { AppType } from './prompt_builder';
 
-export interface ShowcaseAppConstructorParams {
-  category: string;
-  description: string;
-  author: string;
-  url: string;
-  index: number;
-}
+export type Author = {
+  name: string;
+  origin: string;
+};
+
+export type CardInfo = {
+  title: string;
+  authors: Author[];
+};
 
 export class ShowcaseApp {
   id: string;
   category: string;
-  description: string;
-  author: string;
-  url: string;
+  categories: string[];
+  url: string | null;
+  source: 'DeepMind' | 'Develop 2026';
+  basePrompt?: string;
+  cardInfo: CardInfo;
 
-  constructor({ category, description, author, url, index }: ShowcaseAppConstructorParams) {
+  constructor({ category, categories, title, speakers, authors, url, index, source = 'DeepMind', basePrompt }: any) {
     this.id = `app-${index}`;
-    this.category = category;
-    this.description = description;
-    this.author = author;
-    this.url = url;
+    this.categories = categories || (category ? [category] : ['Other']);
+    this.category = this.categories[0];
+    this.url = url || null;
+    this.source = source;
+    this.basePrompt = basePrompt;
+    
+    this.cardInfo = {
+      title: title || '',
+      authors: authors || speakers || [],
+    };
   }
 }
 
 export const appData: ShowcaseApp[] = [
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A simple darts checkout calculator.',
-    author: 'Dave Lacey',
+    title: 'A simple darts checkout calculator.',
+    authors: [{ name: 'Dave Lacey', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/08d646a8c607',
     index: 0,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A tool that turns letters into shapes.',
-    author: 'Fleur Isbell',
+    title: 'A tool that turns letters into shapes.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/1a9b25fad5d5',
     index: 1,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: "A visual timeline of the author's conversation with Gemini Canvas to create the timeline itself.",
-    author: 'Shane Roberts',
+    title: "A visual timeline of the author's conversation with Gemini Canvas to create the timeline itself.",
+    authors: [{ name: 'Shane Roberts', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/1c0e3ba93f55',
     index: 2,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: 'A remix of the "Gemini writing" app to let the user practice their penmanship alongside Gemini.',
-    author: 'Dave Messer',
+    title: 'A remix of the "Gemini writing" app to let the user practice their penmanship alongside Gemini.',
+    authors: [{ name: 'Dave Messer', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/2546bb8b5667',
     index: 3,
   }),
   new ShowcaseApp({
     category: 'Simulation',
-    description: 'A musical physics simulator using tone.js and matter.js.',
-    author: 'Alex Chen',
+    title: 'A musical physics simulator using tone.js and matter.js.',
+    authors: [{ name: 'Alex Chen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/292d1d7b861e',
     index: 4,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'Kittens fix my tiles',
-    author: 'Amit Pitaru',
+    title: 'Kittens fix my tiles',
+    authors: [{ name: 'Amit Pitaru', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/2bac3b1ae0c3',
     index: 5,
   }),
   new ShowcaseApp({
     category: 'Game',
-    description: 'A skeletal multiplayer 2d dungeon game using Firestore.',
-    author: 'Andrew Bolt',
+    title: 'A skeletal multiplayer 2d dungeon game using Firestore.',
+    authors: [{ name: 'Andrew Bolt', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/34d9355aacc3',
     index: 6,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: "An interactive 'line learning tool' for drama students, created from the script of Macbeth.",
-    author: 'Zebedee Pedersen',
+    title: "An interactive 'line learning tool' for drama students, created from the script of Macbeth.",
+    authors: [{ name: 'Zebedee Pedersen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/451d2b1deab1',
     index: 7,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: '"Roast my essay" - a tool for getting fun feedback on papers for students.',
-    author: 'Dave Messer',
+    title: '"Roast my essay" - a tool for getting fun feedback on papers for students.',
+    authors: [{ name: 'Dave Messer', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/4a0f0a4376fc',
     index: 8,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: 'A multiplication practice app for a Year 4 student.',
-    author: 'JK Kearns',
+    title: 'A multiplication practice app for a Year 4 student.',
+    authors: [{ name: 'JK Kearns', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/4f91f7a75fca',
     index: 9,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'An app that creates 1 prompt and 1 image and then uses the analysis of the image to try to improve a "vibey" score to get the best image possible on its own.',
-    author: 'Anna Bortsova',
+    title: 'An app that creates 1 prompt and 1 image and then uses the analysis of the image to try to improve a "vibey" score to get the best image possible on its own.',
+    authors: [{ name: 'Anna Bortsova', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/57efcc3c9670',
     index: 10,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A "Fluid Writing" app that uses your voice to write with custom styles that translate for you.',
-    author: 'Dave Messer',
+    title: 'A "Fluid Writing" app that uses your voice to write with custom styles that translate for you.',
+    authors: [{ name: 'Dave Messer', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/64564cc31b42',
     index: 11,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A creative sketch where Gemini writes its own name using lines and dots.',
-    author: 'Alex Chen',
+    title: 'A creative sketch where Gemini writes its own name using lines and dots.',
+    authors: [{ name: 'Alex Chen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/6caab4b03b4d',
     index: 12,
   }),
   new ShowcaseApp({
     category: 'Informational',
-    description: 'A map of "The White Lotus" filming locations using OpenStreetMaps.',
-    author: 'Alex Chen',
+    title: 'A map of "The White Lotus" filming locations using OpenStreetMaps.',
+    authors: [{ name: 'Alex Chen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/864287b1b70c',
     index: 13,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: "See cities' weather presented in different artist styles.",
-    author: 'Fleur Isbell',
+    title: "See cities' weather presented in different artist styles.",
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/89df67dd6116',
     index: 14,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A spinoff of the svg 3d generator where you can create 3d text and textures.',
-    author: 'Fleur Isbell',
+    title: 'A spinoff of the svg 3d generator where you can create 3d text and textures.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/9358874415c7',
     index: 15,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A multiplayer pixel-art canvas.',
-    author: 'Andrew Bolt',
+    title: 'A multiplayer pixel-art canvas.',
+    authors: [{ name: 'Andrew Bolt', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/945a2cd87200',
     index: 16,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: 'A time-teaching app for kids.',
-    author: 'Barbara Wang',
+    title: 'A time-teaching app for kids.',
+    authors: [{ name: 'Barbara Wang', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/94e7cb62ee33',
     index: 17,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A tool that turns coordinates into shapes.',
-    author: 'Fleur Isbell',
+    title: 'A tool that turns coordinates into shapes.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/a936165fbdb1',
     index: 18,
   }),
   new ShowcaseApp({
     category: 'Game',
-    description: 'A version of the game "Pocket Tanks".',
-    author: 'Ahmed Omran',
+    title: 'A version of the game "Pocket Tanks".',
+    authors: [{ name: 'Ahmed Omran', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/aac1d1d5a747',
     index: 19,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A terrain texture maker to help 3d modelers and game developers.',
-    author: 'Fleur Isbell',
+    title: 'A terrain texture maker to help 3d modelers and game developers.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/aff69ebe8000',
     index: 20,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'Use your keyboard to create musical compositions inspired by the earth.',
-    author: 'Fleur Isbell',
+    title: 'Use your keyboard to create musical compositions inspired by the earth.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/b1bfa7aa2cf8',
     index: 21,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'Starter code template with points writing the word "Gemini."',
-    author: 'Alex Chen',
+    title: 'Starter code template with points writing the word "Gemini."',
+    authors: [{ name: 'Alex Chen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/b736356f5896',
     index: 22,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'An IO momento badge maker.',
-    author: 'Dennis Hsu',
+    title: 'An IO momento badge maker.',
+    authors: [{ name: 'Dennis Hsu', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/be8d94f4a65a',
     index: 23,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A tool that generates textures applying them to extruded shapes and surrounding space.',
-    author: 'Fleur Isbell',
+    title: 'A tool that generates textures applying them to extruded shapes and surrounding space.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/be97504f98d2',
     index: 24,
   }),
   new ShowcaseApp({
     category: 'UI Creation',
-    description: 'Restaurant app key screen creation (Can then be used as the reference screens when coding for native apps).',
-    author: 'Charlene Sirianni',
+    title: 'Restaurant app key screen creation (Can then be used as the reference screens when coding for native apps).',
+    authors: [{ name: 'Charlene Sirianni', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/d445a3648680',
     index: 25,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'Gemini using search and code to announce its own launch in 3D at I/O.',
-    author: 'Lukas Haas',
+    title: 'Gemini using search and code to announce its own launch in 3D at I/O.',
+    authors: [{ name: 'Lukas Haas', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/d65439300f54',
     index: 26,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A "Cartographer" app that draws custom maps with custom styles.',
-    author: 'Dave Messer',
+    title: 'A "Cartographer" app that draws custom maps with custom styles.',
+    authors: [{ name: 'Dave Messer', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/d70827854eb5',
     index: 27,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A custom white noise generator.',
-    author: 'Zebedee Pedersen',
+    title: 'A custom white noise generator.',
+    authors: [{ name: 'Zebedee Pedersen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/d94f2419d8b9',
     index: 28,
   }),
   new ShowcaseApp({
     category: 'Educational',
-    description: 'A Mandelbrot set explorer that visualizes the iteration path and finds attractors.',
-    author: 'Andrew Bolt',
+    title: 'A Mandelbrot set explorer that visualizes the iteration path and finds attractors.',
+    authors: [{ name: 'Andrew Bolt', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/dc8009fdce80',
     index: 29,
   }),
   new ShowcaseApp({
     category: 'Game',
-    description: 'A retro sliding tile puzzle, built for mobile.',
-    author: 'Amit Pitaru',
+    title: 'A retro sliding tile puzzle, built for mobile.',
+    authors: [{ name: 'Amit Pitaru', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/de9339aa730f',
     index: 30,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A live countdown timer.',
-    author: 'Alex Chen',
+    title: 'A live countdown timer.',
+    authors: [{ name: 'Alex Chen', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/e2d958072ecc',
     index: 31,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A gradient music maker.',
-    author: 'Fleur Isbell',
+    title: 'A gradient music maker.',
+    authors: [{ name: 'Fleur Isbell', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/e47754e761f8',
     index: 32,
   }),
   new ShowcaseApp({
     category: 'Tool',
-    description: 'A minimal example of using Firestore for shared state, a Web 2.1 Server-Side Blink Tag.',
-    author: 'Andrew Bolt',
+    title: 'A minimal example of using Firestore for shared state, a Web 2.1 Server-Side Blink Tag.',
+    authors: [{ name: 'Andrew Bolt', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/e969e390b78a',
     index: 33,
   }),
   new ShowcaseApp({
     category: 'Creative',
-    description: 'A virtual pet named Davie.',
-    author: 'Amit Pitaru',
+    title: 'A virtual pet named Davie.',
+    authors: [{ name: 'Amit Pitaru', origin: 'DeepMind' }],
     url: 'https://g.co/gemini/share/eba3f2bc2c79',
     index: 34,
+  }),
+  new ShowcaseApp({
+    categories: ['Keynote'],
+    title: 'Powered by Players: Reforjing 4J Studios',
+    authors: [
+      { name: 'Chris van der Kuyl', origin: '4J Studios' },
+      { name: 'Joseph Garrett', origin: '4J Studios' },
+    ],
+    index: 35,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Powered by Players: Reforjing 4J Studios. Focus on the core idea: From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Games:Edu', 'Keynote'],
+    title: 'Games:Edu Track Intro & Keynote: Apprenticeships & the Tacit Knowledge of Game Development',
+    authors: [
+      { name: 'Laurence Oldham', origin: 'Digital Impact Incubator' },
+      { name: 'Tom Cole', origin: 'University of Greenwich' },
+      { name: 'Jake Habgood', origin: 'Freelance' },
+    ],
+    index: 36,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development. Focus on the core idea: Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'AI Wants to Play: A Game Designer\'s Guide to AI in Every Stage of Development',
+    authors: [
+      { name: 'Rob Davis', origin: 'Wild Loop Games' },
+    ],
+    index: 37,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web application that simulates AI Wants to Play: A Game Designers Guide to AI in Every Stage of Development. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker's recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games. Ensure a futuristic, 'vibey' aesthetic.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'Building New Game Teams Before the Game Is Clear',
+    authors: [
+      { name: 'Marco Colombo', origin: 'Supercell' },
+    ],
+    index: 38,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building New Game Teams Before the Game Is Clear. Focus on the core idea: What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project',
+    authors: [
+      { name: 'Mark Shaw', origin: 'Flix Interactive' },
+    ],
+    index: 39,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project. Focus on the core idea: It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Coding'],
+    title: 'A Frame\'s Life: Frame Timing, Synchronization, and Latency in UE',
+    authors: [
+      { name: 'Ari Arnbjörnsson', origin: 'Epic Games' },
+    ],
+    index: 40,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of A Frames Life: Frame Timing Synchronization and Latency in UE. Focus on the core idea: Every frame in Unreal Engine goes on a long journey before reaching the screen. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Games:Edu'],
+    title: 'Developing Tomorrow\'s Talent: Studio Strategies and Solutions',
+    authors: [
+      { name: 'Laurence Oldham', origin: 'Digital Impact Incubator' },
+      { name: 'James Shepherd', origin: 'Cypherdelic' },
+      { name: 'Grant Clark', origin: 'Double Eleven' },
+      { name: 'Caroline Marchal', origin: 'INTERIOR/NIGHT' },
+      { name: 'Louise Andrew', origin: 'd3t – A Keywords Studio' },
+    ],
+    index: 41,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Developing Tomorrows Talent: Studio Strategies and Solutions. Focus on the core idea: This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Develop: FTUE (First Time User Experience) Tuesday',
+    authors: [
+      { name: 'Jazeena McCallum', origin: 'CRITICAL REFLEX' },
+      { name: 'Annabel Ashalley-Anthony', origin: 'Melanin Gamers' },
+    ],
+    index: 42,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Tuesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'Finding the Balance: Big Team Process vs Indie Mindset',
+    authors: [
+      { name: 'Michael Meaden', origin: 'Athena Worlds' },
+    ],
+    index: 43,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Finding the Balance: Big Team Process vs Indie Mindset. Focus on the core idea: This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'Mobile Games: When Approachability Rhymes with Accessibility',
+    authors: [
+      { name: 'Améliane F. Chiasson', origin: 'Player Research (Keywords Studios)' },
+      { name: 'Cari Watterton', origin: 'Scopely' },
+    ],
+    index: 44,
+    source: 'Develop 2026',
+    basePrompt: `Build a responsive, mobile-first web app that demonstrates Mobile Games: When Approachability Rhymes with Accessibility. The app should feature touch-friendly UI components and focus on this theme: This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players.`
+  }),
+  new ShowcaseApp({
+    categories: ['Discoverability'],
+    title: '5 Easy Steam Store Page Tweaks to Boost Your Visibility',
+    authors: [
+      { name: 'Jarvs Tasker', origin: 'Happy Volcano' },
+    ],
+    index: 45,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of 5 Easy Steam Store Page Tweaks to Boost Your Visibility. Focus on the core idea: Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'The Evolution of Interactive Storytelling',
+    authors: [
+      { name: 'Jane Millichip', origin: 'BAFTA' },
+      { name: 'Veronique Lallier', origin: 'IO Interactive' },
+      { name: 'Abubaker Salim', origin: 'Surgent Studios' },
+      { name: 'Eloise Singer', origin: 'Singer Studios' },
+    ],
+    index: 46,
+    source: 'Develop 2026',
+    basePrompt: `Build a branching narrative tool. Inspired by The Evolution of Interactive Storytelling, the app should let users click through a dynamic dialogue tree that illustrates: Storytelling is at the heart of what we do and runs across all crafts and mediums.`
+  }),
+  new ShowcaseApp({
+    categories: ['Games:Edu'],
+    title: 'Opportunities For Talent: Workshopping The Foundations Of A Better Future',
+    authors: [
+      { name: 'Tom Cole', origin: 'University of Greenwich' },
+      { name: 'Brian McDonald', origin: 'Games Academy, Falmouth University' },
+      { name: 'Perri Lewis', origin: 'Mastered' },
+      { name: 'Laurence Oldham', origin: 'Digital Impact Incubator' },
+      { name: 'Susi Bauer', origin: 'Freelance Coach & Facilitator' },
+    ],
+    index: 47,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Opportunities For Talent: Workshopping The Foundations Of A Better Future. Focus on the core idea: How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Too Many Ideas, One Game: ADHD Survival Guide for Game Dev',
+    authors: [
+      { name: 'Rory Martin', origin: 'Giraffe Head Studios Ltd' },
+    ],
+    index: 48,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Too Many Ideas One Game: ADHD Survival Guide for Game Dev. Focus on the core idea: Game development is already a difficult, long, messy marathon. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'Scaling Without Breaking Your Studio',
+    authors: [
+      { name: 'Tamsin O\'Luanaigh', origin: 'Wise Cat Strategy' },
+    ],
+    index: 49,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scaling Without Breaking Your Studio. Focus on the core idea: As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform',
+    authors: [
+      { name: 'Vladimir Pronin', origin: 'Holland & Barrett' },
+    ],
+    index: 50,
+    source: 'Develop 2026',
+    basePrompt: `Build a responsive, mobile-first web app that demonstrates Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform. The app should feature touch-friendly UI components and focus on this theme: Digital products live across mobile, web, desktop — but delivery usually doesn't.`
+  }),
+  new ShowcaseApp({
+    categories: ['Discoverability'],
+    title: 'How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind',
+    authors: [
+      { name: 'Najmah Salam', origin: 'Panda Cat Games' },
+    ],
+    index: 51,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind. Focus on the core idea: We've all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game',
+    authors: [
+      { name: 'Caspar Gray', origin: 'Green Man Gaming' },
+    ],
+    index: 52,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game. Focus on the core idea: Thinking beyond genres and descriptions early in development makes it more likely your game will succeed. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Burnout: An Honest Chat About the Causes, Symptoms and Recovery',
+    authors: [
+      { name: 'Cat Burton', origin: 'Goth Boss Studios' },
+    ],
+    index: 53,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Burnout: An Honest Chat About the Causes Symptoms and Recovery. Focus on the core idea: Burnout is a very common yet often hidden issue in the games industry. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'XDS Ignite (2 PM): XDEV at a Crossroads: What the Best Teams are Doing Differently',
+    authors: [
+      { name: 'Sam Carlisle', origin: 'Moderator) (Co-Founder, XDS Spark' },
+      { name: 'Claude Bordeleau', origin: 'CRO, Winking & CEO, Ampera' },
+      { name: 'Dave Sanderson', origin: 'Director of External Development, Interleave' },
+      { name: 'Rikki-Lynn Vitello', origin: 'Director of External Development, EA Full Circle' },
+      { name: 'Carl Schmidt', origin: 'Senior Director of External Development, Zynga' },
+    ],
+    index: 54,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently. Focus on the core idea: XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Interface as Identity: Designing UI That Complements the Brand',
+    authors: [
+      { name: 'Agnes Kasilovska', origin: 'Dead Nice Studio' },
+      { name: 'Sam Thompson', origin: 'Dead Nice Studio' },
+    ],
+    index: 55,
+    source: 'Develop 2026',
+    basePrompt: `Build a premium, animated UI showcase. Inspired by Interface as Identity: Designing UI That Complements the Brand, design interface elements that complement a game's brand. Keep in mind: UI and branding are often treated like separate jobs.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'Level Up In-Game Earnings Without Losing Players',
+    authors: [
+      { name: 'Antoine Jullemier', origin: 'Gadsme' },
+    ],
+    index: 56,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Level Up InGame Earnings Without Losing Players. Focus on the core idea: Discover how to boost your game's revenue without compromising the player experience. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Coding'],
+    title: 'Moving from Engineering To Management',
+    authors: [
+      { name: 'James Foster', origin: 'Rocket Science Group' },
+    ],
+    index: 57,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Moving from Engineering To Management. Focus on the core idea: This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio',
+    authors: [
+      { name: 'Daph Janssens', origin: 'Day III Digital' },
+    ],
+    index: 58,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio. Focus on the core idea: The most common company value is integrity while the second most common is collaboration. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Raise the Game Roundtable',
+    authors: [
+      { name: 'Cinzia Musio', origin: 'Ukie' },
+      { name: 'Jonas Gawe', origin: 'Limit Break Mentorship / Electric Saint' },
+    ],
+    index: 59,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Raise the Game Roundtable. Focus on the core idea: Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers',
+    authors: [
+      { name: 'Katherine Mould', origin: 'People Can Fly' },
+    ],
+    index: 60,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers. Focus on the core idea: Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'The State of Mobile Creativity in 2026',
+    authors: [
+      { name: 'Alice Bowman', origin: 'Fusebox Games' },
+    ],
+    index: 61,
+    source: 'Develop 2026',
+    basePrompt: `Build a responsive, mobile-first web app that demonstrates The State of Mobile Creativity in 2026. The app should feature touch-friendly UI components and focus on this theme: Join a panel of industry experts to explore the state of creativity in mobile games in 2026.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'How to Make Whatever You Want and Still Get Attention',
+    authors: [
+      { name: 'Stanley W. Baxton', origin: 'Stanwixbuster' },
+    ],
+    index: 62,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Make Whatever You Want and Still Get Attention. Focus on the core idea: In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'No, Puzzle Games Aren\'t Dead, You Just Didn\'t Realise They\'re Emotional Experiences Too',
+    authors: [
+      { name: 'Caroline Clark', origin: 'Liney Games' },
+    ],
+    index: 63,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of No Puzzle Games Arent Dead You Just Didnt Realise Theyre Emotional Experiences Too. Focus on the core idea: Games are emotional experiences, this is very clear in genres like first person shooters or adventure games. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Games:Edu', 'Roundtables'],
+    title: 'Graduate Journeys: Experiences, Breakthroughs and Insights From Both Sides',
+    authors: [
+      { name: 'Eva Kioseoglou', origin: 'The Chinese Room' },
+      { name: 'Gilbert McGirr', origin: 'Supercell' },
+      { name: 'Sam Miller', origin: 'Supercell' },
+      { name: 'Alfie Wright', origin: 'Moss Monkey Games' },
+      { name: 'Chris Filip', origin: 'UK Global Screen Fund (BFI)' },
+      { name: 'Sandrine le Comte', origin: 'Studio Gobo' },
+      { name: 'Javi Galvan', origin: 'Studio Gobo' },
+      { name: 'Jake Habgood', origin: 'Freelance' },
+    ],
+    index: 64,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides. Focus on the core idea: This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Scheduled Serendipity: Manufacturing Creative Aha Moments',
+    authors: [
+      { name: 'Imre Jele', origin: 'Atypical Types / Bossa Studios' },
+    ],
+    index: 65,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scheduled Serendipity: Manufacturing Creative Aha Moments. Focus on the core idea: Inspiration is treated like lightning: an unpredictable and uncontrollable moment. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Mobile'],
+    title: 'Mobile Gaming: The Next Frontier for Accessibility',
+    authors: [
+      { name: 'Michael Nelson', origin: 'SpecialEffect' },
+      { name: 'Sachin Sunil', origin: 'SpecialEffect' },
+    ],
+    index: 66,
+    source: 'Develop 2026',
+    basePrompt: `Build a responsive, mobile-first web app that demonstrates Mobile Gaming: The Next Frontier for Accessibility. The app should feature touch-friendly UI components and focus on this theme: Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities.`
+  }),
+  new ShowcaseApp({
+    categories: ['Coding'],
+    title: 'Vibe Coding: Build an App in 60 Minutes with GenAI',
+    authors: [
+      { name: 'Tyson Roberts', origin: 'Deepmind' },
+    ],
+    index: 67,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web application that simulates Vibe Coding: Build an App in 60 Minutes with GenAI. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'—intuitive, conversational instructions—to build a working application from scratch. Ensure a futuristic, 'vibey' aesthetic.`
+  }),
+  new ShowcaseApp({
+    categories: ['Discoverability'],
+    title: 'Steam Events in 2026 (And Why You Want To Be a Part Of Them)',
+    authors: [
+      { name: 'Gary Burchell', origin: 'Fireblade Software' },
+    ],
+    index: 68,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Steam Events in 2026 And Why You Want To Be a Part Of Them. Focus on the core idea: Getting visibility is tough and a constant battle. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Games:Edu', 'Roundtables'],
+    title: 'Fixing The Talent Crisis: Moving From Conversation To Action',
+    authors: [
+      { name: 'Laurence Oldham', origin: 'Digital Impact Incubator' },
+      { name: 'Tom Cole', origin: 'University of Greenwich' },
+    ],
+    index: 69,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Fixing The Talent Crisis: Moving From Conversation To Action. Focus on the core idea: This Roundtable is focused on the learnings from today's Games Edu track. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Keynote'],
+    title: 'ustwo games: A Positively Playful Business',
+    authors: [
+      { name: 'Maria Sayans', origin: 'ustwo' },
+      { name: 'Daniel Gray', origin: 'ustwo' },
+      { name: 'Peter Pashley', origin: 'ustwo' },
+      { name: 'Sam Loveridge', origin: 'GamesRadar' },
+    ],
+    index: 70,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of ustwo games: A Positively Playful Business. Focus on the core idea: ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance', 'Keynote'],
+    title: 'Pixels To Performance',
+    authors: [
+      { name: 'Adele Cutting', origin: 'Soundcuts' },
+    ],
+    index: 71,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pixels To Performance. Focus on the core idea: As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Building a Hit: LEGO Batman: Legacy of the Dark Knight',
+    authors: [
+      { name: 'Jonathan Smith', origin: 'TT Games' },
+      { name: 'Mark Green', origin: 'TT Games' },
+      { name: 'Dave Woodman', origin: 'TT Games' },
+      { name: 'Rian Walters', origin: 'TT Games' },
+      { name: 'Ruthie Nielsen', origin: 'TT Games' },
+    ],
+    index: 72,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building a Hit: LEGO Batman: Legacy of the Dark Knight. Focus on the core idea: TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Art'],
+    title: 'Defining & Achieving Visual Quality!',
+    authors: [
+      { name: 'Erol Kentli', origin: 'Flix Interactive' },
+    ],
+    index: 73,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Defining  Achieving Visual Quality. Focus on the core idea: As John Lasseter put it, “Quality is the best business plan”. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'Hiring for Success Under the New UK Employment Rights Act',
+    authors: [
+      { name: 'Liz Prince', origin: 'Amiqus' },
+    ],
+    index: 74,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Hiring for Success Under the New UK Employment Rights Act. Focus on the core idea: The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Coding'],
+    title: 'Inside F1 Game Development: Dynamic Objectives',
+    authors: [
+      { name: 'Paul Stefanescu', origin: 'Electronic Arts' },
+    ],
+    index: 75,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Inside F1 Game Development: Dynamic Objectives. Focus on the core idea: This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance'],
+    title: 'Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A',
+    authors: [
+      { name: 'Nathaniel Marten', origin: 'Lucky 13 Action Ltd' },
+    ],
+    index: 76,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Action Design and Stunt Coordination for Cinematics and Gameplay  QA. Focus on the core idea: A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Develop: FTUE (First Time User Experience) Wednesday',
+    authors: [
+      { name: 'Jazeena McCallum', origin: 'CRITICAL REFLEX' },
+      { name: 'Annabel Ashalley-Anthony', origin: 'Melanin Gamers' },
+    ],
+    index: 77,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Wednesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Other'],
+    title: 'UK Games Industry Census – What have we learned?',
+    authors: [
+      { name: 'Mark Taylor', origin: 'University of Sheffield' },
+      { name: 'Cinzia Musio', origin: 'Ukie' },
+    ],
+    index: 78,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of UK Games Industry Census  What have we learned. Focus on the core idea: Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry's action plan to address the results. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'How to Work with your Ex Dev Partners to Resolve Blockers',
+    authors: [
+      { name: 'Rikki Vitello', origin: 'Freelance' },
+    ],
+    index: 79,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Work with your Ex Dev Partners to Resolve Blockers. Focus on the core idea: Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Discoverability'],
+    title: 'The Recommendation Era: What AI-Driven Discovery Means for Video Games PR',
+    authors: [
+      { name: 'Ravi Vijh', origin: 'Bastion' },
+    ],
+    index: 80,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web application that simulates The Recommendation Era: What AIDriven Discovery Means for Video Games PR. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: There has been a quiet but persistent conversation as to whether PR still matters in games. Ensure a futuristic, 'vibey' aesthetic.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio',
+    authors: [
+      { name: 'Danny Isaac', origin: 'Criterion' },
+      { name: 'Amy Pejic', origin: 'Criterion' },
+    ],
+    index: 81,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio. Focus on the core idea: Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'Pitching to Publishers Sucks (& What We Learned Pitching Cabernet)',
+    authors: [
+      { name: 'Arseniy Klishin', origin: 'Party for Introverts' },
+    ],
+    index: 82,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pitching to Publishers Sucks  What We Learned Pitching Cabernet. Focus on the core idea: Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance'],
+    title: 'How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers',
+    authors: [
+      { name: 'Gareth Taylor', origin: 'Freelance & The Mocap Vaults' },
+    ],
+    index: 83,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers. Focus on the core idea: This talk centres around the collaboration between the Game Developer and the Performer. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'How Does One Freelance?',
+    authors: [
+      { name: 'Lorna McFall', origin: 'Freelance UI UX Designer' },
+    ],
+    index: 84,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Does One Freelance. Focus on the core idea: Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Other'],
+    title: 'D2C\'s Biggest Opportunity Has Nothing to Do With Platform Fees',
+    authors: [
+      { name: 'Liam Wiltshire', origin: 'Tebex' },
+    ],
+    index: 85,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of D2Cs Biggest Opportunity Has Nothing to Do With Platform Fees. Focus on the core idea: The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Design for Change: Should Designers Be Letting AI Make Product Decisions?',
+    authors: [
+      { name: 'Ayobami Aderemi', origin: 'ReAssure' },
+    ],
+    index: 86,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web application that simulates Design for Change: Should Designers Be Letting AI Make Product Decisions. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Ensure a futuristic, 'vibey' aesthetic.`
+  }),
+  new ShowcaseApp({
+    categories: ['Art'],
+    title: 'pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry',
+    authors: [
+      { name: 'Nader Alikhani', origin: 'Innovecs Games' },
+    ],
+    index: 87,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry. Focus on the core idea: Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission',
+    authors: [
+      { name: 'Murray Pannell', origin: 'BIG DUMB GAMES' },
+    ],
+    index: 88,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission. Focus on the core idea: The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Coding'],
+    title: 'From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device',
+    authors: [
+      { name: 'Ian Bolton', origin: 'Arm Ltd' },
+      { name: 'Đorđe Đurđević', origin: 'Nordeus' },
+    ],
+    index: 89,
+    source: 'Develop 2026',
+    basePrompt: `Build a responsive, mobile-first web app that demonstrates From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device. The app should feature touch-friendly UI components and focus on this theme: Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance'],
+    title: 'Press Start, Mind the Gap: Bridging US and UK Game Casting & Production pipelines',
+    authors: [
+      { name: 'Lexington Vanderberg', origin: 'The Halp Network' },
+      { name: 'Katie Young', origin: 'Liquid Violet' },
+      { name: 'Kirsty Gillmore', origin: 'Freelance Voice & Performance Director' },
+    ],
+    index: 90,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Press Start Mind the Gap: Bridging US and UK Game Casting  Production pipelines. Focus on the core idea: As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'One Year On: Progress, Gaps, and Possibilities for LGBTQ+ Inclusion',
+    authors: [
+      { name: 'James Dodd', origin: 'Out Making Games' },
+    ],
+    index: 91,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion. Focus on the core idea: This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Other'],
+    title: 'Stop Surveying, Start Listening: Why Real-Time Player Intelligence is Replacing How we Listen to Players',
+    authors: [
+      { name: 'Phil Mansell', origin: 'Jagex' },
+      { name: 'Tom Gaynor', origin: 'Levellr' },
+      { name: 'Rich Barnwell', origin: 'Entity' },
+    ],
+    index: 92,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Stop Surveying Start Listening: Why RealTime Player Intelligence is Replacing How we Listen to Players. Focus on the core idea: How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Games as Dreams: Using Symbolic Archetypes to Craft Powerful, Flexible Narratives',
+    authors: [
+      { name: 'Lydia Cockerham', origin: 'Creative Assembly' },
+    ],
+    index: 93,
+    source: 'Develop 2026',
+    basePrompt: `Build a branching narrative tool. Inspired by Games as Dreams: Using Symbolic Archetypes to Craft Powerful Flexible Narratives, the app should let users click through a dynamic dialogue tree that illustrates: It's every Narrative Designer's worst nightmare.`
+  }),
+  new ShowcaseApp({
+    categories: ['Indie'],
+    title: 'Shipping S.T.A.L.K.E.R. 2 Our Way: Self-Publishing, Game Pass, and 1 Million in 36 Hours',
+    authors: [
+      { name: 'Agostino Simonetta', origin: 'GSC Game World' },
+    ],
+    index: 94,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Shipping STALKER 2 Our Way: SelfPublishing Game Pass and 1 Million in 36 Hours. Focus on the core idea: S. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'More Than Games: Unlocking New Funding & Creative Opportunities Outside the Consumer Market',
+    authors: [
+      { name: 'Brian Baglow', origin: 'Scottish Games Network Ltd.' },
+    ],
+    index: 95,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of More Than Games: Unlocking New Funding  Creative Opportunities Outside the Consumer Market. Focus on the core idea: The consumer games market is intensely competitive. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Art'],
+    title: 'Exploring the 80:20 Rule in Concept Art',
+    authors: [
+      { name: 'Gargi Roy', origin: 'Lab42' },
+    ],
+    index: 96,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Exploring the 80:20 Rule in Concept Art. Focus on the core idea: The Pareto Principle suggests that 80% of output comes from just 20% of input. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Roundtables'],
+    title: 'Overcoming Barriers to Mental Health Support in the Workplace',
+    authors: [
+      { name: 'Izzie Micul', origin: 'Safe In Our World' },
+    ],
+    index: 97,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Overcoming Barriers to Mental Health Support in the Workplace. Focus on the core idea: This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Other'],
+    title: 'How to Stay Ahead of Cutting Edge Game Technology',
+    authors: [
+      { name: 'Dario Jelusic', origin: 'Atomhawk' },
+      { name: 'David Smethurst', origin: 'Sumo Digital' },
+      { name: 'Terry Goodwin', origin: 'Lab42' },
+      { name: 'Dan Wood', origin: 'Bastion' },
+    ],
+    index: 98,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Stay Ahead of Cutting Edge Game Technology. Focus on the core idea: Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance'],
+    title: 'Skill Buff: Auditions, Agents, and Building a Career in Game Performance',
+    authors: [
+      { name: 'Natalie Edwards', origin: 'Nordlings' },
+    ],
+    index: 99,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Skill Buff: Auditions Agents and Building a Career in Game Performance. Focus on the core idea: The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few. Ensure the design is modern, accessible, and highly polished.`
+  }),
+  new ShowcaseApp({
+    categories: ['Performance'],
+    title: 'Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives',
+    authors: [
+      { name: 'Keith Higinbotham', origin: 'Voice with Keith' },
+    ],
+    index: 100,
+    source: 'Develop 2026',
+    basePrompt: `Build a branching narrative tool. Inspired by Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives, the app should let users click through a dynamic dialogue tree that illustrates: With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages.`
+  }),
+  new ShowcaseApp({
+    categories: ['Design'],
+    title: 'Designing Immersive and Explorable Open Worlds with Narrative Encounters',
+    authors: [
+      { name: 'Shi-tao Fan', origin: 'Maverick) (Cloud Imperium Games' },
+    ],
+    index: 101,
+    source: 'Develop 2026',
+    basePrompt: `Build a branching narrative tool. Inspired by Designing Immersive and Explorable Open Worlds with Narrative Encounters, the app should let users click through a dynamic dialogue tree that illustrates: This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay.`
+  }),
+  new ShowcaseApp({
+    categories: ['Business'],
+    title: 'The Ethics of using AI in Games',
+    authors: [
+      { name: 'Ben Byford', origin: 'Nuclear Candy Games' },
+    ],
+    index: 102,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web application that simulates The Ethics of using AI in Games. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: A tour around the uses and pitfalls of using AI technologies in games development. Ensure a futuristic, 'vibey' aesthetic.`
+  }),
+  new ShowcaseApp({
+    categories: ['Art'],
+    title: 'On the Lore Around Art',
+    authors: [
+      { name: 'Andrej Horoschun', origin: 'Frontier Developments' },
+    ],
+    index: 103,
+    source: 'Develop 2026',
+    basePrompt: `Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of On the Lore Around Art. Focus on the core idea: This session examines the critical link between art creation and underlying studio lore. Ensure the design is modern, accessible, and highly polished.`
   }),
 ];
 
@@ -529,6 +1278,9 @@ export interface PromptIdea {
   prompt: string;
   canvasLibraries: string[];
   aiStudioLibraries: string[];
+  source?: 'DeepMind' | 'Develop:Brighton:2026';
+  sessionTitle?: string;
+  sessionTrack?: string;
 }
 
 export const promptIdeas: PromptIdea[] = [
@@ -1449,6 +2201,627 @@ export const promptIdeas: PromptIdea[] = [
     prompt: 'Visualize typed text as a force-directed graph: words are nodes, and connections are drawn between sequential words to reveal text structure.',
     canvasLibraries: ['D3.js', 'HTML Canvas'],
     aiStudioLibraries: ['D3.js', 'HTML Canvas', 'React']
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Powered by Players: Reforjing 4J Studios. Focus on the core idea: From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Powered by Players: Reforjing 4J Studios',
+    sessionTrack: 'Keynote'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development. Focus on the core idea: Following a brief introduction and welcome to the day\'s events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Games:Edu Track Intro & Keynote: Apprenticeships & the Tacit Knowledge of Game Development',
+    sessionTrack: 'Games:Edu, Keynote'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web application that simulates AI Wants to Play: A Game Designers Guide to AI in Every Stage of Development. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker\'s recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games. Ensure a futuristic, \'vibey\' aesthetic.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'AI Wants to Play: A Game Designer\'s Guide to AI in Every Stage of Development',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building New Game Teams Before the Game Is Clear. Focus on the core idea: What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company\'s program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Building New Game Teams Before the Game Is Clear',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project. Focus on the core idea: It\'s no great secret that projects overrun, that humans don\'t always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of A Frames Life: Frame Timing Synchronization and Latency in UE. Focus on the core idea: Every frame in Unreal Engine goes on a long journey before reaching the screen. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'A Frame\'s Life: Frame Timing, Synchronization, and Latency in UE',
+    sessionTrack: 'Coding'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Developing Tomorrows Talent: Studio Strategies and Solutions. Focus on the core idea: This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Developing Tomorrow\'s Talent: Studio Strategies and Solutions',
+    sessionTrack: 'Games:Edu'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Tuesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Develop: FTUE (First Time User Experience) Tuesday',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Finding the Balance: Big Team Process vs Indie Mindset. Focus on the core idea: This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Finding the Balance: Big Team Process vs Indie Mindset',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build a responsive, mobile-first web app that demonstrates Mobile Games: When Approachability Rhymes with Accessibility. The app should feature touch-friendly UI components and focus on this theme: This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Mobile Games: When Approachability Rhymes with Accessibility',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of 5 Easy Steam Store Page Tweaks to Boost Your Visibility. Focus on the core idea: Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: '5 Easy Steam Store Page Tweaks to Boost Your Visibility',
+    sessionTrack: 'Discoverability'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a branching narrative tool. Inspired by The Evolution of Interactive Storytelling, the app should let users click through a dynamic dialogue tree that illustrates: Storytelling is at the heart of what we do and runs across all crafts and mediums.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'The Evolution of Interactive Storytelling',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Opportunities For Talent: Workshopping The Foundations Of A Better Future. Focus on the core idea: How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Opportunities For Talent: Workshopping The Foundations Of A Better Future',
+    sessionTrack: 'Games:Edu'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Too Many Ideas One Game: ADHD Survival Guide for Game Dev. Focus on the core idea: Game development is already a difficult, long, messy marathon. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Too Many Ideas, One Game: ADHD Survival Guide for Game Dev',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scaling Without Breaking Your Studio. Focus on the core idea: As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Scaling Without Breaking Your Studio',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a responsive, mobile-first web app that demonstrates Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform. The app should feature touch-friendly UI components and focus on this theme: Digital products live across mobile, web, desktop — but delivery usually doesn\'t.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind. Focus on the core idea: We\'ve all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind',
+    sessionTrack: 'Discoverability'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game. Focus on the core idea: Thinking beyond genres and descriptions early in development makes it more likely your game will succeed. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Burnout: An Honest Chat About the Causes Symptoms and Recovery. Focus on the core idea: Burnout is a very common yet often hidden issue in the games industry. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Burnout: An Honest Chat About the Causes, Symptoms and Recovery',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently. Focus on the core idea: XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'XDS Ignite (2 PM): XDEV at a Crossroads: What the Best Teams are Doing Differently',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Tool',
+    prompt: 'Build a premium, animated UI showcase. Inspired by Interface as Identity: Designing UI That Complements the Brand, design interface elements that complement a game\'s brand. Keep in mind: UI and branding are often treated like separate jobs.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Interface as Identity: Designing UI That Complements the Brand',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Level Up InGame Earnings Without Losing Players. Focus on the core idea: Discover how to boost your game\'s revenue without compromising the player experience. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Level Up In-Game Earnings Without Losing Players',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Simulation',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Moving from Engineering To Management. Focus on the core idea: This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Moving from Engineering To Management',
+    sessionTrack: 'Coding'
+  }
+  ,{
+    category: 'Tool',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio. Focus on the core idea: The most common company value is integrity while the second most common is collaboration. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Raise the Game Roundtable. Focus on the core idea: Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Raise the Game Roundtable',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers. Focus on the core idea: Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a responsive, mobile-first web app that demonstrates The State of Mobile Creativity in 2026. The app should feature touch-friendly UI components and focus on this theme: Join a panel of industry experts to explore the state of creativity in mobile games in 2026.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'The State of Mobile Creativity in 2026',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Make Whatever You Want and Still Get Attention. Focus on the core idea: In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How to Make Whatever You Want and Still Get Attention',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of No Puzzle Games Arent Dead You Just Didnt Realise Theyre Emotional Experiences Too. Focus on the core idea: Games are emotional experiences, this is very clear in genres like first person shooters or adventure games. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'No, Puzzle Games Aren\'t Dead, You Just Didn\'t Realise They\'re Emotional Experiences Too',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides. Focus on the core idea: This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Graduate Journeys: Experiences, Breakthroughs and Insights From Both Sides',
+    sessionTrack: 'Games:Edu, Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scheduled Serendipity: Manufacturing Creative Aha Moments. Focus on the core idea: Inspiration is treated like lightning: an unpredictable and uncontrollable moment. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Scheduled Serendipity: Manufacturing Creative Aha Moments',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a responsive, mobile-first web app that demonstrates Mobile Gaming: The Next Frontier for Accessibility. The app should feature touch-friendly UI components and focus on this theme: Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Mobile Gaming: The Next Frontier for Accessibility',
+    sessionTrack: 'Mobile'
+  }
+  ,{
+    category: 'Tool',
+    prompt: 'Build an interactive web application that simulates Vibe Coding: Build an App in 60 Minutes with GenAI. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use \'vibe coding\'—intuitive, conversational instructions—to build a working application from scratch. Ensure a futuristic, \'vibey\' aesthetic.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Vibe Coding: Build an App in 60 Minutes with GenAI',
+    sessionTrack: 'Coding'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Steam Events in 2026 And Why You Want To Be a Part Of Them. Focus on the core idea: Getting visibility is tough and a constant battle. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Steam Events in 2026 (And Why You Want To Be a Part Of Them)',
+    sessionTrack: 'Discoverability'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Fixing The Talent Crisis: Moving From Conversation To Action. Focus on the core idea: This Roundtable is focused on the learnings from today\'s Games Edu track. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Fixing The Talent Crisis: Moving From Conversation To Action',
+    sessionTrack: 'Games:Edu, Roundtables, Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of ustwo games: A Positively Playful Business. Focus on the core idea: ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'ustwo games: A Positively Playful Business',
+    sessionTrack: 'Keynote'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pixels To Performance. Focus on the core idea: As Develop celebrates its 20th anniversary, we\'ll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Pixels To Performance',
+    sessionTrack: 'Performance, Keynote'
+  }
+  ,{
+    category: 'Tool',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building a Hit: LEGO Batman: Legacy of the Dark Knight. Focus on the core idea: TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Building a Hit: LEGO Batman: Legacy of the Dark Knight',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Defining  Achieving Visual Quality. Focus on the core idea: As John Lasseter put it, “Quality is the best business plan”. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Defining & Achieving Visual Quality!',
+    sessionTrack: 'Art'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Hiring for Success Under the New UK Employment Rights Act. Focus on the core idea: The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Hiring for Success Under the New UK Employment Rights Act',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Inside F1 Game Development: Dynamic Objectives. Focus on the core idea: This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Inside F1 Game Development: Dynamic Objectives',
+    sessionTrack: 'Coding'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Action Design and Stunt Coordination for Cinematics and Gameplay  QA. Focus on the core idea: A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A',
+    sessionTrack: 'Performance'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Wednesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Develop: FTUE (First Time User Experience) Wednesday',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of UK Games Industry Census  What have we learned. Focus on the core idea: Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry\'s action plan to address the results. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'UK Games Industry Census – What have we learned?',
+    sessionTrack: 'Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Work with your Ex Dev Partners to Resolve Blockers. Focus on the core idea: Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How to Work with your Ex Dev Partners to Resolve Blockers',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web application that simulates The Recommendation Era: What AIDriven Discovery Means for Video Games PR. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: There has been a quiet but persistent conversation as to whether PR still matters in games. Ensure a futuristic, \'vibey\' aesthetic.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'The Recommendation Era: What AI-Driven Discovery Means for Video Games PR',
+    sessionTrack: 'Discoverability'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio. Focus on the core idea: Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pitching to Publishers Sucks  What We Learned Pitching Cabernet. Focus on the core idea: Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Pitching to Publishers Sucks (& What We Learned Pitching Cabernet)',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers. Focus on the core idea: This talk centres around the collaboration between the Game Developer and the Performer. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers',
+    sessionTrack: 'Performance'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Does One Freelance. Focus on the core idea: Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How Does One Freelance?',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of D2Cs Biggest Opportunity Has Nothing to Do With Platform Fees. Focus on the core idea: The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'D2C\'s Biggest Opportunity Has Nothing to Do With Platform Fees',
+    sessionTrack: 'Free'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web application that simulates Design for Change: Should Designers Be Letting AI Make Product Decisions. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Ensure a futuristic, \'vibey\' aesthetic.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Design for Change: Should Designers Be Letting AI Make Product Decisions?',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Tool',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry. Focus on the core idea: Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry',
+    sessionTrack: 'Art'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission. Focus on the core idea: The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build a responsive, mobile-first web app that demonstrates From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device. The app should feature touch-friendly UI components and focus on this theme: Mobile players expect smooth, responsive gameplay regardless of whether they\'re playing on an older phone/tablet or on a modern flagship device.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device',
+    sessionTrack: 'Coding'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Press Start Mind the Gap: Bridging US and UK Game Casting  Production pipelines. Focus on the core idea: As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Press Start, Mind the Gap: Bridging US and UK Game Casting & Production pipelines',
+    sessionTrack: 'Performance'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion. Focus on the core idea: This year\'s LGBTQ+ roundtable will compare where we were at last year\'s roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'One Year On: Progress, Gaps, and Possibilities for LGBTQ+ Inclusion',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Stop Surveying Start Listening: Why RealTime Player Intelligence is Replacing How we Listen to Players. Focus on the core idea: How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Stop Surveying, Start Listening: Why Real-Time Player Intelligence is Replacing How we Listen to Players',
+    sessionTrack: 'Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build a branching narrative tool. Inspired by Games as Dreams: Using Symbolic Archetypes to Craft Powerful Flexible Narratives, the app should let users click through a dynamic dialogue tree that illustrates: It\'s every Narrative Designer\'s worst nightmare.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Games as Dreams: Using Symbolic Archetypes to Craft Powerful, Flexible Narratives',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Shipping STALKER 2 Our Way: SelfPublishing Game Pass and 1 Million in 36 Hours. Focus on the core idea: S. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Shipping S.T.A.L.K.E.R. 2 Our Way: Self-Publishing, Game Pass, and 1 Million in 36 Hours',
+    sessionTrack: 'Indie'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of More Than Games: Unlocking New Funding  Creative Opportunities Outside the Consumer Market. Focus on the core idea: The consumer games market is intensely competitive. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'More Than Games: Unlocking New Funding & Creative Opportunities Outside the Consumer Market',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Exploring the 80:20 Rule in Concept Art. Focus on the core idea: The Pareto Principle suggests that 80% of output comes from just 20% of input. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Exploring the 80:20 Rule in Concept Art',
+    sessionTrack: 'Art'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Overcoming Barriers to Mental Health Support in the Workplace. Focus on the core idea: This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Overcoming Barriers to Mental Health Support in the Workplace',
+    sessionTrack: 'Roundtables, Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Stay Ahead of Cutting Edge Game Technology. Focus on the core idea: Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'How to Stay Ahead of Cutting Edge Game Technology',
+    sessionTrack: 'Free'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Skill Buff: Auditions Agents and Building a Career in Game Performance. Focus on the core idea: The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Skill Buff: Auditions, Agents, and Building a Career in Game Performance',
+    sessionTrack: 'Performance'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a branching narrative tool. Inspired by Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives, the app should let users click through a dynamic dialogue tree that illustrates: With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives',
+    sessionTrack: 'Performance'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build a branching narrative tool. Inspired by Designing Immersive and Explorable Open Worlds with Narrative Encounters, the app should let users click through a dynamic dialogue tree that illustrates: This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'Designing Immersive and Explorable Open Worlds with Narrative Encounters',
+    sessionTrack: 'Design'
+  }
+  ,{
+    category: 'Game',
+    prompt: 'Build an interactive web application that simulates The Ethics of using AI in Games. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: A tour around the uses and pitfalls of using AI technologies in games development. Ensure a futuristic, \'vibey\' aesthetic.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'The Ethics of using AI in Games',
+    sessionTrack: 'Business'
+  }
+  ,{
+    category: 'Other',
+    prompt: 'Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of On the Lore Around Art. Focus on the core idea: This session examines the critical link between art creation and underlying studio lore. Ensure the design is modern, accessible, and highly polished.',
+    canvasLibraries: [],
+    aiStudioLibraries: [],
+    source: 'Develop:Brighton:2026',
+    sessionTitle: 'On the Lore Around Art',
+    sessionTrack: 'Art'
   }
 ];
 

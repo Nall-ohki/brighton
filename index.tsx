@@ -28,8 +28,15 @@ const ThemeSwitcher = ({ theme, toggleTheme }) => {
   );
 };
 
+const getInitialView = () => {
+  const hash = window.location.hash.replace('#', '');
+  const views = ['brighton', 'showcase', 'resources', 'prompt', 'advice'];
+  const view = hash.split('?')[0].split('/')[0];
+  return views.includes(view) ? view : 'brighton';
+};
+
 const App = () => {
-  const [view, setView] = useState('brighton');
+  const [view, setView] = useState(getInitialView);
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -61,40 +68,58 @@ const App = () => {
     document.title = title;
   }, [view]);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      const views = ['brighton', 'showcase', 'resources', 'prompt', 'advice'];
+      const newView = hash.split('?')[0].split('/')[0];
+      if (views.includes(newView)) {
+        setView(newView);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const changeView = (newView: string) => {
+    window.location.hash = newView;
+  };
+
   return (
     <>
       <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
       <nav className="main-nav">
         <button
-          onClick={() => setView('brighton')}
+          onClick={() => changeView('brighton')}
           className={view === 'brighton' ? 'active' : ''}
           aria-pressed={view === 'brighton'}
         >
           Develop: Brighton 2026 Information
         </button>
         <button
-          onClick={() => setView('showcase')}
+          onClick={() => changeView('showcase')}
           className={view === 'showcase' ? 'active' : ''}
           aria-pressed={view === 'showcase'}
         >
           App Showcase
         </button>
         <button
-          onClick={() => setView('resources')}
+          onClick={() => changeView('resources')}
           className={view === 'resources' ? 'active' : ''}
           aria-pressed={view === 'resources'}
         >
           Resources
         </button>
         <button
-          onClick={() => setView('prompt')}
+          id="nav-prompt"
+          onClick={() => changeView('prompt')}
           className={view === 'prompt' ? 'active' : ''}
           aria-pressed={view === 'prompt'}
         >
           Prompt Generator
         </button>
         <button
-          onClick={() => setView('advice')}
+          onClick={() => changeView('advice')}
           className={view === 'advice' ? 'active' : ''}
           aria-pressed={view === 'advice'}
         >

@@ -15,7 +15,7 @@ This document contains a comprehensive list of **vibe coding concepts and prompt
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Powered by Players: Reforjing 4J Studios. Focus on the core idea: From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Powered by Players: Reforjing 4J Studios. Focus on the core idea: From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -38,7 +38,7 @@ From its roots as a trusted development partner to becoming a studio defined by 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development. Focus on the core idea: Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development. Focus on the core idea: Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -63,7 +63,7 @@ Following a brief introduction and welcome to the day's events by track hosts La
 
 **The GenAI Prompt:**
 ```text
-Build a React web app that simulates AI Wants to Play: A Game Designers Guide to AI in Every Stage of Development. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker's recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games. Use Tailwind CSS for a futuristic, 'vibey' aesthetic.
+Build an interactive web application that simulates AI Wants to Play: A Game Designers Guide to AI in Every Stage of Development. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker's recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games. Ensure a futuristic, 'vibey' aesthetic.
 ```
 
 <details>
@@ -87,7 +87,7 @@ The latest wave of AI is reshaping game development — but what actually works 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Building New Game Teams Before the Game Is Clear. Focus on the core idea: What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building New Game Teams Before the Game Is Clear. Focus on the core idea: What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -110,7 +110,7 @@ What makes an early game team worth believing in before the game itself is fully
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project. Focus on the core idea: It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project. Focus on the core idea: It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -133,7 +133,7 @@ It's no great secret that projects overrun, that humans don't always make good p
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of A Frames Life: Frame Timing Synchronization and Latency in UE. Focus on the core idea: Every frame in Unreal Engine goes on a long journey before reaching the screen. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of A Frames Life: Frame Timing Synchronization and Latency in UE. Focus on the core idea: Every frame in Unreal Engine goes on a long journey before reaching the screen. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -156,7 +156,7 @@ Every frame in Unreal Engine goes on a long journey before reaching the screen. 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Developing Tomorrows Talent: Studio Strategies and Solutions. Focus on the core idea: This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Developing Tomorrows Talent: Studio Strategies and Solutions. Focus on the core idea: This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -179,7 +179,7 @@ This expert panel brings together leaders from a broad range of studios to share
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Tuesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Tuesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -204,7 +204,7 @@ A relaxed and informal roundtable designed to help you get the most out of your 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Finding the Balance: Big Team Process vs Indie Mindset. Focus on the core idea: This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Finding the Balance: Big Team Process vs Indie Mindset. Focus on the core idea: This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -227,7 +227,7 @@ This session looks at how teams can build strong production foundations without 
 
 **The GenAI Prompt:**
 ```text
-Build a responsive, mobile-first web app using React and Tailwind CSS that demonstrates Mobile Games: When Approachability Rhymes with Accessibility. The app should feature touch-friendly UI components and focus on this theme: This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players.
+Build a responsive, mobile-first web app that demonstrates Mobile Games: When Approachability Rhymes with Accessibility. The app should feature touch-friendly UI components and focus on this theme: This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players.
 ```
 
 <details>
@@ -251,7 +251,7 @@ This talk explores how mobile games often excel at approachability but often mis
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of 5 Easy Steam Store Page Tweaks to Boost Your Visibility. Focus on the core idea: Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of 5 Easy Steam Store Page Tweaks to Boost Your Visibility. Focus on the core idea: Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -274,7 +274,7 @@ Your Steam page is the most important marketing asset you have, but most devs un
 
 **The GenAI Prompt:**
 ```text
-Build a branching narrative tool using React. Inspired by The Evolution of Interactive Storytelling, the app should let users click through a dynamic dialogue tree that illustrates: Storytelling is at the heart of what we do and runs across all crafts and mediums.
+Build a branching narrative tool. Inspired by The Evolution of Interactive Storytelling, the app should let users click through a dynamic dialogue tree that illustrates: Storytelling is at the heart of what we do and runs across all crafts and mediums.
 ```
 
 <details>
@@ -298,7 +298,7 @@ Storytelling is at the heart of what we do and runs across all crafts and medium
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Opportunities For Talent: Workshopping The Foundations Of A Better Future. Focus on the core idea: How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Opportunities For Talent: Workshopping The Foundations Of A Better Future. Focus on the core idea: How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -322,7 +322,7 @@ How can we evolve the conversation from talent needs into sustainable growth opp
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Too Many Ideas One Game: ADHD Survival Guide for Game Dev. Focus on the core idea: Game development is already a difficult, long, messy marathon. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Too Many Ideas One Game: ADHD Survival Guide for Game Dev. Focus on the core idea: Game development is already a difficult, long, messy marathon. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -346,7 +346,7 @@ Game development is already a difficult, long, messy marathon. Add ADHD traits l
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Scaling Without Breaking Your Studio. Focus on the core idea: As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scaling Without Breaking Your Studio. Focus on the core idea: As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -369,7 +369,7 @@ As game studios grow, the biggest risks to performance and long-term value often
 
 **The GenAI Prompt:**
 ```text
-Build a responsive, mobile-first web app using React and Tailwind CSS that demonstrates Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform. The app should feature touch-friendly UI components and focus on this theme: Digital products live across mobile, web, desktop — but delivery usually doesn't.
+Build a responsive, mobile-first web app that demonstrates Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform. The app should feature touch-friendly UI components and focus on this theme: Digital products live across mobile, web, desktop — but delivery usually doesn't.
 ```
 
 <details>
@@ -392,7 +392,7 @@ Digital products live across mobile, web, desktop — but delivery usually doesn
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind. Focus on the core idea: We've all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind. Focus on the core idea: We've all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -415,7 +415,7 @@ We've all been there - grand plans for multi-channel marketing campaigns that wi
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game. Focus on the core idea: Thinking beyond genres and descriptions early in development makes it more likely your game will succeed. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game. Focus on the core idea: Thinking beyond genres and descriptions early in development makes it more likely your game will succeed. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -438,7 +438,7 @@ Thinking beyond genres and descriptions early in development makes it more likel
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Burnout: An Honest Chat About the Causes Symptoms and Recovery. Focus on the core idea: Burnout is a very common yet often hidden issue in the games industry. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Burnout: An Honest Chat About the Causes Symptoms and Recovery. Focus on the core idea: Burnout is a very common yet often hidden issue in the games industry. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -462,7 +462,7 @@ Burnout is a very common yet often hidden issue in the games industry. Many foun
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently. Focus on the core idea: XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently. Focus on the core idea: XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -486,7 +486,7 @@ XDS Ignite is a developer-only event that brings together developers and publish
 
 **The GenAI Prompt:**
 ```text
-Build a premium, animated UI showcase using React and Framer Motion. Inspired by Interface as Identity: Designing UI That Complements the Brand, design interface elements that complement a game's brand. Keep in mind: UI and branding are often treated like separate jobs.
+Build a premium, animated UI showcase. Inspired by Interface as Identity: Designing UI That Complements the Brand, design interface elements that complement a game's brand. Keep in mind: UI and branding are often treated like separate jobs.
 ```
 
 <details>
@@ -509,7 +509,7 @@ UI and branding are often treated like separate jobs. Branding frames the game f
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Level Up InGame Earnings Without Losing Players. Focus on the core idea: Discover how to boost your game's revenue without compromising the player experience. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Level Up InGame Earnings Without Losing Players. Focus on the core idea: Discover how to boost your game's revenue without compromising the player experience. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -532,7 +532,7 @@ Discover how to boost your game's revenue without compromising the player experi
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Moving from Engineering To Management. Focus on the core idea: This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Moving from Engineering To Management. Focus on the core idea: This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -555,7 +555,7 @@ This talk will explore the different pathways that an engineer (or IC) can take 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio. Focus on the core idea: The most common company value is integrity while the second most common is collaboration. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio. Focus on the core idea: The most common company value is integrity while the second most common is collaboration. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -578,7 +578,7 @@ The most common company value is integrity while the second most common is colla
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Raise the Game Roundtable. Focus on the core idea: Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Raise the Game Roundtable. Focus on the core idea: Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -602,7 +602,7 @@ Join us to talk about how to make the games industry a more equitable, diverse a
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers. Focus on the core idea: Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers. Focus on the core idea: Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -626,7 +626,7 @@ Over the last few years, awareness of neurodiversity and mental health in games 
 
 **The GenAI Prompt:**
 ```text
-Build a responsive, mobile-first web app using React and Tailwind CSS that demonstrates The State of Mobile Creativity in 2026. The app should feature touch-friendly UI components and focus on this theme: Join a panel of industry experts to explore the state of creativity in mobile games in 2026.
+Build a responsive, mobile-first web app that demonstrates The State of Mobile Creativity in 2026. The app should feature touch-friendly UI components and focus on this theme: Join a panel of industry experts to explore the state of creativity in mobile games in 2026.
 ```
 
 <details>
@@ -649,7 +649,7 @@ Join a panel of industry experts to explore the state of creativity in mobile ga
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How to Make Whatever You Want and Still Get Attention. Focus on the core idea: In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Make Whatever You Want and Still Get Attention. Focus on the core idea: In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -673,7 +673,7 @@ In absence of any sort of studio backing, funding grants, publishers, or doing a
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of No Puzzle Games Arent Dead You Just Didnt Realise Theyre Emotional Experiences Too. Focus on the core idea: Games are emotional experiences, this is very clear in genres like first person shooters or adventure games. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of No Puzzle Games Arent Dead You Just Didnt Realise Theyre Emotional Experiences Too. Focus on the core idea: Games are emotional experiences, this is very clear in genres like first person shooters or adventure games. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -696,7 +696,7 @@ Games are emotional experiences, this is very clear in genres like first person 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides. Focus on the core idea: This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides. Focus on the core idea: This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -720,7 +720,7 @@ This Free Roundtable gives the opportunity to hear firsthand from those who have
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Scheduled Serendipity: Manufacturing Creative Aha Moments. Focus on the core idea: Inspiration is treated like lightning: an unpredictable and uncontrollable moment. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Scheduled Serendipity: Manufacturing Creative Aha Moments. Focus on the core idea: Inspiration is treated like lightning: an unpredictable and uncontrollable moment. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -744,7 +744,7 @@ Inspiration is treated like lightning: an unpredictable and uncontrollable momen
 
 **The GenAI Prompt:**
 ```text
-Build a responsive, mobile-first web app using React and Tailwind CSS that demonstrates Mobile Gaming: The Next Frontier for Accessibility. The app should feature touch-friendly UI components and focus on this theme: Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities.
+Build a responsive, mobile-first web app that demonstrates Mobile Gaming: The Next Frontier for Accessibility. The app should feature touch-friendly UI components and focus on this theme: Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities.
 ```
 
 <details>
@@ -767,7 +767,7 @@ Playing games on mobile devices is more popular globally than any other platform
 
 **The GenAI Prompt:**
 ```text
-Build a React web app that simulates Vibe Coding: Build an App in 60 Minutes with GenAI. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'—intuitive, conversational instructions—to build a working application from scratch. Use Tailwind CSS for a futuristic, 'vibey' aesthetic.
+Build an interactive web application that simulates Vibe Coding: Build an App in 60 Minutes with GenAI. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'—intuitive, conversational instructions—to build a working application from scratch. Ensure a futuristic, 'vibey' aesthetic.
 ```
 
 <details>
@@ -790,7 +790,7 @@ Curious about how AI is changing software development? Join us for a rapid-fire,
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Steam Events in 2026 And Why You Want To Be a Part Of Them. Focus on the core idea: Getting visibility is tough and a constant battle. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Steam Events in 2026 And Why You Want To Be a Part Of Them. Focus on the core idea: Getting visibility is tough and a constant battle. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -813,7 +813,7 @@ Getting visibility is tough and a constant battle. Steam events offer a vital wa
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Fixing The Talent Crisis: Moving From Conversation To Action. Focus on the core idea: This Roundtable is focused on the learnings from today's Games Edu track. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Fixing The Talent Crisis: Moving From Conversation To Action. Focus on the core idea: This Roundtable is focused on the learnings from today's Games Edu track. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -839,7 +839,7 @@ This Roundtable is focused on the learnings from today's Games Edu track. We wil
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of ustwo games: A Positively Playful Business. Focus on the core idea: ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of ustwo games: A Positively Playful Business. Focus on the core idea: ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -862,7 +862,7 @@ ustwo games was born in 2012 inside ustwo studios, a digital design agency in Ea
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Pixels To Performance. Focus on the core idea: As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pixels To Performance. Focus on the core idea: As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -886,7 +886,7 @@ As Develop celebrates its 20th anniversary, we'll explore how game dialogue has 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Building a Hit: LEGO Batman: Legacy of the Dark Knight. Focus on the core idea: TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Building a Hit: LEGO Batman: Legacy of the Dark Knight. Focus on the core idea: TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -909,7 +909,7 @@ TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the h
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Defining  Achieving Visual Quality. Focus on the core idea: As John Lasseter put it, “Quality is the best business plan”. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Defining  Achieving Visual Quality. Focus on the core idea: As John Lasseter put it, “Quality is the best business plan”. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -932,7 +932,7 @@ As John Lasseter put it, “Quality is the best business plan”. This sounds si
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Hiring for Success Under the New UK Employment Rights Act. Focus on the core idea: The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Hiring for Success Under the New UK Employment Rights Act. Focus on the core idea: The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -955,7 +955,7 @@ The new UK Employment Rights Act represents one of the most significant shifts i
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Inside F1 Game Development: Dynamic Objectives. Focus on the core idea: This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Inside F1 Game Development: Dynamic Objectives. Focus on the core idea: This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -980,7 +980,7 @@ This session will explore how a small team from Formula 1 game series developed 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Action Design and Stunt Coordination for Cinematics and Gameplay  QA. Focus on the core idea: A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Action Design and Stunt Coordination for Cinematics and Gameplay  QA. Focus on the core idea: A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1003,7 +1003,7 @@ A question and answer session focusing on the process of designing action conten
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Wednesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Develop: FTUE First Time User Experience Wednesday. Focus on the core idea: A relaxed and informal roundtable designed to help you get the most out of your time at the conference. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1026,7 +1026,7 @@ A relaxed and informal roundtable designed to help you get the most out of your 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of UK Games Industry Census  What have we learned. Focus on the core idea: Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry's action plan to address the results. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of UK Games Industry Census  What have we learned. Focus on the core idea: Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry's action plan to address the results. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1050,7 +1050,7 @@ Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity &
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How to Work with your Ex Dev Partners to Resolve Blockers. Focus on the core idea: Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Work with your Ex Dev Partners to Resolve Blockers. Focus on the core idea: Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1073,7 +1073,7 @@ Deadlines, insufficient documentation, repetitive feedback loops, and compressed
 
 **The GenAI Prompt:**
 ```text
-Build a React web app that simulates The Recommendation Era: What AIDriven Discovery Means for Video Games PR. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: There has been a quiet but persistent conversation as to whether PR still matters in games. Use Tailwind CSS for a futuristic, 'vibey' aesthetic.
+Build an interactive web application that simulates The Recommendation Era: What AIDriven Discovery Means for Video Games PR. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: There has been a quiet but persistent conversation as to whether PR still matters in games. Ensure a futuristic, 'vibey' aesthetic.
 ```
 
 <details>
@@ -1096,7 +1096,7 @@ There has been a quiet but persistent conversation as to whether PR still matter
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio. Focus on the core idea: Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio. Focus on the core idea: Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1120,7 +1120,7 @@ Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a ses
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Pitching to Publishers Sucks  What We Learned Pitching Cabernet. Focus on the core idea: Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Pitching to Publishers Sucks  What We Learned Pitching Cabernet. Focus on the core idea: Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1143,7 +1143,7 @@ Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes h
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers. Focus on the core idea: This talk centres around the collaboration between the Game Developer and the Performer. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers. Focus on the core idea: This talk centres around the collaboration between the Game Developer and the Performer. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1166,7 +1166,7 @@ This talk centres around the collaboration between the Game Developer and the Pe
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How Does One Freelance. Focus on the core idea: Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How Does One Freelance. Focus on the core idea: Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1189,7 +1189,7 @@ Are you someone who is new to the games industry looking for your first client, 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of D2Cs Biggest Opportunity Has Nothing to Do With Platform Fees. Focus on the core idea: The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of D2Cs Biggest Opportunity Has Nothing to Do With Platform Fees. Focus on the core idea: The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1213,7 +1213,7 @@ The D2C conversation in games has been dominated by one number: saving 25-30% on
 
 **The GenAI Prompt:**
 ```text
-Build a React web app that simulates Design for Change: Should Designers Be Letting AI Make Product Decisions. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Use Tailwind CSS for a futuristic, 'vibey' aesthetic.
+Build an interactive web application that simulates Design for Change: Should Designers Be Letting AI Make Product Decisions. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Ensure a futuristic, 'vibey' aesthetic.
 ```
 
 <details>
@@ -1236,7 +1236,7 @@ This talk questions the growing assumption that Artificial Intelligence should g
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry. Focus on the core idea: Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry. Focus on the core idea: Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1259,7 +1259,7 @@ Every game needs art, but not every game needs the same artists, at the same tim
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission. Focus on the core idea: The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission. Focus on the core idea: The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1282,7 +1282,7 @@ The games industry is facing many challenges, but it is full of experienced, tal
 
 **The GenAI Prompt:**
 ```text
-Build a responsive, mobile-first web app using React and Tailwind CSS that demonstrates From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device. The app should feature touch-friendly UI components and focus on this theme: Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device.
+Build a responsive, mobile-first web app that demonstrates From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device. The app should feature touch-friendly UI components and focus on this theme: Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device.
 ```
 
 <details>
@@ -1305,7 +1305,7 @@ Mobile players expect smooth, responsive gameplay regardless of whether they're 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Press Start Mind the Gap: Bridging US and UK Game Casting  Production pipelines. Focus on the core idea: As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Press Start Mind the Gap: Bridging US and UK Game Casting  Production pipelines. Focus on the core idea: As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1328,7 +1328,7 @@ As video game production increasingly spans borders, casting and voice recording
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion. Focus on the core idea: This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion. Focus on the core idea: This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1351,7 +1351,7 @@ This year's LGBTQ+ roundtable will compare where we were at last year's roundtab
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Stop Surveying Start Listening: Why RealTime Player Intelligence is Replacing How we Listen to Players. Focus on the core idea: How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Stop Surveying Start Listening: Why RealTime Player Intelligence is Replacing How we Listen to Players. Focus on the core idea: How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1375,7 +1375,7 @@ How studios turn player signal into better products, faster decisions and strong
 
 **The GenAI Prompt:**
 ```text
-Build a branching narrative tool using React. Inspired by Games as Dreams: Using Symbolic Archetypes to Craft Powerful Flexible Narratives, the app should let users click through a dynamic dialogue tree that illustrates: It's every Narrative Designer's worst nightmare.
+Build a branching narrative tool. Inspired by Games as Dreams: Using Symbolic Archetypes to Craft Powerful Flexible Narratives, the app should let users click through a dynamic dialogue tree that illustrates: It's every Narrative Designer's worst nightmare.
 ```
 
 <details>
@@ -1398,7 +1398,7 @@ It's every Narrative Designer's worst nightmare. A quest has been cut, an enemy 
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Shipping STALKER 2 Our Way: SelfPublishing Game Pass and 1 Million in 36 Hours. Focus on the core idea: S. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Shipping STALKER 2 Our Way: SelfPublishing Game Pass and 1 Million in 36 Hours. Focus on the core idea: S. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1421,7 +1421,7 @@ S.T.A.L.K.E.R. 2: Heart of Chornobyl - a first-person open-world shooter built o
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of More Than Games: Unlocking New Funding  Creative Opportunities Outside the Consumer Market. Focus on the core idea: The consumer games market is intensely competitive. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of More Than Games: Unlocking New Funding  Creative Opportunities Outside the Consumer Market. Focus on the core idea: The consumer games market is intensely competitive. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1445,7 +1445,7 @@ The consumer games market is intensely competitive. However, the UK games indust
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Exploring the 80:20 Rule in Concept Art. Focus on the core idea: The Pareto Principle suggests that 80% of output comes from just 20% of input. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Exploring the 80:20 Rule in Concept Art. Focus on the core idea: The Pareto Principle suggests that 80% of output comes from just 20% of input. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1468,7 +1468,7 @@ The Pareto Principle suggests that 80% of output comes from just 20% of input. F
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Overcoming Barriers to Mental Health Support in the Workplace. Focus on the core idea: This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Overcoming Barriers to Mental Health Support in the Workplace. Focus on the core idea: This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1491,7 +1491,7 @@ This roundtable will open a vital discussion about the barriers many games indus
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of How to Stay Ahead of Cutting Edge Game Technology. Focus on the core idea: Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of How to Stay Ahead of Cutting Edge Game Technology. Focus on the core idea: Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1515,7 +1515,7 @@ Over the last two decades, videogame technology has evolved dramatically, from t
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of Skill Buff: Auditions Agents and Building a Career in Game Performance. Focus on the core idea: The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of Skill Buff: Auditions Agents and Building a Career in Game Performance. Focus on the core idea: The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>
@@ -1539,7 +1539,7 @@ The video game performance landscape has evolved rapidly - voiceover is no longe
 
 **The GenAI Prompt:**
 ```text
-Build a branching narrative tool using React. Inspired by Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives, the app should let users click through a dynamic dialogue tree that illustrates: With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages.
+Build a branching narrative tool. Inspired by Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives, the app should let users click through a dynamic dialogue tree that illustrates: With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages.
 ```
 
 <details>
@@ -1564,7 +1564,7 @@ With several video game titles under my belt as both a voice/dialect coach and a
 
 **The GenAI Prompt:**
 ```text
-Build a branching narrative tool using React. Inspired by Designing Immersive and Explorable Open Worlds with Narrative Encounters, the app should let users click through a dynamic dialogue tree that illustrates: This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay.
+Build a branching narrative tool. Inspired by Designing Immersive and Explorable Open Worlds with Narrative Encounters, the app should let users click through a dynamic dialogue tree that illustrates: This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay.
 ```
 
 <details>
@@ -1587,7 +1587,7 @@ This session examines the development of the Open World Encounter in Project Ava
 
 **The GenAI Prompt:**
 ```text
-Build a React web app that simulates The Ethics of using AI in Games. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: A tour around the uses and pitfalls of using AI technologies in games development. Use Tailwind CSS for a futuristic, 'vibey' aesthetic.
+Build an interactive web application that simulates The Ethics of using AI in Games. Create a mock interface for an AI assistant that helps game designers. Include a feature that visualizes: A tour around the uses and pitfalls of using AI technologies in games development. Ensure a futuristic, 'vibey' aesthetic.
 ```
 
 <details>
@@ -1610,7 +1610,7 @@ A tour around the uses and pitfalls of using AI technologies in games developmen
 
 **The GenAI Prompt:**
 ```text
-Build an interactive web dashboard using React, Recharts, and Tailwind CSS. The dashboard should visualize the key takeaways of On the Lore Around Art. Focus on the core idea: This session examines the critical link between art creation and underlying studio lore. Ensure the design is modern, accessible, and highly polished.
+Build an interactive web dashboard with data visualizations. The dashboard should visualize the key takeaways of On the Lore Around Art. Focus on the core idea: This session examines the critical link between art creation and underlying studio lore. Ensure the design is modern, accessible, and highly polished.
 ```
 
 <details>

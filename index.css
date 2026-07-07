@@ -10,7 +10,7 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
   --subtle-hover-bg: #e9ecef;
 
-  --category-tool-bg: #4a90e2;
+  --category-tool-bg: #546e7a;
   --category-creative-bg: #9013FE;
   --category-educational-bg: #34A853;
   --category-simulation-bg: #F5A623;
@@ -166,6 +166,39 @@ body {
   border-bottom-color: var(--accent-color);
 }
 
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.sub-nav button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  top: 1px;
+}
+
+.sub-nav button:hover {
+  color: var(--text-primary);
+}
+
+.sub-nav button.active {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
 header {
   text-align: center;
   margin-bottom: 2rem;
@@ -259,7 +292,7 @@ header p {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 384px), 1fr));
   gap: 1.5rem;
 }
 
@@ -272,7 +305,6 @@ header p {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
   border: 1px solid var(--border-color);
   position: relative;
-  overflow: hidden;
 }
 
 .card:hover {
@@ -292,6 +324,7 @@ header p {
   font-size: 0.75rem;
   font-weight: 700;
   color: #fff;
+  background-color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -313,6 +346,24 @@ header p {
 .category-tag--data-viz { background-color: var(--category-data-viz-bg); }
 .category-tag--perception { background-color: var(--category-perception-bg); }
 .category-tag--ui { background-color: var(--category-ui-bg); }
+
+/* Source Tags */
+.category-tag--deepmind { background-color: #4f46e5; color: #fff; }
+.category-tag--develop-2026 { background-color: #ff5722; color: #fff; }
+
+/* --- New tags for Develop 2026 --- */
+.category-tag--discoverability { background-color: #8e44ad; }
+.category-tag--roundtables { background-color: #2980b9; }
+.category-tag--games-edu { background-color: #27ae60; }
+.category-tag--performance { background-color: #c0392b; }
+.category-tag--keynote { background-color: #f39c12; color: #fff; }
+.category-tag--mobile { background-color: #16a085; }
+.category-tag--indie { background-color: #d35400; }
+.category-tag--design { background-color: #e74c3c; }
+.category-tag--art { background-color: #9b59b6; }
+.category-tag--free { background-color: #34495e; }
+.category-tag--coding { background-color: #f1c40f; color: #000; }
+.category-tag--business { background-color: #2c3e50; }
 
 
 .card-content {
@@ -352,6 +403,28 @@ header p {
 
 .card-footer a:hover {
   background-color: var(--accent-hover);
+}
+
+.card-footer button.view-app-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #8e44ad; /* Purple to distinguish from View App */
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.card-footer button.view-app-button:hover {
+  background-color: #732d91;
+}
+
+.card-footer button.view-app-button:active {
+  transform: scale(0.97);
 }
 
 .no-results {
@@ -930,27 +1003,70 @@ header p {
 .category-filter[data-category="ui"] { border-color: var(--category-ui-bg); }
 
 /* Hover and Active state: colored background */
-.category-filter[data-category]:hover,
 .category-filter[data-category].active {
   color: #fff;
 }
 
-.category-filter[data-category="tool"]:hover, .category-filter[data-category="tool"].active { background-color: var(--category-tool-bg); border-color: var(--category-tool-bg); }
-.category-filter[data-category="creative"]:hover, .category-filter[data-category="creative"].active { background-color: var(--category-creative-bg); border-color: var(--category-creative-bg); }
-.category-filter[data-category="educational"]:hover, .category-filter[data-category="educational"].active { background-color: var(--category-educational-bg); border-color: var(--category-educational-bg); }
-.category-filter[data-category="simulation"]:hover, .category-filter[data-category="simulation"].active { background-color: var(--category-simulation-bg); border-color: var(--category-simulation-bg); }
-.category-filter[data-category="game"]:hover, .category-filter[data-category="game"].active { background-color: var(--category-game-bg); border-color: var(--category-game-bg); }
-.category-filter[data-category="informational"]:hover, .category-filter[data-category="informational"].active { background-color: var(--category-informational-bg); border-color: var(--category-informational-bg); }
-.category-filter[data-category="ui-creation"]:hover, .category-filter[data-category="ui-creation"].active { background-color: var(--category-ui-creation-bg); border-color: var(--category-ui-creation-bg); }
-.category-filter[data-category="3d"]:hover, .category-filter[data-category="3d"].active { background-color: var(--category-3d-bg); border-color: var(--category-3d-bg); }
-.category-filter[data-category="audio"]:hover, .category-filter[data-category="audio"].active { background-color: var(--category-audio-bg); border-color: var(--category-audio-bg); }
-.category-filter[data-category="physics"]:hover, .category-filter[data-category="physics"].active { background-color: var(--category-physics-bg); border-color: var(--category-physics-bg); }
-.category-filter[data-category="data-viz"]:hover, .category-filter[data-category="data-viz"].active { background-color: var(--category-data-viz-bg); border-color: var(--category-data-viz-bg); }
-.category-filter[data-category="perception"]:hover, .category-filter[data-category="perception"].active { background-color: var(--category-perception-bg); border-color: var(--category-perception-bg); }
-.category-filter[data-category="ui"]:hover, .category-filter[data-category="ui"].active { background-color: var(--category-ui-bg); border-color: var(--category-ui-bg); }
+.category-filter[data-category="tool"].active { background-color: var(--category-tool-bg); border-color: var(--category-tool-bg); }
+.category-filter[data-category="creative"].active { background-color: var(--category-creative-bg); border-color: var(--category-creative-bg); }
+.category-filter[data-category="educational"].active { background-color: var(--category-educational-bg); border-color: var(--category-educational-bg); }
+.category-filter[data-category="simulation"].active { background-color: var(--category-simulation-bg); border-color: var(--category-simulation-bg); }
+.category-filter[data-category="game"].active { background-color: var(--category-game-bg); border-color: var(--category-game-bg); }
+.category-filter[data-category="informational"].active { background-color: var(--category-informational-bg); border-color: var(--category-informational-bg); }
+.category-filter[data-category="ui-creation"].active { background-color: var(--category-ui-creation-bg); border-color: var(--category-ui-creation-bg); }
+.category-filter[data-category="3d"].active { background-color: var(--category-3d-bg); border-color: var(--category-3d-bg); }
+.category-filter[data-category="audio"].active { background-color: var(--category-audio-bg); border-color: var(--category-audio-bg); }
+.category-filter[data-category="physics"].active { background-color: var(--category-physics-bg); border-color: var(--category-physics-bg); }
+.category-filter[data-category="data-viz"].active { background-color: var(--category-data-viz-bg); border-color: var(--category-data-viz-bg); }
+.category-filter[data-category="perception"].active { background-color: var(--category-perception-bg); border-color: var(--category-perception-bg); }
+.category-filter[data-category="ui"].active { background-color: var(--category-ui-bg); border-color: var(--category-ui-bg); }
+
+/* Source Filter Tags */
+.category-filter[data-category="deepmind"] { border-color: #4f46e5; }
+.category-filter[data-category="deepmind"].active { background-color: #4f46e5; border-color: #4f46e5; color: #fff; }
+
+.category-filter[data-category="develop-2026"] { border-color: #ff5722; }
+.category-filter[data-category="develop-2026"].active { background-color: #ff5722; border-color: #ff5722; color: #fff; }
+
+/* New tags for Develop 2026 */
+.category-filter[data-category="discoverability"] { border-color: #8e44ad; }
+.category-filter[data-category="discoverability"].active { background-color: #8e44ad; border-color: #8e44ad; color: #fff; }
+
+.category-filter[data-category="roundtables"] { border-color: #2980b9; }
+.category-filter[data-category="roundtables"].active { background-color: #2980b9; border-color: #2980b9; color: #fff; }
+
+.category-filter[data-category="games-edu"] { border-color: #27ae60; }
+.category-filter[data-category="games-edu"].active { background-color: #27ae60; border-color: #27ae60; color: #fff; }
+
+.category-filter[data-category="performance"] { border-color: #c0392b; }
+.category-filter[data-category="performance"].active { background-color: #c0392b; border-color: #c0392b; color: #fff; }
+
+.category-filter[data-category="keynote"] { border-color: #f39c12; }
+.category-filter[data-category="keynote"].active { background-color: #f39c12; border-color: #f39c12; color: #fff; }
+
+.category-filter[data-category="mobile"] { border-color: #16a085; }
+.category-filter[data-category="mobile"].active { background-color: #16a085; border-color: #16a085; color: #fff; }
+
+.category-filter[data-category="indie"] { border-color: #d35400; }
+.category-filter[data-category="indie"].active { background-color: #d35400; border-color: #d35400; color: #fff; }
+
+.category-filter[data-category="design"] { border-color: #e74c3c; }
+.category-filter[data-category="design"].active { background-color: #e74c3c; border-color: #e74c3c; color: #fff; }
+
+.category-filter[data-category="art"] { border-color: #9b59b6; }
+.category-filter[data-category="art"].active { background-color: #9b59b6; border-color: #9b59b6; color: #fff; }
+
+.category-filter[data-category="free"] { border-color: #34495e; }
+.category-filter[data-category="free"].active { background-color: #34495e; border-color: #34495e; color: #fff; }
+
+.category-filter[data-category="coding"] { border-color: #f1c40f; }
+.category-filter[data-category="coding"].active { background-color: #f1c40f; border-color: #f1c40f; color: #000; }
+
+.category-filter[data-category="business"] { border-color: #2c3e50; }
+.category-filter[data-category="business"].active { background-color: #2c3e50; border-color: #2c3e50; color: #fff; }
 
 /* Special text color for light backgrounds */
-.category-filter[data-category="2d"]:hover, .category-filter[data-category="2d"].active {
+.category-filter[data-category="2d"].active {
     background-color: var(--category-2d-bg);
     border-color: var(--category-2d-bg);
     color: #000;
@@ -971,4 +1087,38 @@ header p {
 
 [data-theme="dark"] .modifier-select-wrapper select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23a0a0a0' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+}
+
+/* Tooltip */
+.prompt-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.prompt-tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  background-color: var(--card-background);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 24px var(--shadow-color);
+  padding: 1rem;
+  border-radius: 8px;
+  width: max-content;
+  max-width: 320px;
+  white-space: pre-wrap;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  pointer-events: none;
+  text-align: left;
+}
+
+.prompt-tooltip-container:hover .prompt-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
