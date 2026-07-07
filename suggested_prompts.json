@@ -1,0 +1,22 @@
+[
+  {
+    "header": "\"Juice\" & VFX (Particle Systems)",
+    "description": "Game devs love visual polish and \"juice\". This demonstrates how vibe coding can be used to quickly iterate on custom particle effects and physics-driven visuals.",
+    "suggested_prompt": "Build a customizable 2D particle system using HTML5 Canvas. When the user clicks or drags the mouse, spawn glowing particles that simulate fire or magic sparks. Include simple physics (gravity, friction) and fade out particles over time. Add a small UI panel to adjust particle count, color, and gravity."
+  },
+  {
+    "header": "The \"One-Prompt\" Arcade Prototype",
+    "description": "A dead-simple, universally understood arcade clone that can be generated in exactly one prompt. This is the best way to prove the baseline capability to beginners and show that logic, not just UI, can be generated instantly.",
+    "suggested_prompt": "Build a fully playable 'Asteroids' clone using HTML5 Canvas and JavaScript in a single file. Include player ship rotation, thrusting, shooting, asteroid splitting, screen wrapping, and a score counter. Make the ship control with arrow keys and spacebar. It must be fully playable immediately on load."
+  },
+  {
+    "header": "AI & Pathfinding Behaviors",
+    "description": "Game devs spend a lot of time tweaking AI logic. Seeing an LLM scaffold complex behaviors like flocking algorithms or A* pathfinding visually is very compelling.",
+    "suggested_prompt": "Create a Boids flocking simulation on an HTML5 canvas. Render 100 simple triangles representing birds. Implement the three core Boids rules: separation, alignment, and cohesion, so they fly around organically like a flock. Add sliders to tweak the weight of each rule in real-time."
+  },
+  {
+    "header": "Internal Tooling (Level Editors)",
+    "description": "Game devs spend a massive amount of time building internal tools. This shows that vibe coding isn't just for making games, but for rapidly prototyping the tools needed to make games.",
+    "suggested_prompt": "Build a 2D tilemap level editor for a game. Provide a 16x16 interactive grid and a palette of 4 different colored 'tiles' (representing grass, water, wall, sand). Let the user click or drag to paint the grid. Include a button to export the final map state as a JSON array."
+  }
+]
