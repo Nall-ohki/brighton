@@ -17,18 +17,13 @@ const ClearIcon = () => (
 
 const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp) => {
   const displayTitle = cardInfo.title;
+  const sourceSlug = source.toLowerCase().replace(/[\s/.:]+/g, '-');
   return (
-    <article className="card" aria-labelledby={`card-heading-${id}`}>
-       <div className="card-header" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
-        <span className={`category-tag category-tag--${source.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>
-          {source}
-        </span>
-        <span style={{ color: 'var(--border-color)', margin: '0 0.25rem', fontSize: '1rem', userSelect: 'none' }}>|</span>
-        {[...categories].sort((a, b) => a.localeCompare(b)).map(cat => (
-          <span key={cat} className={`category-tag category-tag--${cat.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>{cat}</span>
-        ))}
+    <article className={`card card--source-${sourceSlug}`} aria-labelledby={`card-heading-${id}`}>
+      <div className={`source-badge category-tag--${sourceSlug}`}>
+        {source}
       </div>
-      <div className="card-content">
+      <div className="card-content" style={{ paddingTop: '2.25rem' }}>
         <h2 id={`card-heading-${id}`} style={{ color: '#5e4d9b', fontWeight: 700, fontSize: '1.25rem', marginBottom: '1.2rem', lineHeight: 1.3 }}>
           {cardInfo.title}
         </h2>
@@ -41,32 +36,39 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
           ))}
         </div>
       </div>
-      <footer className="card-footer">
-        {url ? (
-          <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
-            View App
-          </a>
-        ) : basePrompt ? (
-          <div className="prompt-tooltip-container">
-            <button 
-              className="view-app-button" 
-              aria-label={`Try prompt for: ${displayTitle}`}
-              onClick={() => {
-                window.sessionStorage.setItem('pendingIdea', basePrompt);
-                document.getElementById('nav-prompt')?.click();
-              }}
-            >
-              Try Prompt
-            </button>
-            <div className="prompt-tooltip">
-              {basePrompt}
+      <footer className="card-footer" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', flex: 1 }}>
+          {[...categories].sort((a, b) => a.localeCompare(b)).map(cat => (
+            <span key={cat} className={`category-tag category-tag--${cat.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>{cat}</span>
+          ))}
+        </div>
+        <div style={{ flexShrink: 0 }}>
+          {url ? (
+            <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
+              View App
+            </a>
+          ) : basePrompt ? (
+            <div className="prompt-tooltip-container">
+              <button 
+                className="view-app-button" 
+                aria-label={`Try prompt for: ${displayTitle}`}
+                onClick={() => {
+                  window.sessionStorage.setItem('pendingIdea', basePrompt);
+                  document.getElementById('nav-prompt')?.click();
+                }}
+              >
+                Try Prompt
+              </button>
+              <div className="prompt-tooltip">
+                {basePrompt}
+              </div>
             </div>
-          </div>
-        ) : (
-          <span className="view-app-disabled" aria-label={`App coming soon: ${displayTitle}`}>
-            Coming Soon
-          </span>
-        )}
+          ) : (
+            <span className="view-app-disabled" aria-label={`App coming soon: ${displayTitle}`}>
+              Coming Soon
+            </span>
+          )}
+        </div>
       </footer>
     </article>
   );

@@ -11,7 +11,7 @@
   --subtle-hover-bg: #e9ecef;
 
   --category-tool-bg: #546e7a;
-  --category-creative-bg: #9013FE;
+  --category-creative-bg: #f06292;
   --category-educational-bg: #34A853;
   --category-simulation-bg: #F5A623;
   --category-game-bg: #D0021B;
@@ -352,7 +352,7 @@ header p {
 .category-tag--develop-2026 { background-color: #ff5722; color: #fff; }
 
 /* --- New tags for Develop 2026 --- */
-.category-tag--discoverability { background-color: #8e44ad; }
+.category-tag--discoverability { background-color: #5c6bc0; }
 .category-tag--roundtables { background-color: #2980b9; }
 .category-tag--games-edu { background-color: #27ae60; }
 .category-tag--performance { background-color: #c0392b; }
@@ -360,7 +360,7 @@ header p {
 .category-tag--mobile { background-color: #16a085; }
 .category-tag--indie { background-color: #d35400; }
 .category-tag--design { background-color: #e74c3c; }
-.category-tag--art { background-color: #9b59b6; }
+.category-tag--art { background-color: #00897b; }
 .category-tag--free { background-color: #34495e; }
 .category-tag--coding { background-color: #f1c40f; color: #000; }
 .category-tag--business { background-color: #2c3e50; }
@@ -1029,8 +1029,8 @@ header p {
 .category-filter[data-category="develop-2026"].active { background-color: #ff5722; border-color: #ff5722; color: #fff; }
 
 /* New tags for Develop 2026 */
-.category-filter[data-category="discoverability"] { border-color: #8e44ad; }
-.category-filter[data-category="discoverability"].active { background-color: #8e44ad; border-color: #8e44ad; color: #fff; }
+.category-filter[data-category="discoverability"] { border-color: #5c6bc0; }
+.category-filter[data-category="discoverability"].active { background-color: #5c6bc0; border-color: #5c6bc0; color: #fff; }
 
 .category-filter[data-category="roundtables"] { border-color: #2980b9; }
 .category-filter[data-category="roundtables"].active { background-color: #2980b9; border-color: #2980b9; color: #fff; }
@@ -1053,8 +1053,8 @@ header p {
 .category-filter[data-category="design"] { border-color: #e74c3c; }
 .category-filter[data-category="design"].active { background-color: #e74c3c; border-color: #e74c3c; color: #fff; }
 
-.category-filter[data-category="art"] { border-color: #9b59b6; }
-.category-filter[data-category="art"].active { background-color: #9b59b6; border-color: #9b59b6; color: #fff; }
+.category-filter[data-category="art"] { border-color: #00897b; }
+.category-filter[data-category="art"].active { background-color: #00897b; border-color: #00897b; color: #fff; }
 
 .category-filter[data-category="free"] { border-color: #34495e; }
 .category-filter[data-category="free"].active { background-color: #34495e; border-color: #34495e; color: #fff; }
@@ -1121,4 +1121,41 @@ header p {
 .prompt-tooltip-container:hover .prompt-tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/* Card Themes */
+.card.card--source-deepmind {
+  background-color: #f5f3ff;
+  border-color: #e0e7ff;
+}
+
+[data-theme="dark"] .card.card--source-deepmind {
+  background-color: #1e1b4b;
+  border-color: #312e81;
+}
+
+.card.card--source-develop-2026 {
+  background-color: #fff7ed;
+  border-color: #ffedd5;
+}
+
+[data-theme="dark"] .card.card--source-develop-2026 {
+  background-color: #431407;
+  border-color: #7c2d12;
+}
+
+/* Source Badge Overlay */
+.source-badge {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
