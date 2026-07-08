@@ -29,12 +29,7 @@ const AdvicePage = () => {
 
   return (
     <>
-      <header>
-        <h1>Prompting & Coding Advice</h1>
-        <p>General tips and best practices for working with AI code generation.</p>
-      </header>
-
-      <div className="category-filters" role="toolbar" aria-label="Filter by target environment">
+<div className="category-filters" role="toolbar" aria-label="Filter by target environment">
         {targets.map(target => (
           <button
             key={target}

@@ -5,7 +5,7 @@ import { resources, promptIdeas } from './data';
 
 export type AppType = 'Game' | 'Simulation' | 'Tool' | 'Other';
 type Target = 'Gemini Canvas' | 'AI Studio';
-type Modifier = '2D' | '3D' | 'Audio' | 'Physics' | 'Perception' | 'UI' | 'Data Viz';
+type Modifier = '2D' | '3D' | 'Audio' | 'Physics' | 'Perception' | 'Data Viz';
 
 type SelectedModifiers = Record<Modifier, string | null>;
 type AddOns = {
@@ -22,30 +22,18 @@ const initialModifiers: SelectedModifiers = {
   'Audio': null,
   'Physics': null,
   'Perception': null,
-  'UI': null,
   'Data Viz': null,
 };
 
 const recommendedModifiers: Record<AppType, Modifier[]> = {
   Game: ['2D', 'Audio', 'Physics'],
   Simulation: ['2D', 'Physics'],
-  Tool: ['UI'],
+  Tool: [],
   Other: [],
-};
-
-const getInitialPromptSource = (): 'Any' | 'DeepMind' | 'Develop:Brighton:2026' => {
-  const hash = window.location.hash.replace('#', '');
-  const parts = hash.split('/');
-  if (parts.length > 1) {
-    const source = decodeURIComponent(parts[1]);
-    if (source === 'DeepMind' || source === 'Develop:Brighton:2026') return source;
-  }
-  return 'Any';
 };
 
 const PromptBuilderPage = () => {
   const [appType, setAppType] = useState<AppType>('Tool');
-  const [source, setSource] = useState<'Any' | 'DeepMind' | 'Develop:Brighton:2026'>(getInitialPromptSource);
   const [target, setTarget] = useState<Target>('Gemini Canvas');
   const [idea, setIdea] = useState(() => {
     const pending = window.sessionStorage.getItem('pendingIdea');
@@ -77,28 +65,7 @@ const PromptBuilderPage = () => {
     return () => window.removeEventListener('loadIdea', handleLoadIdea);
   }, []);
 
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      const parts = hash.split('/');
-      if (parts[0] === 'prompt') {
-        if (parts.length > 1) {
-          const src = decodeURIComponent(parts[1]);
-          if (src === 'DeepMind' || src === 'Develop:Brighton:2026') {
-            setSource(src);
-            return;
-          }
-        }
-        setSource('Any');
-      }
-    };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
 
-  const handleSourceChange = (newSource: 'Any' | 'DeepMind' | 'Develop:Brighton:2026') => {
-    window.location.hash = newSource === 'Any' ? 'prompt' : `prompt/${encodeURIComponent(newSource)}`;
-  };
 
   const modifierOptions = useMemo(() => {
     const options: Record<string, { tool: string; canvasRecommended: boolean; aiStudioRecommended: boolean; }[]> = {};
@@ -138,9 +105,7 @@ const PromptBuilderPage = () => {
         newModifiers[mod] = getRecommendedLibrary(mod, target);
     });
 
-    if (target === 'AI Studio') {
-      newModifiers['UI'] = 'React';
-    }
+
 
     setModifiers(newModifiers);
   }, [appType, target, getRecommendedLibrary]);
@@ -283,11 +248,8 @@ Technical implementation details:
   }, []);
 
   const handleFeelingLucky = useCallback(() => {
-    // Filter by the selected app type and source
+    // Filter by the selected app type
     let availableIdeas = promptIdeas.filter(idea => idea.category === appType);
-    if (source !== 'Any') {
-      availableIdeas = availableIdeas.filter(idea => (idea.source || 'DeepMind') === source);
-    }
 
     // Filter by target environment compatibility
     if (target === 'Gemini Canvas') {
@@ -299,9 +261,6 @@ Technical implementation details:
     // Fallback if no ideas match the target environment
     if (availableIdeas.length === 0) {
       availableIdeas = promptIdeas.filter(idea => idea.category === appType);
-      if (source !== 'Any') {
-        availableIdeas = availableIdeas.filter(idea => (idea.source || 'DeepMind') === source);
-      }
       if (availableIdeas.length === 0) return; // No ideas for this category at all
     }
 
@@ -357,21 +316,31 @@ Technical implementation details:
         setIsOtherModifierActive(false);
         setOtherModifierText('');
     }
-  }, [appType, source, target, libraryToModifierMap]);
+  }, [appType, target, libraryToModifierMap]);
 
 
   const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <>
-      <header>
-        <h1>Prompt Generator</h1>
-        <p>Craft the perfect starting prompt for your next creative project.</p>
-      </header>
-
-      <div className="prompt-builder-layout">
+<div className="prompt-builder-layout">
         <div className="prompt-panel">
           <h2>Your App Idea</h2>
+
+          <div className="form-group">
+            <div className="form-group-header">
+                <label htmlFor="app-idea">Describe your core idea</label>
+                <button className="btn lucky-btn" onClick={handleFeelingLucky}>
+                    I'm feeling lucky ✨
+                </button>
+            </div>
+            <textarea
+              id="app-idea"
+              value={idea}
+              onChange={e => setIdea(e.target.value)}
+              placeholder="e.g., A visualization of real-time weather data as abstract art."
+            ></textarea>
+          </div>
           <div className="form-group">
             <label>What kind of app do you want to create?</label>
             <div className="radio-group-container">
@@ -394,56 +363,6 @@ Technical implementation details:
                     </div>
                 ))}
             </div>
-          </div>
-           <div className="form-group">
-            <label>Target Environment</label>
-            <div className="radio-group-container">
-                {(['Gemini Canvas', 'AI Studio'] as Target[]).map(t => (
-                     <div key={t} className="radio-option">
-                        <input
-                            type="radio"
-                            id={`target-${t.replace(/\s+/g, '-')}`}
-                            name="target-env"
-                            value={t}
-                            checked={target === t}
-                            onChange={e => setTarget(e.target.value as Target)}
-                        />
-                        <label htmlFor={`target-${t.replace(/\s+/g, '-')}`}>{t}</label>
-                    </div>
-                ))}
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Idea Source Pool</label>
-            <div className="radio-group-container">
-                {(['Any', 'DeepMind', 'Develop:Brighton:2026'] as const).map(src => (
-                     <div key={src} className="radio-option">
-                        <input
-                            type="radio"
-                            id={`source-${src.replace(/[^a-zA-Z0-9]/g, '-')}`}
-                            name="source-env"
-                            value={src}
-                            checked={source === src}
-                            onChange={e => handleSourceChange(e.target.value as any)}
-                        />
-                        <label htmlFor={`source-${src.replace(/[^a-zA-Z0-9]/g, '-')}`}>{src}</label>
-                    </div>
-                ))}
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="form-group-header">
-                <label htmlFor="app-idea">Describe your core idea</label>
-                <button className="btn lucky-btn" onClick={handleFeelingLucky}>
-                    I'm feeling lucky ✨
-                </button>
-            </div>
-            <textarea
-              id="app-idea"
-              value={idea}
-              onChange={e => setIdea(e.target.value)}
-              placeholder="e.g., A visualization of real-time weather data as abstract art."
-            ></textarea>
           </div>
           <div className="form-group">
             <label>Technical Modifiers (Recommended based on App Type)</label>
@@ -547,9 +466,25 @@ Technical implementation details:
         </div>
         <div className="prompt-panel">
           <h2>Synthesized Prompt</h2>
+          <div className="radio-group-container" style={{ marginBottom: '1rem' }}>
+              {(['Gemini Canvas', 'AI Studio'] as Target[]).map(t => (
+                   <div key={t} className="radio-option">
+                      <input
+                          type="radio"
+                          id={`target-${t.replace(/\s+/g, '-')}`}
+                          name="target-env"
+                          value={t}
+                          checked={target === t}
+                          onChange={e => setTarget(e.target.value as Target)}
+                      />
+                      <label htmlFor={`target-${t.replace(/\s+/g, '-')}`}>{t}</label>
+                  </div>
+              ))}
+          </div>
           <pre className="synthesized-prompt">
             <code>{synthesizedPrompt}</code>
           </pre>
+          <div style={{ flexGrow: 0.25 }}></div>
           <div className="prompt-actions">
             <button className="btn" onClick={handleCopy}>{copyButtonText}</button>
             <a

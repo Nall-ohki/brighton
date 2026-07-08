@@ -76,12 +76,7 @@ const ResourcesPage = () => {
 
   return (
     <>
-      <header>
-        <h1>Vibe Coded Resources</h1>
-        <p>A curated list of libraries and tools for creative coding.</p>
-      </header>
-
-      <div className="filter-controls">
+<div className="filter-controls">
         <div className="category-filters" role="toolbar" aria-label="Filter by category">
             {categories.map(category => (
             <button

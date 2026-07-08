@@ -24,14 +24,14 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
         {source}
       </div>
       <div className="card-content" style={{ paddingTop: '2.25rem' }}>
-        <h2 id={`card-heading-${id}`} style={{ color: '#5e4d9b', fontWeight: 700, fontSize: '1.25rem', marginBottom: '1.2rem', lineHeight: 1.3 }}>
+        <h2 id={`card-heading-${id}`} style={{ color: 'var(--card-title-color)', fontWeight: 700, fontSize: '1.25rem', marginBottom: '1.2rem', lineHeight: 1.3 }}>
           {cardInfo.title}
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', columnGap: '0.75rem', rowGap: '0.4rem', alignItems: 'baseline', lineHeight: 1.25 }}>
           {cardInfo.authors.map((s, idx) => (
             <React.Fragment key={idx}>
-              <span style={{ color: '#e67e22', fontWeight: 700 }}>{s.name}</span>
-              <span style={{ color: '#4b5563', fontWeight: 700, fontSize: '0.95rem' }}>{s.origin || ''}</span>
+              <span style={{ color: 'var(--card-author-color)', fontWeight: 700 }}>{s.name}</span>
+              <span style={{ color: 'var(--card-origin-color)', fontWeight: 700, fontSize: '0.95rem' }}>{s.origin || ''}</span>
             </React.Fragment>
           ))}
         </div>
@@ -39,7 +39,7 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
       <footer className="card-footer" style={{ justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', flex: 1 }}>
           {[...categories].sort((a, b) => a.localeCompare(b)).map(cat => (
-            <span key={cat} className={`category-tag category-tag--${cat.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>{cat}</span>
+            <span key={cat} className={`category-tag category-tag--inverse category-tag--${cat.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>{cat}</span>
           ))}
         </div>
         <div style={{ flexShrink: 0 }}>
@@ -221,12 +221,7 @@ const ShowcasePage = () => {
 
   return (
     <>
-      <header>
-        <h1>Vibe Coded App Showcase</h1>
-        <p>An interactive collection of creative apps.</p>
-      </header>
-
-      <div className="search-container" role="search" style={{ marginBottom: '1.5rem' }}>
+<div className="search-container" role="search" style={{ marginBottom: '1.5rem' }}>
         <input
           id="search-input"
           type="search"

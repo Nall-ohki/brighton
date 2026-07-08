@@ -3,11 +3,7 @@ import React from 'react';
 const BrightonPage = () => {
   return (
     <>
-      <header>
-        <h1>Develop: Brighton 2026 Information</h1>
-        <p>Use the links below to share your app and access session resources.</p>
-      </header>
-      <div className="submission-links">
+<div className="submission-links">
         {/* Share Section */}
         <div className="card-grid">
             <article className="card" aria-labelledby="session-heading">
