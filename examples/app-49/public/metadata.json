@@ -1,0 +1,4 @@
+{
+  "title": "Scaling Without Breaking Your Studio",
+  "prompt": "Build a studio scaling simulation where the player clicks to hire new staff, but each hire secretly adds a hidden 'leadership debt' token. When the debt pile exceeds the leadership capacity bar, a chain reaction of attrition fires start — staff sprites begin drifting off-screen. The player must spend 'org investment' cards to reinforce leadership before breakpoints. Data-driven dashboard visual style, dark background with glowing red/amber warning indicators."
+}
