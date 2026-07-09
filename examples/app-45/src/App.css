@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --steam-dark: #1b2838;
+  --steam-blue: #2a475e;
+  --steam-light: #66c0f4;
+  --steam-text: #c7d5e0;
+  --steam-green: #a4d007;
+  --retro-bg: #000000;
+  --retro-border: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  background-color: var(--retro-bg);
+  color: var(--steam-text);
+  overflow-x: hidden;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pixel-border {
+  box-shadow: 
+    inset 2px 2px 0px 0px rgba(255,255,255,0.8),
+    inset -2px -2px 0px 0px rgba(0,0,0,0.8),
+    0px 0px 0px 2px #fff;
+}
+
+.pixel-border-inset {
+  box-shadow: 
+    inset 2px 2px 0px 0px rgba(0,0,0,0.8),
+    inset -2px -2px 0px 0px rgba(255,255,255,0.8),
+    0px 0px 0px 2px #888;
+}
+
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0,0,0,0.2) 50%,
+    rgba(0,0,0,0.2)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.crt-flicker {
+  animation: flicker 0.15s infinite;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.95; }
+  50% { opacity: 1; }
+  100% { opacity: 0.95; }
+}
+
+.tag {
+  background: var(--steam-blue);
+  color: var(--steam-light);
+  padding: 4px 8px;
+  font-size: 8px;
+  line-height: 1.5;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.blur-fx {
+  filter: blur(8px) grayscale(100%);
+  opacity: 0.5;
+}
+
+.sharp-fx {
+  filter: blur(0px) grayscale(0%);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.draggable-item {
+  cursor: grab;
+  background: #333;
+  border: 2px solid #aaa;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 2px 2px 0px #000;
+}
+
+.draggable-item:active {
+  cursor: grabbing;
+}
+
+.wishlist-counter {
+  font-size: 24px;
+  color: var(--steam-green);
+  text-shadow: 2px 2px 0px #000;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f00;
+  z-index: 50;
+}
