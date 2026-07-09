@@ -1,0 +1,4 @@
+{
+  "title": "Scheduled Serendipity: Manufacturing Creative Aha Moments",
+  "prompt": "Build a 'scheduled serendipity' constraint-based idea generator toy. The player spins two wheels — one of constraints (10-minute timer, single color, no dialogue) and one of transformations (reverse it, scale it up, make it sad) — and the app generates a randomized game concept card from the combination. The player can lock in a constraint and keep re-spinning the transformation wheel, simulating the creative loop the talk describes. Vintage lottery-machine retro aesthetic with spinning drum animation."
+}
