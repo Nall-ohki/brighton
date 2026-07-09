@@ -1,0 +1,4 @@
+{
+  "title": "Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers",
+  "prompt": "Build a manager support allocation simulation for neurodiverse teams in game production. The player is a studio manager with a fixed 'emotional labour' budget each week; neurodivergent team members appear with accommodation requests (flexible deadlines, quiet room, written briefs). The player drags support tokens to each person but can run out \u2014 if the manager's own wellbeing meter empties, productivity collapses for everyone. Calm, cool-toned minimal UI."
+}
