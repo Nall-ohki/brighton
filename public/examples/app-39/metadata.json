@@ -1,0 +1,4 @@
+{
+  "title": "The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project",
+  "prompt": "Build a sunk-cost fallacy puzzle game where the player manages a doomed game project. Each turn they receive a warning signal card (Budget Overrun, Scope Creep, Morale Drop, Timeline Drift) and must decide: 'Cut scope', 'Pivot', or 'Push On'. Choosing 'Push On' too many times makes the project meter collapse dramatically; correctly triggering the 'kill switch' earns a score bonus. The UI should look like a battered producer spreadsheet — monospace fonts, red/amber/green status cells, dark mode."
+}
