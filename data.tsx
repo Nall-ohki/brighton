@@ -295,7 +295,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Joseph Garrett', origin: '4J Studios' }],
     index: 35,
     source: 'Develop 2026',
-    url: '/examples/app-35-3d/index.html',
+    url: '/examples/app-35/index.html',
     basePrompt: `Create a WebGL cellular automaton voxel simulator inspired by 4J Studios' Elements Engine. The demo features a 3D isometric chunk where users can place blocks of different elements (e.g., magma, water, sand, flora). Each element reacts procedurally in real-time—water flowing over magma creates steam and solidifies into obsidian, sand falls with gravity, and flora spreads on dirt when hydrated. The UI should allow tweaking the 'tick rate' and element interaction rules, showcasing the infinite procedural dynamics discussed by Chris van der Kuyl and Joe Garrett.`,
   }),
   new ShowcaseApp({
