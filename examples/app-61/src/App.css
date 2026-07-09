@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #050011;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.hud-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.score {
+  color: #00ffff;
+  font-size: 20px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.status {
+  color: #ff00ff;
+  font-size: 16px;
+  text-shadow: 0 0 10px currentColor;
+  text-align: right;
+  max-width: 50%;
+  line-height: 1.5;
+}
+
+.center-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: auto;
+  background: rgba(5, 0, 17, 0.85);
+  padding: 40px;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+}
+
+.title {
+  color: #ff00ff;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px #ff00ff;
+  line-height: 1.5;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 35px;
+  line-height: 1.8;
+  color: #aaff00;
+  text-shadow: 0 0 5px #aaff00;
+}
+
+.instructions {
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff inset, 0 0 10px #00ffff;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff inset, 0 0 20px #00ffff;
+}
