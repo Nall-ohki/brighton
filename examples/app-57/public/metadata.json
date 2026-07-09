@@ -1,0 +1,4 @@
+{
+  "title": "Moving from Engineering To Management",
+  "prompt": "Build a career path choice interactive diagram. The player starts as an IC engineer sprite and navigates a branching skill tree where each node is labelled with a management skill (1:1s, Roadmapping, Hiring, Technical Direction) or an engineering skill (Architecture, Code Review, Mentorship). Hovering reveals a real-world impact tooltip; clicking adds the skill. The screen fills over time showing the different manager archetypes the player could become. Clean corporate org-chart visual with subtle animation."
+}
