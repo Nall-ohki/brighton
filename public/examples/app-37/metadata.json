@@ -1,0 +1,4 @@
+{
+  "title": "AI Wants to Play: A Game Designer's Guide to AI in Every Stage of Development",
+  "prompt": "Build an interactive card game inspired by DeepMind's Agent57 where you train a tiny neural-net agent by playing cards. The player draws hand cards labelled 'Explore', 'Exploit', 'Reward+', 'Penalty', and 'Meta-Learn' and plays them in sequence to shape a small agent sprite navigating a procedural maze on the right side of the screen. The agent's behavior visibly changes based on which cards were played last round. Dark neon cyberpunk style with glowing circuit-board UI."
+}
