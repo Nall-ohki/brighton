@@ -289,7 +289,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Joseph Garrett', origin: '4J Studios' }],
     index: 35,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Powered by Players: Reforjing 4J Studios'. The user should be able to toss around elements that represent 'From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players' with satisfying bouncy physics.`
+    url: '/examples/app-35/index.html'
   }),
   new ShowcaseApp({
     categories: ['Games:Edu', 'Keynote'],
