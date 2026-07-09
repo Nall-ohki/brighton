@@ -16,5 +16,5 @@
     "Insight into 4J Studio's story and how the company has evolved over 21 years.",
     "The choice to commit to a custom engine and the impact of its constant evolution."
   ],
-  "prompt": "Build a physics-based crafting sandbox inspired by Minecraft's 'Elements Engine' from 4J Studios' Reforj. The player clicks to place elemental blocks (Fire, Water, Earth, Air) on a grid, and they interact physically — fire spreads, water flows downhill, earth crumbles under pressure, air blows objects. Include a 'Title Update' button that randomly introduces a new element rule mid-session (e.g. ice appears when water meets cold). Retro pixel art style with a chunky pastel color palette."
+  "prompt": "Create a WebGL cellular automaton voxel simulator inspired by 4J Studios' Elements Engine. The demo features a 3D isometric chunk where users can place blocks of different elements (e.g., magma, water, sand, flora). Each element reacts procedurally in real-time—water flowing over magma creates steam and solidifies into obsidian, sand falls with gravity, and flora spreads on dirt when hydrated. The UI should allow tweaking the 'tick rate' and element interaction rules, showcasing the infinite procedural dynamics discussed by Chris van der Kuyl and Joe Garrett."
 }

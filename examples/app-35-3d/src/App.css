@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+.sandbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: 'VT323', monospace;
+  color: #343a40;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #e5c48b;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 0px #343a40;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #6c757d;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border: 4px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px #e9ecef;
+}
+
+.element-selector {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  padding: 10px 14px;
+  border: 4px solid #adb5bd;
+  background-color: #fff;
+  color: #495057;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #adb5bd;
+  transition: transform 0.1s, box-shadow 0.1s;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #adb5bd;
+}
+
+.btn.active {
+  background-color: #f1f3f5;
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px transparent;
+}
+
+.btn-clear {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  box-shadow: 2px 2px 0px #ff6b6b;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #adb5bd;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.pixel-canvas {
+  image-rendering: pixelated;
+  background-color: #fff;
+  cursor: crosshair;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Optional: faint grid background via CSS */
+  background-size: 8px 8px;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+}

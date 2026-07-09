@@ -289,7 +289,8 @@ export const appData: ShowcaseApp[] = [
       { name: 'Joseph Garrett', origin: '4J Studios' }],
     index: 35,
     source: 'Develop 2026',
-    url: '/examples/app-35/index.html'
+    url: '/examples/app-35-3d/index.html',
+    basePrompt: `Create a WebGL cellular automaton voxel simulator inspired by 4J Studios' Elements Engine. The demo features a 3D isometric chunk where users can place blocks of different elements (e.g., magma, water, sand, flora). Each element reacts procedurally in real-time—water flowing over magma creates steam and solidifies into obsidian, sand falls with gravity, and flora spreads on dirt when hydrated. The UI should allow tweaking the 'tick rate' and element interaction rules, showcasing the infinite procedural dynamics discussed by Chris van der Kuyl and Joe Garrett.`,
   }),
   new ShowcaseApp({
     categories: ['Games:Edu', 'Keynote'],
@@ -949,9 +950,10 @@ export const appData: ShowcaseApp[] = [
       { name: 'Andrej Horoschun', origin: 'Frontier Developments' }],
     index: 103,
     source: 'Develop 2026',
-    basePrompt: `Build a lore-consistency visual puzzle inspired by Frontier Developments' art-mythology pipeline. The player is shown an art asset (a creature, a building, a symbol) and must match it to one of three lore fragments shown as text blurbs. Correct matches add the asset to a growing visual lore codex on the right; incorrect matches 'taint' the world art and add visual inconsistencies. As the codex fills, the game world rendered in the background becomes richer and more cohesive. Epic fantasy compendium aesthetic.`
-  })];
-
+    basePrompt: `A visual inspection and art-curation game where the player acts as an Art Director maintaining project cohesion over a long development cycle. The player is presented with incoming concept art pieces and 3D model renders on a virtual desk. They must cross-reference the art against the 'Studio Lore Bible' and 'Target Identity Guidelines.' Using a red marker tool, the player circles elements that break the established mythology (e.g., an incorrect architectural motif, or anachronistic armor materials) and sends feedback. The core mechanic relies on attention to detail and progressive difficulty as the game's lore bible expands with new factions and rules.`,
+    target: 'Common'
+  }),
+];
 
 export interface ResourceConstructorParams {
   category: string;
