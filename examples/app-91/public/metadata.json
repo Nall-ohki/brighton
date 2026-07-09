@@ -1,4 +1,16 @@
 {
   "title": "One Year On: Progress, Gaps, and Possibilities for LGBTQ+ Inclusion",
-  "prompt": "Build an LGBTQ+ inclusion progress tracker interactive timeline. The player scrolls through a fictional studio's 5-year arc and clicks on policy moments (pronoun fields added, trans health cover extended, pride ERG formed) to reveal their impact on a community wellbeing score. Social/political headwind events slide in from the right requiring the player to enact a protective policy before the wellbeing score drops. Warm rainbow-gradient pride aesthetic."
+  "authors": [
+    {
+      "name": "James Dodd",
+      "origin": "Out Making Games"
+    }
+  ],
+  "description": "This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. The hosts will present a series of topics, which attendees will be free to discuss, sharing their thoughts, insights, and experiences in a supportive environment.",
+  "session_takeaway": [
+    "Understand what LGBTQ+ professionals are currently experiencing in the industry.",
+    "Discover practical ways to navigate and mitigate workplace negativity.",
+    "Gain examples of changes to EDI practices around the world and how to implement them."
+  ],
+  "prompt": "Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion', reflecting on the idea that 'This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape'."
 }

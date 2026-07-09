@@ -1,1 +1,16 @@
-{ "title": "A Frame's Life: Frame Timing, Synchronization, and Latency in UE", "prompt": "Build an animated pipeline visualizer where the player can click to fire a single frame and watch it travel in real time through labeled stages: Game Thread → Render Thread → RHI → DirectX → GPU → Display. Each stage has a processing-time slider the player adjusts; if the frame takes too long at any stage, the 'vsync missed' indicator flashes and the display tears visually. Include a VRR toggle that smooths tearing. Dark technical dashboard style with cyan data-flow lines." }
+{
+  "title": "A Frame's Life: Frame Timing, Synchronization, and Latency in UE",
+  "authors": [
+    {
+      "name": "Ari Arnbj\u00f6rnsson",
+      "origin": "Epic Games"
+    }
+  ],
+  "description": "Every frame in Unreal Engine goes on a long journey before reaching the screen. In this talk, we'll walk through that journey from gameplay code through the game thread, render thread, RHI thread, DirectX, the GPU, and finally onto the display. We'll explore how these stages synchronize, how frames are queued and presented, and how small decisions can add measurable latency. By the end, you'll have a clearer picture of frame pacing, vsync, VRR, swap chains, input delay, and Unreal's game thread synchronization options, so you can make more informed decisions on the tradeoffs between performance and responsiveness.",
+  "session_takeaway": [
+    "Understand the many different factors that make up whether a frame makes or misses a vsync.",
+    "A clearer perspective on frame pacing, vsync, VRR, swap chains, and input delay.",
+    "Practical knowledge of Unreal's game thread synchronization options to optimize latency."
+  ],
+  "prompt": "Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'A Frames Life: Frame Timing Synchronization and Latency in UE', especially: 'Every frame in Unreal Engine goes on a long journey before reaching the screen'."
+}

@@ -1,4 +1,16 @@
 {
   "title": "The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project",
-  "prompt": "Build a sunk-cost fallacy puzzle game where the player manages a doomed game project. Each turn they receive a warning signal card (Budget Overrun, Scope Creep, Morale Drop, Timeline Drift) and must decide: 'Cut scope', 'Pivot', or 'Push On'. Choosing 'Push On' too many times makes the project meter collapse dramatically; correctly triggering the 'kill switch' earns a score bonus. The UI should look like a battered producer spreadsheet — monospace fonts, red/amber/green status cells, dark mode."
+  "authors": [
+    {
+      "name": "Mark Shaw",
+      "origin": "Flix Interactive"
+    }
+  ],
+  "description": "It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. How do you stop the train when it's obvious that your project or feature is overrunning? Game developers are often left feeling powerless to stop or course correct in the face of overrun because they don't have the tools to confidently identify what is going wrong. This talk explores the deeper reasons behind project failure and explains the psychological and behavioural reasons why teams miss warning signs. It will look at the folly of a sunk cost fallacy as well as demonstrate how to ignore the instinct to keep digging when things are already going south. Although external factors can often derail a project, this talk will demonstrate the tools that Producers and the wider development team can utilise to help guide the team in creating achievable goals, pivot in the face of changing priorities but most importantly, highlight when a project is overshooting the mark so you can pull the plug before it's too late.",
+  "session_takeaway": [
+    "Show how to make Scope drift visible: Being clear on goals and priorities.",
+    "Recognising that Sunk cost is not a reason to continue: How to decide on future value.",
+    "How to ensure you have a \u201ckill-switch\u201d process: Ensuring you have a culture that can use it."
+  ],
+  "prompt": "Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project'. It should have popups, sounds, and folders that explore: 'It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them'."
 }

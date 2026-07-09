@@ -1,1 +1,17 @@
-{ "title": "Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives", "prompt": "Build an accent and dialect decoding audio-visual puzzle game inspired by 'Dungeons and Dialects'. Phonetic notation cards fall from the top of the screen labelled with fantasy accent clichés (Dwarves = Scottish, Elves = RP English); the player must break these clichés by dragging authentic regional dialect cards onto character portraits to replace them, then preview the result as an animated speech bubble. A 'stereotype meter' drops as authentic choices are made. Dark fantasy illustrated style." }
+{
+  "title": "Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives",
+  "authors": [
+    {
+      "name": "Keith Higinbotham",
+      "origin": "Voice with Keith"
+    }
+  ],
+  "description": "With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages. Today's projects need more than a great script or stunning visuals\u2014they need voices that resonate and characters that feel real. In this talk, I'll share how attention to linguistic detail not only boosts actor performance but also helps directors and actors choose voices that are truly authentic and inclusive.",
+  "session_takeaway": [
+    "Understand why breaking free from clich\u00e9s and stereotypes is crucial for immersive, engaging narratives.",
+    "Get clear, practical methods for using authentic, inclusive accents.",
+    "Learn deep listening techniques that capture natural dialogue, bringing stories to life.",
+    "Explore ways to blend creative and tech insights early on for connected performance."
+  ],
+  "prompt": "Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives', revealing insights about: 'With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages'."
+}

@@ -1,4 +1,16 @@
 {
   "title": "Moving from Engineering To Management",
-  "prompt": "Build a career path choice interactive diagram. The player starts as an IC engineer sprite and navigates a branching skill tree where each node is labelled with a management skill (1:1s, Roadmapping, Hiring, Technical Direction) or an engineering skill (Architecture, Code Review, Mentorship). Hovering reveals a real-world impact tooltip; clicking adds the skill. The screen fills over time showing the different manager archetypes the player could become. Clean corporate org-chart visual with subtle animation."
+  "authors": [
+    {
+      "name": "James Foster",
+      "origin": "Rocket Science Group"
+    }
+  ],
+  "description": "This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. It will include personal experiences within management (both as an employee and as a manager) and a thorough dive into management itself, exploring the pathways to management, different types of managers, and how to properly balance opportunities. Additionally, it will discuss in detail the different steps an engineer must take and the responsibilities that come with each of those steps.",
+  "session_takeaway": [
+    "The questions to ask and conversations that can be had to define a path into management.",
+    "How to balance engineering and management responsibilities.",
+    "A clear understanding of the different structural options available within management."
+  ],
+  "prompt": "Build an intense, arcade-style stock trading minigame where the commodity is 'Moving from Engineering To Management'. The market crashes and booms based on: 'This talk will explore the different pathways that an engineer (or IC) can take in order to move into management'."
 }

@@ -1,4 +1,16 @@
 {
   "title": "Burnout: An Honest Chat About the Causes, Symptoms and Recovery",
-  "prompt": "Build a burnout recovery visual novel / idle sim hybrid. A founder character's energy, sleep, and passion meters slowly drain as tasks pile up on a desk; the player can pause work to trigger self-care actions (Rest, Talk, Delegate, Walk) each shown as animated vignettes. The key mechanic is that the player must recognize early warning signals (shaking hands, grey color bleed) before the burnout meter maxes out. Muted, intimate watercolor illustration style."
+  "authors": [
+    {
+      "name": "Cat Burton",
+      "origin": "Goth Boss Studios"
+    }
+  ],
+  "description": "Burnout is a very common yet often hidden issue in the games industry. Many founders and senior leaders experience burnout multiple times, usually in silence while pretending they're fine. When you're under constant pressure, feel like you can't switch off or aren't able to prioritise your own needs, burnout becomes almost inevitable. But you can avoid it if you catch it early enough and make positive changes. This roundtable creates a safe space for games leaders to share authentic experiences of burnout, stress and exhaustion. Rather than offering generic advice, the discussion will focus on practical, experience-led insights.",
+  "session_takeaway": [
+    "How to recognise burnout signals in yourself or your team.",
+    "Practical tips for recovery and prevention based on authentic lived experiences.",
+    "Reassurance that burnout is unfortunately common and you are not alone."
+  ],
+  "prompt": "Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Burnout: An Honest Chat About the Causes Symptoms and Recovery', especially: 'Burnout is a very common yet often hidden issue in the games industry'."
 }

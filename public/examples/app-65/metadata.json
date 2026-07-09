@@ -1,4 +1,17 @@
 {
   "title": "Scheduled Serendipity: Manufacturing Creative Aha Moments",
-  "prompt": "Build a 'scheduled serendipity' constraint-based idea generator toy. The player spins two wheels — one of constraints (10-minute timer, single color, no dialogue) and one of transformations (reverse it, scale it up, make it sad) — and the app generates a randomized game concept card from the combination. The player can lock in a constraint and keep re-spinning the transformation wheel, simulating the creative loop the talk describes. Vintage lottery-machine retro aesthetic with spinning drum animation."
+  "authors": [
+    {
+      "name": "Imre Jele",
+      "origin": "Atypical Types / Bossa Studios"
+    }
+  ],
+  "description": "Inspiration is treated like lightning: an unpredictable and uncontrollable moment. In practice, the best studios do not wait for \u201cAha\u201d moments to happen randomly, they create the conditions for them to occur reliably. This talk is a pragmatic guide to elevating your work from waiting for inspiration to strike into a reliable creative powerhouse. We will look at the two engines behind great ideas: taste (your ability to choose what matters) and process (how you generate, clash, and transform inputs into something new). You will leave with repeatable practices.",
+  "session_takeaway": [
+    "A repeatable method to create conditions for \u201cAha\u201d moments instead of waiting for them.",
+    "Practical techniques for curating stronger inputs beyond games and trend loops.",
+    "How to use constraints and transformation loops to avoid derivative design.",
+    "How to schedule incubation and mode switching without losing production momentum."
+  ],
+  "prompt": "Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Scheduled Serendipity: Manufacturing Creative Aha Moments'. It should have popups, sounds, and folders that explore: 'Inspiration is treated like lightning: an unpredictable and uncontrollable moment'."
 }

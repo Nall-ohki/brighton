@@ -1,4 +1,17 @@
 {
   "title": "Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers",
-  "prompt": "Build a manager support allocation simulation for neurodiverse teams in game production. The player is a studio manager with a fixed 'emotional labour' budget each week; neurodivergent team members appear with accommodation requests (flexible deadlines, quiet room, written briefs). The player drags support tokens to each person but can run out \u2014 if the manager's own wellbeing meter empties, productivity collapses for everyone. Calm, cool-toned minimal UI."
+  "authors": [
+    {
+      "name": "Katherine Mould",
+      "origin": "People Can Fly"
+    }
+  ],
+  "description": "Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Many studios now genuinely want to do better. The challenge is sustaining that support in a way that works for both employees and the people managing them. This talk focuses on what happens after awareness, when good intentions meet deadlines, live projects, and already stretched managers. It explores the practical realities of supporting neurodiverse teams in fast paced production environments. Drawing on real examples from global AAA teams, I will examine what support actually helps neurodivergent employees thrive, where accommodations can unintentionally create friction, and how emotional labour often quietly shifts onto managers.",
+  "session_takeaway": [
+    "How to support neurodivergent employees in a sustainable way that works in real production environments.",
+    "How to protect manager wellbeing while fostering psychological safety and inclusion.",
+    "How to move from individual accommodations to team level systems that scale.",
+    "Common mistakes to avoid when supporting neurodiverse teams."
+  ],
+  "prompt": "Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers', illustrating: 'Over the last few years, awareness of neurodiversity and mental health in games has grown significantly'."
 }

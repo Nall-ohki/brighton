@@ -1,4 +1,16 @@
 {
   "title": "Designing Immersive and Explorable Open Worlds with Narrative Encounters",
-  "prompt": "Build an open-world narrative encounter placement designer. The player is given a top-down procedural terrain map and must place authored narrative encounter tokens (NPC camp, hidden note, ambush, lore shrine) at positions that balance density — too clustered and the 'systemic feel' meter drops; too sparse and the 'narrative richness' meter drops. Systemic behavior events then randomly fire between encounters and the player watches emergent stories play out. Sci-fi holographic map aesthetic."
+  "authors": [
+    {
+      "name": "Shi-tao Fan",
+      "origin": "Maverick) (Cloud Imperium Games"
+    }
+  ],
+  "description": "This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay. It highlights how the encounter framework enhances player exploration, improves immersion, and seamlessly blends gameplay with the project's rich lore and strong IP identity. Through this overview, we explore the design principles, technical solutions, and development workflow.",
+  "session_takeaway": [
+    "Practical methods for designing open world encounters that balance systemic behavior with authored narrative intent.",
+    "Techniques for integrating lore and worldbuilding into moment-to-moment gameplay without disrupting player agency.",
+    "Actionable workflows and cross-discipline practices that help teams build scalable encounter content."
+  ],
+  "prompt": "Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'Designing Immersive and Explorable Open Worlds with Narrative Encounters' and the struggles of: 'This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay'."
 }

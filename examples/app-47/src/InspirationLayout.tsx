@@ -54,10 +54,38 @@ export default function InspirationLayout({ children }: { children: React.ReactN
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontFamily: 'sans-serif' }}>
               <div>
                 <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Title</div>
-                <div style={{ color: '#0f172a', fontWeight: '500' }}>{metadata.title}</div>
+                <div style={{ color: '#0f172a', fontWeight: '500', fontSize: '1.1rem' }}>{metadata.title}</div>
               </div>
+              
+              {metadata.authors && metadata.authors.length > 0 && (
+                <div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Speaker(s)</div>
+                  <div style={{ color: '#334155' }}>
+                    {metadata.authors.map((a: any, i: number) => (
+                      <div key={i}><strong>{a.name}</strong> <span style={{color: '#64748b'}}>({a.origin})</span></div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {metadata.description && (
+                <div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Talk Description</div>
+                  <div style={{ color: '#334155', fontSize: '0.9rem', lineHeight: '1.5' }}>{metadata.description}</div>
+                </div>
+              )}
+              
+              {metadata.session_takeaway && metadata.session_takeaway.length > 0 && (
+                <div>
+                  <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Takeaways</div>
+                  <ul style={{ margin: 0, paddingLeft: '20px', color: '#334155', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                    {metadata.session_takeaway.map((t: string, i: number) => <li key={i}>{t}</li>)}
+                  </ul>
+                </div>
+              )}
+
               <div>
-                <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Prompt</div>
+                <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 'bold', marginBottom: '4px' }}>Generation Prompt</div>
                 <div style={{ color: '#334155', fontSize: '0.95rem', lineHeight: '1.5', whiteSpace: 'pre-wrap', padding: '12px', background: '#f1f5f9', borderRadius: '8px', border: '1px solid #e2e8f0' }}>{metadata.basePrompt || metadata.prompt}</div>
               </div>
             </div>

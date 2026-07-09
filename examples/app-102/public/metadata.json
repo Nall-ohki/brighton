@@ -1,4 +1,16 @@
 {
   "title": "The Ethics of using AI in Games",
-  "prompt": "Build an AI ethics risk assessment card game for game studios. Players draw AI use-case scenario cards (AI-generated NPC voices, procedural content replacing artists, player behavior prediction) and must assign each a risk level (Low/Medium/High) by weighing Legal, Creative, and Ethical sliders. The game reveals the industry consensus score after each card and explains the delta. A final 'studio ethics charter' is generated from the player's choices. Clean legal-document meets game-UI aesthetic."
+  "authors": [
+    {
+      "name": "Ben Byford",
+      "origin": "Nuclear Candy Games"
+    }
+  ],
+  "description": "A tour around the uses and pitfalls of using AI technologies in games development.",
+  "session_takeaway": [
+    "How can AI be used responsibly in games development.",
+    "What are the key legal and ethical considerations.",
+    "Clear recommendations and actions going forward in using AI."
+  ],
+  "prompt": "Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'The Ethics of using AI in Games'. The mechanics should explore how 'A tour around the uses and pitfalls of using AI technologies in games development'. Use a glitchy, cyberpunk aesthetic."
 }

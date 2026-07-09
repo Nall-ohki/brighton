@@ -1,4 +1,16 @@
 {
   "title": "On the Lore Around Art",
-  "prompt": "A visual inspection and art-curation game where the player acts as an Art Director maintaining project cohesion over a long development cycle. The player is presented with incoming concept art pieces and 3D model renders on a virtual desk. They must cross-reference the art against the 'Studio Lore Bible' and 'Target Identity Guidelines.' Using a red marker tool, the player circles elements that break the established mythology (e.g., an incorrect architectural motif, or anachronistic armor materials) and sends feedback. The core mechanic relies on attention to detail and progressive difficulty as the game's lore bible expands with new factions and rules."
+  "authors": [
+    {
+      "name": "Andrej Horoschun",
+      "origin": "Frontier Developments"
+    }
+  ],
+  "description": "This session examines the critical link between art creation and underlying studio lore. Our speaker explores Frontier's methods for ensuring visual assets remain tightly grounded in game mythology and target identity, protecting cohesion throughout long development cycles.",
+  "session_takeaway": [
+    "Understand how to build structured guidelines that keep art teams aligned to project lore.",
+    "Practical insights into Frontier's visual development processes.",
+    "How to navigate artistic independence while protecting brand and world rules."
+  ],
+  "prompt": "Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'On the Lore Around Art', revealing insights about: 'This session examines the critical link between art creation and underlying studio lore'."
 }

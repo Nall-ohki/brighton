@@ -1,4 +1,16 @@
 {
   "title": "Scaling Without Breaking Your Studio",
-  "prompt": "Build a studio scaling simulation where the player clicks to hire new staff, but each hire secretly adds a hidden 'leadership debt' token. When the debt pile exceeds the leadership capacity bar, a chain reaction of attrition fires start — staff sprites begin drifting off-screen. The player must spend 'org investment' cards to reinforce leadership before breakpoints. Data-driven dashboard visual style, dark background with glowing red/amber warning indicators."
+  "authors": [
+    {
+      "name": "Tamsin O'Luanaigh",
+      "origin": "Wise Cat Strategy"
+    }
+  ],
+  "description": "As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. This session explores the predictable pressure points that emerge as studios scale, and why many challenges attributed to hiring, process, or delivery are often symptoms of deeper leadership and system strain. Drawing on experience across multiple growth-stage studios, the talk explores the inflection points where execution risk, attrition, and leadership overload tend to increase. It looks at why leadership capability often lags behind headcount growth, how decision bottlenecks and unclear accountability quietly erode value, and the hidden cost of pushing for growth without strengthening people and leadership systems. The session also shares practical leadership shifts that support resilience, clarity, and sustainable performance under pressure.",
+  "session_takeaway": [
+    "Recognise early leadership and people risks as studios scale.",
+    "Understand how leadership systems affect delivery and execution risk.",
+    "Apply practical shifts to support sustainable performance under pressure."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Scaling Without Breaking Your Studio'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation'."
 }

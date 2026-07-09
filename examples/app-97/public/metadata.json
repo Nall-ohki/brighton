@@ -1,4 +1,16 @@
 {
   "title": "Overcoming Barriers to Mental Health Support in the Workplace",
-  "prompt": "Build a workplace mental health barrier maze game. A worker character navigates a top-down office maze where walls are labelled mental health barriers (Stigma, No EAP, Manager Unaware, No Time). The player must find and activate support beacons (Safe In Our World signs, Wellbeing Champion, Anonymous Helpline) to dissolve the walls. Each studio type (indie, AA, AAA) generates a different maze layout. Soft safe-space color palette with warm amber and teal tones."
+  "authors": [
+    {
+      "name": "Izzie Micul",
+      "origin": "Safe In Our World"
+    }
+  ],
+  "description": "This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. The types of organisations that make up our fast-paced industry are so diverse that there is no 'one size fits all' approach to getting mental health support at work right.",
+  "session_takeaway": [
+    "Understand the specific barriers to implementing mental health support faced across diverse games companies.",
+    "Gain insight into flexible methods to overcome these barriers according to your studio's make-up.",
+    "Connect with peers to collaborate and share best practices in a supportive, facilitated environment."
+  ],
+  "prompt": "Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Overcoming Barriers to Mental Health Support in the Workplace', illustrating: 'This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices'."
 }

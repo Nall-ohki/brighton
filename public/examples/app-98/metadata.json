@@ -1,1 +1,28 @@
-{ "title": "How to Stay Ahead of Cutting Edge Game Technology", "prompt": "Build a 20-year game technology evolution quiz show. Technology trend cards appear one at a time (ray tracing, procedural gen, neural rendering, haptics) and the player must drag each to its correct decade on a horizontal timeline. Correct placements unlock a brief tooltip about that tech's game-dev impact. A final 'emerging tech' round asks the player to predict which 2026+ technologies will matter. Retro quiz-show TV-set aesthetic with spinning wheel graphic." }
+{
+  "title": "How to Stay Ahead of Cutting Edge Game Technology",
+  "authors": [
+    {
+      "name": "Dario Jelusic",
+      "origin": "Atomhawk"
+    },
+    {
+      "name": "David Smethurst",
+      "origin": "Sumo Digital"
+    },
+    {
+      "name": "Terry Goodwin",
+      "origin": "Lab42"
+    },
+    {
+      "name": "Dan Wood",
+      "origin": "Bastion"
+    }
+  ],
+  "description": "Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. In this panel, technology leaders from Sumo Digital will look back at how the industry reached this point, examine the realities studios face today, and discuss what the next wave of change could mean for teams, pipelines and leadership.",
+  "session_takeaway": [
+    "A clearer understanding of how past technology decisions continue to influence modern game development.",
+    "Practical insight into the trends currently shaping production and studio operations.",
+    "A more grounded perspective on emerging technologies and how to approach them realistically."
+  ],
+  "prompt": "Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'How to Stay Ahead of Cutting Edge Game Technology', especially: 'Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation'."
+}

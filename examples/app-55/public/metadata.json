@@ -1,4 +1,20 @@
 {
   "title": "Interface as Identity: Designing UI That Complements the Brand",
-  "prompt": "Build a UI brand identity builder toy where the player picks typography, spacing density, motion speed, and color temperature sliders and watches a mock game menu assemble in real time on the right. Each choice shifts the brand personality meter between axes: Playful↔Serious, Loud↔Quiet, Sharp↔Soft. The final composition is labelled with a brand archetype (Rebel, Sage, Jester, etc.). Minimal design-tool aesthetic, white canvas with precise controls."
+  "authors": [
+    {
+      "name": "Agnes Kasilovska",
+      "origin": "Dead Nice Studio"
+    },
+    {
+      "name": "Sam Thompson",
+      "origin": "Dead Nice Studio"
+    }
+  ],
+  "description": "UI and branding are often treated like separate jobs. Branding frames the game from the outside and sets expectations. UI is what happens once you're inside, where those expectations turn into experience. UI isn't only about clarity and function. It is a visual language players learn through repetition, and it carries tone, perspective, and intent through structure, typography, spacing, motion, and density. This talk explores how interface decisions influence identity, how branding later reacts to what the UI has already made real, and how to design the two so they support each other instead of pulling apart.",
+  "session_takeaway": [
+    "A simple framework for aligning UI and branding from early development.",
+    "How to define a shared anchor and one consistent signal players recognize anywhere.",
+    "How to adapt style when direction shifts without rebuilding everything."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Interface as Identity: Designing UI That Complements the Brand'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'UI and branding are often treated like separate jobs'."
 }
