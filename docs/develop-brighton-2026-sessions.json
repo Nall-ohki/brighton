@@ -1,0 +1,1744 @@
+[
+  {
+    "id": 1,
+    "title": "Powered by Players: Reforjing 4J Studios",
+    "date": "Tuesday 14th July",
+    "time": "9:45am - 10:45am",
+    "room": "Room 1",
+    "tracks": [
+      "Keynote"
+    ],
+    "authors": [
+      {
+        "name": "Chris van der Kuyl",
+        "company": "4J Studios"
+      },
+      {
+        "name": "Joseph Garrett",
+        "company": "4J Studios"
+      }
+    ],
+    "description": "From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped—at every stage—by players. In this candid and forward-looking keynote, Joe Garrett and Chris van der Kuyl take the stage to unpack the journey of 4J Studios: from its early history and over fifteen years working on Minecraft, through its bold evolution into a creator of original technology and its new IP, Reforj. This talk explores how 4J is building Reforj to be a modern game ecosystem—one shaped not behind closed doors, but in partnership with its community. From early experiments through to key update milestones, Joe and Chris will reveal how direct player feedback has actively informed systems, features, and design direction. Looking ahead, they will share what's next for Reforj, including a preview of Title Update 8 and the unique fully custom Elements Engine powering it.",
+    "session_takeaway": [
+      "The importance of listening to your community and how to harness their feedback.",
+      "Insight into 4J Studio's story and how the company has evolved over 21 years.",
+      "The choice to commit to a custom engine and the impact of its constant evolution."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Games:Edu Track Intro & Keynote: Apprenticeships & the Tacit Knowledge of Game Development",
+    "date": "Tuesday 14th July",
+    "time": "9:45am - 10:45am",
+    "room": "Room 5",
+    "tracks": [
+      "Games:Edu",
+      "Keynote"
+    ],
+    "authors": [
+      {
+        "name": "Laurence Oldham",
+        "company": "Digital Impact Incubator"
+      },
+      {
+        "name": "Tom Cole",
+        "company": "University of Greenwich"
+      },
+      {
+        "name": "Jake Habgood",
+        "company": "Freelance"
+      }
+    ],
+    "description": "Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Drawing on experience from his own early career at Gremlin Graphics and 20 years of leading training initiatives across industry and academia, the session examines how much of what defines an effective developer is not easily codified, but instead acquired through observation, collaboration, and participation in real production environments. The talk focuses on tacit knowledge, the practical understanding of workflows, judgement, and team dynamics that emerges through close interaction with experienced colleagues. It argues that this form of learning is central to game development, where rapid iteration, cross-disciplinary collaboration, and shared problem-solving are essential. The session also considers how changes in working patterns, particularly the shift toward remote working, affect the transmission of this knowledge by reducing opportunities for informal exchange, mentorship, and apprenticeship-style learning. The keynote reflects on the implications for studios seeking to build capability, maintain cultural cohesion, and support early career development, particularly where traditional learning pathways are disrupted. It outlines considerations for sustaining effective knowledge transfer and team development in modern production contexts, before concluding with a Q&A.",
+    "session_takeaway": [
+      "Understand the role of apprenticeship, both formal and informal, in developing games industry skills.",
+      "Recognise the importance of tacit knowledge in production environments.",
+      "Identify the challenges remote working presents for knowledge transfer and team development.",
+      "Consider approaches to sustaining effective learning and cultural cohesion within studios."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "AI Wants to Play: A Game Designer's Guide to AI in Every Stage of Development",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Rob Davis",
+        "company": "Wild Loop Games"
+      }
+    ],
+    "description": "The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker's recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games. We start with AI as a design tool. Using platforms like Lovable, Claude, and Gemini, the speaker prototyped a suite of games in weeks rather than months — rapidly iterating on everything from mechanics to UI. We'll cover how to get the best from these tools when used together, and provide an honest comparison of AI tools that actually matter to game teams. We'll then dig into a structured methodology for AI-assisted development — demonstrated on a live project — that prevents common pitfalls such as hallucination and context drift. Next, we look at AI in the game itself. A custom card game system — inspired by DeepMind's Agent57 — trains a neural network to master multiple card games using universal strategic features; NPCs with generated personas that affect how they respond to player actions; and a game that misuses AI as a core gameplay mechanic. We also examine some shipped games that use AI in interesting ways, and the design issues they faced. Every example comes with honest results — what worked, what failed, and what's worth your time. Attendees leave with a practical framework for adopting AI in their own studios.",
+    "session_takeaway": [
+      "A practical decision framework for choosing the right AI tool and techniques at every stage of development — from prototyping with Lovable and Claude, to choosing between RL, LLMs, and heuristics for your runtime AI.",
+      "How to use AI to radically accelerate game prototyping — with an honest comparison of tools (Lovable, Claude Desktop, Claude Code, Gemini), real case studies showing what each is best at and how they can work together, and a reliable development framework that is transferable to any tool.",
+      "How a single lightweight AI model can learn to play multiple games — a concrete architecture that's smaller and faster than brute-force approaches, including the evolution through different RL techniques and the practical lessons from training failures.",
+      "Design principles for AIs that players actually enjoy — drawn from shipped games and the speaker's own prototypes with clear guidance on what's ready for production, what's experimental, and what's still hype."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Building New Game Teams Before the Game Is Clear",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Marco Colombo",
+        "company": "Supercell"
+      }
+    ],
+    "description": "What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. The talk will look at the messy, practical reality of early team formation: how small teams build trust quickly, make decisions with limited information, use constraints to create momentum, and learn fast enough to know whether they are moving in the right direction. Rather than focusing on a specific game or presenting a polished “Supercell formula,” the session will explore the conditions, habits, and trade-offs that help early teams work better when almost everything is still uncertain. Attendees can expect an honest, practical perspective on team formation, creative ownership, feedback, and learning speed in new game development.",
+    "session_takeaway": [
+      "A practical look at how early game teams form, learn, and make decisions.",
+      "Reflections on what helps small teams move through uncertainty.",
+      "Clear questions developers and leaders can bring back to their own teams."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 3",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Mark Shaw",
+        "company": "Flix Interactive"
+      }
+    ],
+    "description": "It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them. How do you stop the train when it's obvious that your project or feature is overrunning? Game developers are often left feeling powerless to stop or course correct in the face of overrun because they don't have the tools to confidently identify what is going wrong. This talk explores the deeper reasons behind project failure and explains the psychological and behavioural reasons why teams miss warning signs. It will look at the folly of a sunk cost fallacy as well as demonstrate how to ignore the instinct to keep digging when things are already going south. Although external factors can often derail a project, this talk will demonstrate the tools that Producers and the wider development team can utilise to help guide the team in creating achievable goals, pivot in the face of changing priorities but most importantly, highlight when a project is overshooting the mark so you can pull the plug before it's too late.",
+    "session_takeaway": [
+      "Show how to make Scope drift visible: Being clear on goals and priorities.",
+      "Recognising that Sunk cost is not a reason to continue: How to decide on future value.",
+      "How to ensure you have a “kill-switch” process: Ensuring you have a culture that can use it."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "A Frame's Life: Frame Timing, Synchronization, and Latency in UE",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 4",
+    "tracks": [
+      "Coding"
+    ],
+    "authors": [
+      {
+        "name": "Ari Arnbjörnsson",
+        "company": "Epic Games"
+      }
+    ],
+    "description": "Every frame in Unreal Engine goes on a long journey before reaching the screen. In this talk, we'll walk through that journey from gameplay code through the game thread, render thread, RHI thread, DirectX, the GPU, and finally onto the display. We'll explore how these stages synchronize, how frames are queued and presented, and how small decisions can add measurable latency. By the end, you'll have a clearer picture of frame pacing, vsync, VRR, swap chains, input delay, and Unreal's game thread synchronization options, so you can make more informed decisions on the tradeoffs between performance and responsiveness.",
+    "session_takeaway": [
+      "Understand the many different factors that make up whether a frame makes or misses a vsync.",
+      "A clearer perspective on frame pacing, vsync, VRR, swap chains, and input delay.",
+      "Practical knowledge of Unreal's game thread synchronization options to optimize latency."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Developing Tomorrow's Talent: Studio Strategies and Solutions",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 5",
+    "tracks": [
+      "Games:Edu"
+    ],
+    "authors": [
+      {
+        "name": "Laurence Oldham",
+        "company": "Digital Impact Incubator"
+      },
+      {
+        "name": "James Shepherd",
+        "company": "Cypherdelic"
+      },
+      {
+        "name": "Grant Clark",
+        "company": "Double Eleven"
+      },
+      {
+        "name": "Caroline Marchal",
+        "company": "INTERIOR/NIGHT"
+      },
+      {
+        "name": "Louise Andrew",
+        "company": "d3t – A Keywords Studio"
+      }
+    ],
+    "description": "This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. The panel will draw from their deep and varied experience and approaches, providing insights into the challenges and successes they've encountered. Attendees will gain a practical understanding of the diverse strategies studios use to develop talent, the real-world obstacles faced, and the benefits of investing in future professionals. The panel is especially relevant for studio leaders and educators seeking actionable strategies for talent development.",
+    "session_takeaway": [
+      "Gain real-world insights into how studios are actively addressing talent pipeline challenges.",
+      "Understand the practical challenges, costs, and successes of different approaches to talent development.",
+      "Learn what studios see as the key benefits and future directions for building and sustaining talent in the games industry."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Develop: FTUE (First Time User Experience) Tuesday",
+    "date": "Tuesday 14th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Jazeena McCallum",
+        "company": "CRITICAL REFLEX"
+      },
+      {
+        "name": "Annabel Ashalley-Anthony",
+        "company": "Melanin Gamers"
+      }
+    ],
+    "description": "A relaxed and informal roundtable designed to help you get the most out of your time at the conference. A diverse panel of friendly and experienced devs from across the whole industry spectrum want to help anyone who feels shy, awkward, a little out of place, on the outside, or just unable to really squeeze all the goodness out of this amazing show. You'll feel positive, empowered and fully equipped to have an absolutely smashing time, with tips on how to be productive, tools to network, and commitments from volunteers to be your safety net should things get a little too much! Finally, should you feel like it would help, we'll match people up with Show Mentors to ensure however long you're in Brighton, you go back to your studio feeling invigorated and inspired!",
+    "session_takeaway": [
+      "Shared experiences that will give you some ideas on best practice plus do's and don'ts for networking at every event.",
+      "Recommendations for talks to attend and delegates to meet, plus practical help to do so!",
+      "Knowledge of safe and quiet spaces to help manage your experience at the show.",
+      "Introductions to helpers who you can approach throughout your visit if you need a friendly face!"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Finding the Balance: Big Team Process vs Indie Mindset",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Michael Meaden",
+        "company": "Athena Worlds"
+      }
+    ],
+    "description": "This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Through lessons learned in both small indie teams and larger studio environments, Michael will share insights into different workflows, team structures, and approaches to sustaining both people and creativity.",
+    "session_takeaway": [
+      "Practical strategies for balancing sustainable workloads with efficient production pipelines.",
+      "Clear approaches to structuring teams and workflows that support both accountability and creative experimentation.",
+      "Actionable methods for maintaining team well-being while delivering innovative, high-quality games."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Mobile Games: When Approachability Rhymes with Accessibility",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Améliane F. Chiasson",
+        "company": "Player Research (Keywords Studios)"
+      },
+      {
+        "name": "Cari Watterton",
+        "company": "Scopely"
+      }
+    ],
+    "description": "This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players. Discover the meaningful overlap: customizable controls help both casual players and those with motor impairments, clear audio/visual cues serve new players and those with various disabilities from cognitive to visual and hearing. See how you can properly support OS-level accessibility settings like screen readers and text scaling, while also designing accessible mobile gaming experiences through inclusive design and accessibility-aware development in commonly used engines. Learn from expert game accessibility specialists Cari Watterton (Scopely) and Améliane F. Chiasson (Player Research) and make your next mobile game (or patch!) more accessible.",
+    "session_takeaway": [
+      "Learn how to make your mobile game reach a wider audience of people who use mobile devices daily for their accessibility needs.",
+      "Know how to leverage and efficiently support iOS and Android's accessibility settings.",
+      "Learn how to cleverly align accessibility efforts with your studio goals.",
+      "Get tips on how to prevent accessibility barriers at the design level to avoid needing to do extra work."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "5 Easy Steam Store Page Tweaks to Boost Your Visibility",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Discoverability"
+    ],
+    "authors": [
+      {
+        "name": "Jarvs Tasker",
+        "company": "Happy Volcano"
+      }
+    ],
+    "description": "Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. In this session, I'll walk you through five dead-simple tweaks you can make right now to boost your CTR, increase wishlists, and get your game recommended to the right players. We'll look at capsule art clarity, the “verbs first” short description rule, choosing screenshots that actually sell your game, tag alignment, and a couple of keyword tricks that helped Modulus hit 100k wishlists. Attendees will walk away with a clear checklist, real examples from Modulus and other indie titles, and a better understanding of how small, thoughtful changes can dramatically increase your visibility, wishlist velocity, and long-tail discovery on Steam.",
+    "session_takeaway": [
+      "How to apply five quick store page improvements that increase click-through rates and wishlist conversion on Steam.",
+      "Useful benchmarks using proven data from marketing experts like Chris Zukowski.",
+      "How to evaluate and iterate on your own Steam page using a simple checklist that any team can implement immediately."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "The Evolution of Interactive Storytelling",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Jane Millichip",
+        "company": "BAFTA"
+      },
+      {
+        "name": "Veronique Lallier",
+        "company": "IO Interactive"
+      },
+      {
+        "name": "Abubaker Salim",
+        "company": "Surgent Studios"
+      },
+      {
+        "name": "Eloise Singer",
+        "company": "Singer Studios"
+      }
+    ],
+    "description": "Storytelling is at the heart of what we do and runs across all crafts and mediums. This session will explore how storytelling and narrative is developing in a creative landscape with increasing overlap between film, games and television. The panel will discuss their creative approaches, how they get inspiration, how ideas are generated and how they shape narratives across channels.",
+    "session_takeaway": [
+      "Understand why storytelling remains the connective tissue across film, television and games despite differences in format.",
+      "Explore how audiences increasingly expect to engage with stories across multiple platforms and mediums.",
+      "Learn why games are now influencing the broader entertainment industry creatively, not just commercially.",
+      "Trace where ideas originate (character, world, mechanics, emotion or theme) and how narrative development differs between linear and interactive models."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Opportunities For Talent: Workshopping The Foundations Of A Better Future",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 5",
+    "tracks": [
+      "Games:Edu"
+    ],
+    "authors": [
+      {
+        "name": "Tom Cole",
+        "company": "University of Greenwich"
+      },
+      {
+        "name": "Brian McDonald",
+        "company": "Games Academy, Falmouth University"
+      },
+      {
+        "name": "Perri Lewis",
+        "company": "Mastered"
+      },
+      {
+        "name": "Laurence Oldham",
+        "company": "Digital Impact Incubator"
+      },
+      {
+        "name": "Susi Bauer",
+        "company": "Freelance Coach & Facilitator"
+      }
+    ],
+    "description": "How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem. The session begins with high-impact Provocations for Growth from a broad field of experts. Each speaker will provide a brief, five-minute talk on their experiences and expertise. Following these insights, the floor opens for a Foundations Workshop. Participants will work in mixed groups of educators and industry to capture ideas using Padlet technology. Working through the obstacles, groups will brainstorm potential solutions drawing out and building the foundations for action.",
+    "session_takeaway": [
+      "Identify and address shared barriers in the education‑to‑industry talent pipeline.",
+      "Collaborate on practical ideas to support graduate development.",
+      "Learn from cross‑sector perspectives, industry education, and those bridging the gap.",
+      "Contribute to actionable foundations for future talent growth."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Too Many Ideas, One Game: ADHD Survival Guide for Game Dev",
+    "date": "Tuesday 14th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Rory Martin",
+        "company": "Giraffe Head Studios Ltd"
+      }
+    ],
+    "description": "Game development is already a difficult, long, messy marathon. Add ADHD traits like novelty chasing, time blindness, and idea overload, and it can feel like you are constantly fighting your own brain. This light hearted talk is a practical, real world look at how to work with ADHD in game development and turn common pain points into strengths. Instead of trying to force a “normal” workflow, I will share approaches that harness what ADHD can be good at: creative problem solving, momentum bursts, rapid iteration, and high energy finishing pushes. It is not a medical talk or about motivation hacks. It is an overview of strategies, habits, and production choices that help you ship, stay sane, and use your brain the way it actually works.",
+    "session_takeaway": [
+      "A simple way to capture ideas without derailing the main project.",
+      "A method for choosing the next task when focus is inconsistent.",
+      "A repeatable approach for turning hyperfocus into finished work."
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Scaling Without Breaking Your Studio",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Tamsin O'Luanaigh",
+        "company": "Wise Cat Strategy"
+      }
+    ],
+    "description": "As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation. This session explores the predictable pressure points that emerge as studios scale, and why many challenges attributed to hiring, process, or delivery are often symptoms of deeper leadership and system strain. Drawing on experience across multiple growth-stage studios, the talk explores the inflection points where execution risk, attrition, and leadership overload tend to increase. It looks at why leadership capability often lags behind headcount growth, how decision bottlenecks and unclear accountability quietly erode value, and the hidden cost of pushing for growth without strengthening people and leadership systems. The session also shares practical leadership shifts that support resilience, clarity, and sustainable performance under pressure.",
+    "session_takeaway": [
+      "Recognise early leadership and people risks as studios scale.",
+      "Understand how leadership systems affect delivery and execution risk.",
+      "Apply practical shifts to support sustainable performance under pressure."
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Vladimir Pronin",
+        "company": "Holland & Barrett"
+      }
+    ],
+    "description": "Digital products live across mobile, web, desktop — but delivery usually doesn't. One central mobile team becomes a ticket factory for everyone else, web prioritises desktop, and releases turn into cross-team coordination hell. In this talk, Vladimir Pronin shares a production case where a mobile app transformed from single-team bottleneck into a self-service platform enabling parallel delivery from 10+ squads. Vladimir unpacks the shift from 'mobile as channel' to 'mobile as platform': defining crisp platform boundaries that enable instead of constrain, guardrails that let squads ship safely without central approval, and shared observability that makes incidents solvable instead of mysterious. He shows how platform contracts replaced ad-hoc tickets, how outcome alignment stopped channel wars (app vs web vs desktop), and how delivery cadence went from monthly heroics to weekly business-as-usual.",
+    "session_takeaway": [
+      "Mental model for platform boundaries that scale cross-platform delivery.",
+      "Team topology patterns to escape centralised mobile ownership.",
+      "Decision framework to align mobile/web/desktop around outcomes, not channels."
+    ]
+  },
+  {
+    "id": 17,
+    "title": "How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Discoverability"
+    ],
+    "authors": [
+      {
+        "name": "Najmah Salam",
+        "company": "Panda Cat Games"
+      }
+    ],
+    "description": "We've all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts. Then, reality sets in. There's too much to do and too little time to carry out our dream marketing campaigns. In this session, Najmah will walk through how to design a content strategy that takes into account your limited resources while still keeping up a sustainable and consistent marketing plan.",
+    "session_takeaway": [
+      "A step-by-step playbook on marketing content strategy.",
+      "How to make the best of limited marketing resources.",
+      "Creating a focused and impactful marketing plan."
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Caspar Gray",
+        "company": "Green Man Gaming"
+      }
+    ],
+    "description": "Thinking beyond genres and descriptions early in development makes it more likely your game will succeed. You can do this without sacrificing creativity and artistry, but it requires a fresh perspective. Drawing on my experience both signing games for major publishers, and pitching to them as an agent, I'll be giving you a framework to interrogate your game designs, find their irreducible core and craft truly appealing games. This goes deeper than picking a genre, a handful of Steam tags and guessing at an elusive “USP”. In today's crowded marketplace, you can't just describe what you are making. You can however greatly increase your chances of success by looking at your game through a different lens, and working hard to intrigue and convince your audience.",
+    "session_takeaway": [
+      "Discover how to look beyond genres and descriptions to get at the true core of your game.",
+      "Learn how to convince people about your game, not just describe it.",
+      "Get the tools to reach a bigger audience without sacrificing creativity."
+    ]
+  },
+  {
+    "id": 19,
+    "title": "XDS Ignite (2 PM): XDEV at a Crossroads: What the Best Teams are Doing Differently",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 3:00pm",
+    "room": "Room 5",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Sam Carlisle (Moderator)",
+        "company": "Co-Founder, XDS Spark"
+      },
+      {
+        "name": "Claude Bordeleau",
+        "company": "CRO, Winking & CEO, Ampera"
+      },
+      {
+        "name": "Dave Sanderson",
+        "company": "Director of External Development, Interleave"
+      },
+      {
+        "name": "Rikki-Lynn Vitello",
+        "company": "Director of External Development, EA Full Circle"
+      },
+      {
+        "name": "Carl Schmidt",
+        "company": "Senior Director of External Development, Zynga"
+      }
+    ],
+    "description": "XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. In this 2:00pm - 3:30pm session, members of the XDS Advisory Committee share what they're seeing across the industry right now: what's working, what's changing, and where teams are getting left behind.",
+    "session_takeaway": [
+      "Understand the current trends and realities of external development across the industry.",
+      "Discover what successful teams are doing differently to optimize developer-partner co-creation.",
+      "Insights into emerging practices and models for sustainable external development."
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Burnout: An Honest Chat About the Causes, Symptoms and Recovery",
+    "date": "Tuesday 14th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Cat Burton",
+        "company": "Goth Boss Studios"
+      }
+    ],
+    "description": "Burnout is a very common yet often hidden issue in the games industry. Many founders and senior leaders experience burnout multiple times, usually in silence while pretending they're fine. When you're under constant pressure, feel like you can't switch off or aren't able to prioritise your own needs, burnout becomes almost inevitable. But you can avoid it if you catch it early enough and make positive changes. This roundtable creates a safe space for games leaders to share authentic experiences of burnout, stress and exhaustion. Rather than offering generic advice, the discussion will focus on practical, experience-led insights.",
+    "session_takeaway": [
+      "How to recognise burnout signals in yourself or your team.",
+      "Practical tips for recovery and prevention based on authentic lived experiences.",
+      "Reassurance that burnout is unfortunately common and you are not alone."
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Interface as Identity: Designing UI That Complements the Brand",
+    "date": "Tuesday 14th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Agnes Kasilovska",
+        "company": "Dead Nice Studio"
+      },
+      {
+        "name": "Sam Thompson",
+        "company": "Dead Nice Studio"
+      }
+    ],
+    "description": "UI and branding are often treated like separate jobs. Branding frames the game from the outside and sets expectations. UI is what happens once you're inside, where those expectations turn into experience. UI isn't only about clarity and function. It is a visual language players learn through repetition, and it carries tone, perspective, and intent through structure, typography, spacing, motion, and density. This talk explores how interface decisions influence identity, how branding later reacts to what the UI has already made real, and how to design the two so they support each other instead of pulling apart.",
+    "session_takeaway": [
+      "A simple framework for aligning UI and branding from early development.",
+      "How to define a shared anchor and one consistent signal players recognize anywhere.",
+      "How to adapt style when direction shifts without rebuilding everything."
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Level Up In-Game Earnings Without Losing Players",
+    "date": "Tuesday 14th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Antoine Jullemier",
+        "company": "Gadsme"
+      }
+    ],
+    "description": "Discover how to boost your game's revenue without compromising the player experience. Drawing on insights from thousands of games using such solution, we'll show how mobile, PC, and console publishers can integrate non-intrusive, immersive ads that feel natural in-game, drive meaningful engagement, and increase earnings—all while keeping players happy and engaged.",
+    "session_takeaway": [
+      "How to integrate non-intrusive immersive ads into mobile, PC, and console games without disrupting the player experience.",
+      "Best practices for ad placement, frequency, and design to boost engagement and revenue.",
+      "How to use player analytics and data to optimize monetization while maintaining retention."
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Moving from Engineering To Management",
+    "date": "Tuesday 14th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Coding"
+    ],
+    "authors": [
+      {
+        "name": "James Foster",
+        "company": "Rocket Science Group"
+      }
+    ],
+    "description": "This talk will explore the different pathways that an engineer (or IC) can take in order to move into management. It will include personal experiences within management (both as an employee and as a manager) and a thorough dive into management itself, exploring the pathways to management, different types of managers, and how to properly balance opportunities. Additionally, it will discuss in detail the different steps an engineer must take and the responsibilities that come with each of those steps.",
+    "session_takeaway": [
+      "The questions to ask and conversations that can be had to define a path into management.",
+      "How to balance engineering and management responsibilities.",
+      "A clear understanding of the different structural options available within management."
+    ]
+  },
+  {
+    "id": 24,
+    "title": "How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio",
+    "date": "Tuesday 14th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Daph Janssens",
+        "company": "Day III Digital"
+      }
+    ],
+    "description": "The most common company value is integrity while the second most common is collaboration. But how many truly live by those values when pay structures reward competition and the most important decisions are made behind closed doors? Values alone don't shape studio culture. This talk is a case study of what happened when an industry veteran and an outsider founded a co-dev studio where pay is transparent, power is shared and the company culture is built within the studio structure. Daph walks you through the original hypothesis, what rethinking pay and power meant, and their observations as the studio grew from 2 to 18 people over two years, contributing to multiple AAA co-dev projects.",
+    "session_takeaway": [
+      "An honest case study of how transparent and aligned pay structures influence collaboration and retention.",
+      "An understanding of how studio culture can be shaped by structural decisions, and not just values.",
+      "A new perspective on industry norms related to pay, power, and business resilience."
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Raise the Game Roundtable",
+    "date": "Tuesday 14th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Cinzia Musio",
+        "company": "Ukie"
+      },
+      {
+        "name": "Jonas Gawe",
+        "company": "Limit Break Mentorship / Electric Saint"
+      }
+    ],
+    "description": "Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Through this roundtable, we'll aim to discuss actionable takeaways to make your studio or company a more inclusive place to work for, and share tips on how to do so sustainably. You will also learn what Raise the Game and their partners are up to, and how you can get involved.",
+    "session_takeaway": [
+      "How to make your studio a more equitable, diverse, and inclusive place.",
+      "Take action sustainably to make long-lasting changes in your studio culture.",
+      "Learn how to guide your studio toward organizational and culture maturity."
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers",
+    "date": "Tuesday 14th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Katherine Mould",
+        "company": "People Can Fly"
+      }
+    ],
+    "description": "Over the last few years, awareness of neurodiversity and mental health in games has grown significantly. Many studios now genuinely want to do better. The challenge is sustaining that support in a way that works for both employees and the people managing them. This talk focuses on what happens after awareness, when good intentions meet deadlines, live projects, and already stretched managers. It explores the practical realities of supporting neurodiverse teams in fast paced production environments. Drawing on real examples from global AAA teams, I will examine what support actually helps neurodivergent employees thrive, where accommodations can unintentionally create friction, and how emotional labour often quietly shifts onto managers.",
+    "session_takeaway": [
+      "How to support neurodivergent employees in a sustainable way that works in real production environments.",
+      "How to protect manager wellbeing while fostering psychological safety and inclusion.",
+      "How to move from individual accommodations to team level systems that scale.",
+      "Common mistakes to avoid when supporting neurodiverse teams."
+    ]
+  },
+  {
+    "id": 27,
+    "title": "The State of Mobile Creativity in 2026",
+    "date": "Tuesday 14th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Alice Bowman",
+        "company": "Fusebox Games"
+      }
+    ],
+    "description": "Join a panel of industry experts to explore the state of creativity in mobile games in 2026. As the mobile market becomes more saturated and competitive than ever, AI continues to reshape development, and success is increasingly defined by CPI, where does creativity fit? Our panel interrogates the role of creativity in today's mobile games industry.",
+    "session_takeaway": [
+      "Explore the conflict and alignment of commercial parameters (like CPI) and creative expression.",
+      "Understand how major mobile teams are keeping creative risk-taking alive in 2026.",
+      "A clear view of AI's current impact on design and speed of asset creation in active teams."
+    ]
+  },
+  {
+    "id": 28,
+    "title": "How to Make Whatever You Want and Still Get Attention",
+    "date": "Tuesday 14th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Stanley W. Baxton",
+        "company": "Stanwixbuster"
+      }
+    ],
+    "description": "In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. In this talk, he's going to break down how he did it, making a case for abandoning the “normal” way to develop games, and how the industry is ignoring vital talent at the fringes.",
+    "session_takeaway": [
+      "Why we need to look beyond “getting into” the industry as a means to make meaningful games.",
+      "Why making “hyper-local” games for very specific audiences should be pursued and can be culturally impactful.",
+      "How someone can start striking out into making “non-commercial” games using non-traditional game tools.",
+      "An honest look at privilege and why we need more systems to support artists on the economic fringes."
+    ]
+  },
+  {
+    "id": 29,
+    "title": "No, Puzzle Games Aren't Dead, You Just Didn't Realise They're Emotional Experiences Too",
+    "date": "Tuesday 14th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Caroline Clark",
+        "company": "Liney Games"
+      }
+    ],
+    "description": "Games are emotional experiences, this is very clear in genres like first person shooters or adventure games. However, puzzle games are about logic and deduction, and it's not immediately clear that emotions are even present, let alone important. I will make the case that despite appearances, puzzle games are indeed emotional, and in articulating how different mechanics create different emotions, we can better understand why some puzzle games stick with us longer than others, and what to consider when building our own puzzle games.",
+    "session_takeaway": [
+      "Why you should think of your game mechanics and the intended emotional experience together.",
+      "Specific examples of how mechanics reinforce a particular emotional experience.",
+      "New appreciation of puzzle games, deduction loops, and puzzle mechanics."
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Graduate Journeys: Experiences, Breakthroughs and Insights From Both Sides",
+    "date": "Tuesday 14th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Games:Edu",
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Eva Kioseoglou",
+        "company": "The Chinese Room"
+      },
+      {
+        "name": "Gilbert McGirr",
+        "company": "Supercell"
+      },
+      {
+        "name": "Sam Miller",
+        "company": "Supercell"
+      },
+      {
+        "name": "Alfie Wright",
+        "company": "Moss Monkey Games"
+      },
+      {
+        "name": "Chris Filip",
+        "company": "UK Global Screen Fund (BFI)"
+      },
+      {
+        "name": "Sandrine le Comte",
+        "company": "Studio Gobo"
+      },
+      {
+        "name": "Javi Galvan",
+        "company": "Studio Gobo"
+      },
+      {
+        "name": "Jake Habgood",
+        "company": "Freelance"
+      }
+    ],
+    "description": "This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. It provides an opportunity to participate in an open discussion about those experiences and their lessons. In this open, organic conversation, the students and the path builders will share the positive impact of studio-led mentorship and dedicated incubation. We'll explore the gaps they found and how the support structures helped them overcome those challenges.",
+    "session_takeaway": [
+      "Gain first‑hand knowledge from those that have made the transition from education to industry.",
+      "Learn how studios and programmes support graduates through mentorship and pathways.",
+      "Gain clarity on practical next steps for moving from education into professional practice."
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Scheduled Serendipity: Manufacturing Creative Aha Moments",
+    "date": "Tuesday 14th July",
+    "time": "5:00pm - 5:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Imre Jele",
+        "company": "Atypical Types / Bossa Studios"
+      }
+    ],
+    "description": "Inspiration is treated like lightning: an unpredictable and uncontrollable moment. In practice, the best studios do not wait for “Aha” moments to happen randomly, they create the conditions for them to occur reliably. This talk is a pragmatic guide to elevating your work from waiting for inspiration to strike into a reliable creative powerhouse. We will look at the two engines behind great ideas: taste (your ability to choose what matters) and process (how you generate, clash, and transform inputs into something new). You will leave with repeatable practices.",
+    "session_takeaway": [
+      "A repeatable method to create conditions for “Aha” moments instead of waiting for them.",
+      "Practical techniques for curating stronger inputs beyond games and trend loops.",
+      "How to use constraints and transformation loops to avoid derivative design.",
+      "How to schedule incubation and mode switching without losing production momentum."
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Mobile Gaming: The Next Frontier for Accessibility",
+    "date": "Tuesday 14th July",
+    "time": "5:00pm - 5:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Mobile"
+    ],
+    "authors": [
+      {
+        "name": "Michael Nelson",
+        "company": "SpecialEffect"
+      },
+      {
+        "name": "Sachin Sunil",
+        "company": "SpecialEffect"
+      }
+    ],
+    "description": "Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities. SpecialEffect sees opening up the world of mobile games as the next frontier in its mission to make gaming more accessible for physically disabled players around the world. We aim to use our own mobile games as 'proof of concept' to share with the wider-industry what we consider to be best practice for this growing audience of potential players.",
+    "session_takeaway": [
+      "Key lessons learned from creating SpecialEffect's own mobile games for Android and iOS.",
+      "Positive and practical suggestions for things to incorporate into mobile game design to ease access.",
+      "An overview of the different assistive control devices now available for mobile and tablet, including eye-tracking."
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Vibe Coding: Build an App in 60 Minutes with GenAI",
+    "date": "Tuesday 14th July",
+    "time": "5:00pm - 5:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Coding"
+    ],
+    "authors": [
+      {
+        "name": "Tyson Roberts",
+        "company": "Deepmind"
+      }
+    ],
+    "description": "Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'—intuitive, conversational instructions—to build a working application from scratch. Newcomers will discover how to turn plain English into functional code, while experienced coders can test the limits of GenAI for rapid prototyping, bypass standard boilerplate, or mentor a beginner.",
+    "session_takeaway": [
+      "Learn how to guide and prompt GenAI tools to generate functional software from conversational English.",
+      "A clearer understanding of rapid prototyping limits and capabilities of standard tools.",
+      "Walk away with a working project built from scratch."
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Steam Events in 2026 (And Why You Want To Be a Part Of Them)",
+    "date": "Tuesday 14th July",
+    "time": "5:00pm - 5:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Discoverability"
+    ],
+    "authors": [
+      {
+        "name": "Gary Burchell",
+        "company": "Fireblade Software"
+      }
+    ],
+    "description": "Getting visibility is tough and a constant battle. Steam events offer a vital way to gain large volumes of on-platform traffic both pre and post release. But how do they work? What benefits do they bring? How can you participate or run your own one? Get the lowdown from someone who has hosted six front-page featured events visited by over 10 million Steam users.",
+    "session_takeaway": [
+      "Comprehensive coverage of the different types of Steam events and their landscape in 2026.",
+      "Learn the core benefits of Steam events and why they are vital to discoverability.",
+      "Understand what to look out for when participating in a Steam event, along with how to host your own."
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Fixing The Talent Crisis: Moving From Conversation To Action",
+    "date": "Tuesday 14th July",
+    "time": "5:00pm - 5:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Games:Edu",
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Laurence Oldham",
+        "company": "Digital Impact Incubator"
+      },
+      {
+        "name": "Tom Cole",
+        "company": "University of Greenwich"
+      }
+    ],
+    "description": "This Roundtable is focused on the learnings from today's Games Edu track. We will be consolidating and sharing our thoughts with each other, giving plenty of time for networking to build the necessary bridges and move the discussion into practice. We will cover the key outcomes from the earlier sessions in the track, giving a chance for educators, studio leads, and practitioners to share successes and challenges.",
+    "session_takeaway": [
+      "Consolidate key themes and learnings from the entire Games Edu track.",
+      "Share real-world challenges and successes in developing early-career talent.",
+      "Build new, concrete connections across industry, education, and bridging organizations."
+    ]
+  },
+  {
+    "id": 36,
+    "title": "ustwo games: A Positively Playful Business",
+    "date": "Wednesday 15th July",
+    "time": "9:45am - 10:45am",
+    "room": "Room 1",
+    "tracks": [
+      "Keynote"
+    ],
+    "authors": [
+      {
+        "name": "Maria Sayans",
+        "company": "ustwo"
+      },
+      {
+        "name": "Daniel Gray",
+        "company": "ustwo"
+      },
+      {
+        "name": "Peter Pashley",
+        "company": "ustwo"
+      },
+      {
+        "name": "Sam Loveridge",
+        "company": "GamesRadar"
+      }
+    ],
+    "description": "ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Fourteen years later, they have carved their path as an independent company and a certified B-Corp. Their award-winning games like the Monument Valley series and the inspiring eco-adventure Alba: A Wildlife Adventure, have reached millions of players worldwide. In this fireside chat, Maria Sayans, CEO, Daniel Gray, Chief Creative Officer, and Peter Pashley, Chief Development Officer, will discuss the origins of the studio and how they've made games with a lasting impact.",
+    "session_takeaway": [
+      "Discover how an agency project evolved into a certified B-Corp independent company.",
+      "Learn the philosophy behind Monument Valley and Alba.",
+      "Understand how to run a gaming business that entertains while also making a difference."
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Pixels To Performance",
+    "date": "Wednesday 15th July",
+    "time": "9:45am - 10:45am",
+    "room": "Room 5",
+    "tracks": [
+      "Performance",
+      "Keynote"
+    ],
+    "authors": [
+      {
+        "name": "Adele Cutting",
+        "company": "Soundcuts"
+      }
+    ],
+    "description": "As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters.",
+    "session_takeaway": [
+      "Deep dive into the 20-year history of performance and dialogue in gaming.",
+      "Understand the interdisciplinary dynamics required to deliver compelling digital performances.",
+      "Tips and practices to align writers, directors, and developers around character design."
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Building a Hit: LEGO Batman: Legacy of the Dark Knight",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Jonathan Smith",
+        "company": "TT Games"
+      },
+      {
+        "name": "Mark Green",
+        "company": "TT Games"
+      },
+      {
+        "name": "Dave Woodman",
+        "company": "TT Games"
+      },
+      {
+        "name": "Rian Walters",
+        "company": "TT Games"
+      },
+      {
+        "name": "Ruthie Nielsen",
+        "company": "TT Games"
+      }
+    ],
+    "description": "TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. A panel of Directors from the team share insights into the decisions made through development to deliver on TT's ambition to create 'the definitive Batman game'.",
+    "session_takeaway": [
+      "High-level project planning and workflows for large projects in Unreal Engine 5.",
+      "Tips for effective cross-discipline collaboration inside a major AAA studio.",
+      "Best practices for working with massive global licensors like DC and LEGO."
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Defining & Achieving Visual Quality!",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 2",
+    "tracks": [
+      "Art"
+    ],
+    "authors": [
+      {
+        "name": "Erol Kentli",
+        "company": "Flix Interactive"
+      }
+    ],
+    "description": "As John Lasseter put it, “Quality is the best business plan”. This sounds simple enough, the higher the Quality of our project, the more successful it will be, right? Yet in an ever-evolving industry, with myriad competing considerations, how do we go about achieving quality? By what standards do we go about defining and subsequently strategize achieving it? Games industry veteran Erol Kentli delves into the varied considerations, including: Visual style and target platform, scope vs finesse, team autonomy, and the qualitative expectations of the public.",
+    "session_takeaway": [
+      "Insight into considerations around what Quality is, how it is perceived, and the business benefits of pursuing it.",
+      "How to strategically plan, scope, and benchmark for visual Quality early in a project.",
+      "How to apply creative and management methodologies (like Dyson's or Cleese's approaches) to visual beauty."
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Hiring for Success Under the New UK Employment Rights Act",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 3",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Liz Prince",
+        "company": "Amiqus"
+      }
+    ],
+    "description": "The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions. For employers, this means that recruitment mistakes will carry risk much earlier in the employment lifecycle. This session explores how hiring processes must evolve to remain effective, defensible, and fair under the new legal landscape. Liz Prince will break down what the changes mean in practice for employers, particularly around selection criteria, interviews, probationary periods, and decision-making documentation.",
+    "session_takeaway": [
+      "Understand how the new Employment Rights Act changes hiring risk profiles and timelines.",
+      "Learn how to structure recruitment and selection pipelines to reduce unfair dismissal exposure.",
+      "Take away practical steps to improve interviews, assessments, and structured hiring records."
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Inside F1 Game Development: Dynamic Objectives",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 4",
+    "tracks": [
+      "Coding"
+    ],
+    "authors": [
+      {
+        "name": "Paul Stefanescu",
+        "company": "Electronic Arts"
+      }
+    ],
+    "description": "This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. The talk will include concrete implementation examples with gameplay footage and behind-the-scenes formulas as well as highlighting challenges, performance considerations, and insights into how the team integrated voice acting to create an immersive experience.",
+    "session_takeaway": [
+      "Designing adaptive gameplay systems that enhance player experience in racing settings.",
+      "Balancing realism with the arcade nature of dynamic game systems.",
+      "Accounting for time manipulation systems (rewinding) when inventing new live features.",
+      "Designing a modular system to account for tight annual schedules and scope creep.",
+      "Using speech and voice cues to create natural-feeling objectives."
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 5",
+    "tracks": [
+      "Performance"
+    ],
+    "authors": [
+      {
+        "name": "Nathaniel Marten",
+        "company": "Lucky 13 Action Ltd"
+      }
+    ],
+    "description": "A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Please feel free to bring questions regarding any element of the process - from the key safety requirements developers should expect a coordinator to manage through to the creative elements that factor into producing great action content.",
+    "session_takeaway": [
+      "Answer key questions and give practical advice regarding the process of creating and capturing action content.",
+      "Explore how action content is created and how it can enhance and support Cinematic and Gameplay production.",
+      "Understand how a coordinator can help developers manage, predict, and mitigate risk."
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Develop: FTUE (First Time User Experience) Wednesday",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Jazeena McCallum",
+        "company": "CRITICAL REFLEX"
+      },
+      {
+        "name": "Annabel Ashalley-Anthony",
+        "company": "Melanin Gamers"
+      }
+    ],
+    "description": "A relaxed and informal roundtable designed to help you get the most out of your time at the conference. A diverse panel of friendly and experienced devs from across the whole industry spectrum want to help anyone who feels shy, awkward, a little out of place, on the outside, or just unable to really squeeze all the goodness out of this amazing show.",
+    "session_takeaway": [
+      "Shared experiences that will give you some ideas on best practice plus do's and don'ts for networking.",
+      "Recommendations for talks to attend and delegates to meet, plus practical help to do so!",
+      "Knowledge of safe and quiet spaces to help manage your experience at the show."
+    ]
+  },
+  {
+    "id": 44,
+    "title": "UK Games Industry Census – What have we learned?",
+    "date": "Wednesday 15th July",
+    "time": "11:00am - 11:45am",
+    "room": "Room 7",
+    "tracks": [
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Mark Taylor",
+        "company": "University of Sheffield"
+      },
+      {
+        "name": "Cinzia Musio",
+        "company": "Ukie"
+      }
+    ],
+    "description": "Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry's action plan to address the results. In this presentation you will learn about the key findings of the industry-wide census, the biggest areas that call for action, and what everyone who works in games can do to support a more diverse and inclusive industry.",
+    "session_takeaway": [
+      "Learn how the UK games industry has transformed since 2021.",
+      "Understand who has been most affected by layoffs and how their daily work has changed.",
+      "Learn specific actions you can use to support your workplace to enact positive, inclusive change."
+    ]
+  },
+  {
+    "id": 45,
+    "title": "How to Work with your Ex Dev Partners to Resolve Blockers",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Rikki Vitello",
+        "company": "Freelance"
+      }
+    ],
+    "description": "Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness. Join me as we walk through how to engage with our external partners in a meaningful way to resolve conflict when it arises.",
+    "session_takeaway": [
+      "Learn how to effectively communicate with your vendors to get needs met.",
+      "Emphasize listening to your vendors' needs to come to resolutions together.",
+      "Learn how to resolve conflict sustainably through structured communication."
+    ]
+  },
+  {
+    "id": 46,
+    "title": "The Recommendation Era: What AI-Driven Discovery Means for Video Games PR",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Discoverability"
+    ],
+    "authors": [
+      {
+        "name": "Ravi Vijh",
+        "company": "Bastion"
+      }
+    ],
+    "description": "There has been a quiet but persistent conversation as to whether PR still matters in games. That conversation is worth revisiting, because the way players discover games is changing again. A growing number of players are now using AI assistants like ChatGPT, Gemini and Perplexity as their first port of call when looking for something to play. These platforms draw on the body of written material that exists around a game: reviews, forum threads, editorial features, and community posts. This session will walk through how ChatGPT and Gemini actually form game recommendations, what signals they weight, and what a video games PR campaign built to take advantage of that looks like in practice.",
+    "session_takeaway": [
+      "Understand how platforms like ChatGPT, Gemini, and Perplexity form recommendations, and why earned media is better placed than influencer spend to build AI visibility.",
+      "Leave with a working framework for planning a video games PR campaign around sustained narrative and thought leadership rather than releasing window bursts.",
+      "Get clear tactics to audit your game's current AI visibility and position your studio for long-term discovery value."
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Danny Isaac",
+        "company": "Criterion"
+      },
+      {
+        "name": "Amy Pejic",
+        "company": "Criterion"
+      }
+    ],
+    "description": "Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms. This all now culminates in them being a leading pillar of Battlefield Studios focused on the future of this iconic franchise, that all started with the launch of Battlefield 6, the biggest-selling shooter of 2025.",
+    "session_takeaway": [
+      "Understand how Criterion has evolved alongside the gaming industry over 30 years across multiple hardware generations.",
+      "Insights into how Criterion adapted across genres and creative challenges while keeping their bold thinking.",
+      "A look at how the collaborative model across Criterion, DICE, Motive, and Ripple Effect shapes the Battlefield franchise.",
+      "Key career advice for young people looking to enter the gaming industry in 2026."
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Pitching to Publishers Sucks (& What We Learned Pitching Cabernet)",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Arseniy Klishin",
+        "company": "Party for Introverts"
+      }
+    ],
+    "description": "Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet. In his talk he provides an array of developer-friendly insights and advice about the pitching process, developing prototypes, making adjustments to the pitch and demo based on publisher feedback, and more.",
+    "session_takeaway": [
+      "Gain an increased confidence in your pitching abilities and understand meetings from the developer perspective.",
+      "A breakdown of what to expect from pitch meetings and publisher expectations.",
+      "Repeatable strategies for making improvements to demos based on active industry feedback."
+    ]
+  },
+  {
+    "id": 49,
+    "title": "How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 5",
+    "tracks": [
+      "Performance"
+    ],
+    "authors": [
+      {
+        "name": "Gareth Taylor",
+        "company": "Freelance & The Mocap Vaults"
+      }
+    ],
+    "description": "This talk centres around the collaboration between the Game Developer and the Performer. Drawing on almost 25 years working in Motion and Performance Capture in over 50 AAA titles, I share my experience on how developers and actors alike can get the most out of their time in the volume. From choosing actors and auditioning, to preparing shot-lists and streamlining schedules.",
+    "session_takeaway": [
+      "Learn how to prepare for and execute a motion capture shoot to achieve optimal data.",
+      "How to structure and plan a mocap day that is both actor-friendly and budget-efficient.",
+      "Deep dive into acting in the digital realm and communication techniques between devs and actors."
+    ]
+  },
+  {
+    "id": 50,
+    "title": "How Does One Freelance?",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Lorna McFall",
+        "company": "Freelance UI UX Designer"
+      }
+    ],
+    "description": "Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns. In this 'How Does One Freelance?' roundtable we will discover those questions and openly explore the answers together to help establish whether this work structure is for you. We will discuss day to day life, pricing, legal contracts, self assessment, and more.",
+    "session_takeaway": [
+      "The Work: Break down different ways to build your client network and maintain sustainable contracts.",
+      "The Money: Learn how to price your specialized services and go about getting paid.",
+      "The Business: Understand HMRC self-assessment, taxes, contracts, and managing business expenses."
+    ]
+  },
+  {
+    "id": 51,
+    "title": "D2C's Biggest Opportunity Has Nothing to Do With Platform Fees",
+    "date": "Wednesday 15th July",
+    "time": "12:00pm - 12:45pm",
+    "room": "Room 7",
+    "tracks": [
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Liam Wiltshire",
+        "company": "Tebex"
+      }
+    ],
+    "description": "The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players. That argument misses the true opportunity now available to studios: lower risk, improved financial control, and unlocking new growth channels. Liam Wiltshire, VP and GM at Tebex, will show how the best-in-class D2C monetization adopters do differently using real data from Tebex's platform of 45,000+ gaming stores.",
+    "session_takeaway": [
+      "Understand how to turn an existing player community into a wholly-owned revenue engine.",
+      "How to utilize direct-to-consumer pipelines to lower CAC and improve retention.",
+      "Real-world data benchmarks showing the impact of D2C on player LTV."
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Design for Change: Should Designers Be Letting AI Make Product Decisions?",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Ayobami Aderemi",
+        "company": "ReAssure"
+      }
+    ],
+    "description": "This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Rather than accepting AI recommendations at face value, I will explore where AI genuinely enhances research, prototyping, and design decisions, and where it subtly shifts responsibility away from human designers. Attendees will discover practical frameworks for using AI in ways that strengthen product quality, user insight, and ethical outcomes.",
+    "session_takeaway": [
+      "How to evaluate when AI adds true value to UX and product design decisions.",
+      "A simple framework for balancing human design judgment with AI support.",
+      "Practical ways to keep ethical design and user needs at the center of AI-assisted workflows."
+    ]
+  },
+  {
+    "id": 53,
+    "title": "pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Art"
+    ],
+    "authors": [
+      {
+        "name": "Nader Alikhani",
+        "company": "Innovecs Games"
+      }
+    ],
+    "description": "Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Whether you're a solo developer wearing every hat, an indie team deciding where to spend a limited budget, or a studio leader planning department growth, success often comes down to understanding which art problems need solving now—and which can wait. Using RPG party composition as a framework, this talk explores how art direction, concept art, production art and technical art create value throughout development.",
+    "session_takeaway": [
+      "Understand which classes of art problems to prioritize at various stages of production.",
+      "Using the RPG party framework to plan, scale, and balance art department capabilities.",
+      "Smarter decisions on where to invest limited art budgets for maximum return."
+    ]
+  },
+  {
+    "id": 54,
+    "title": "BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Murray Pannell",
+        "company": "BIG DUMB GAMES"
+      }
+    ],
+    "description": "The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games. Meanwhile, the traditional routes into development feel harder than ever. This talk shares the early story of BIG DUMB GAMES, a new indie “collective” built around a simple question: what if experienced developers stopped waiting for permission and found a fairer way to build something together? Using their first creation, STARSHIP BLOOPERS, Murray talks through collective ownership, contribution credits, and transparent reward sharing.",
+    "session_takeaway": [
+      "How to think about a collective studio model where contributors share in future success without pretending risk doesn't exist.",
+      "Practical ways to structure contribution credits and transparent agreements when salaries are a distant dream.",
+      "The real-world challenges of building with little or no upfront capital."
+    ]
+  },
+  {
+    "id": 55,
+    "title": "From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Coding"
+    ],
+    "authors": [
+      {
+        "name": "Ian Bolton",
+        "company": "Arm Ltd"
+      },
+      {
+        "name": "Đorđe Đurđević",
+        "company": "Nordeus"
+      }
+    ],
+    "description": "Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device. In this talk, Nordeus share practical lessons from developing and optimising Top Goal, a football title currently in soft launch. Arm will complement this with insights into on-device profiling techniques that empowered the Nordeus team to make performance improvements.",
+    "session_takeaway": [
+      "Why you must profile on real devices early and often, since emulators don't reflect CPU, GPU, or thermal behavior.",
+      "How to optimize for frame stability and responsiveness, not just bare FPS.",
+      "How to scale features intelligently to preserve gameplay feel across low and high-end devices alike."
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Press Start, Mind the Gap: Bridging US and UK Game Casting & Production pipelines",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 5",
+    "tracks": [
+      "Performance"
+    ],
+    "authors": [
+      {
+        "name": "Lexington Vanderberg",
+        "company": "The Halp Network"
+      },
+      {
+        "name": "Katie Young",
+        "company": "Liquid Violet"
+      },
+      {
+        "name": "Kirsty Gillmore",
+        "company": "Freelance Voice & Performance Director"
+      }
+    ],
+    "description": "As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity. This talk explores what it actually takes to run successful split US/UK casts, from aligning developers to two very different acting climates to building workflows that don't fall apart. We'll dig into contracts, pay expectations, session structures, and scheduling differences.",
+    "session_takeaway": [
+      "Practical strategies for creating equitable cross-border production pipelines.",
+      "Understand where actors, directors, and agents fit into split-geography pipelines.",
+      "Establish realistic workflows to support actors while keeping game budgets fair and predictable."
+    ]
+  },
+  {
+    "id": 57,
+    "title": "One Year On: Progress, Gaps, and Possibilities for LGBTQ+ Inclusion",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "James Dodd",
+        "company": "Out Making Games"
+      }
+    ],
+    "description": "This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape. The hosts will present a series of topics, which attendees will be free to discuss, sharing their thoughts, insights, and experiences in a supportive environment.",
+    "session_takeaway": [
+      "Understand what LGBTQ+ professionals are currently experiencing in the industry.",
+      "Discover practical ways to navigate and mitigate workplace negativity.",
+      "Gain examples of changes to EDI practices around the world and how to implement them."
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Stop Surveying, Start Listening: Why Real-Time Player Intelligence is Replacing How we Listen to Players",
+    "date": "Wednesday 15th July",
+    "time": "2:00pm - 2:45pm",
+    "room": "Room 7",
+    "tracks": [
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Phil Mansell",
+        "company": "Jagex"
+      },
+      {
+        "name": "Tom Gaynor",
+        "company": "Levellr"
+      },
+      {
+        "name": "Rich Barnwell",
+        "company": "Entity"
+      }
+    ],
+    "description": "How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices.",
+    "session_takeaway": [
+      "Understand how to parse player signals to make fast and accurate product adjustments.",
+      "Discover the methods behind real-time player intelligence vs classic retrospective surveys.",
+      "Learn how to avoid being influenced solely by the loudest community voices."
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Games as Dreams: Using Symbolic Archetypes to Craft Powerful, Flexible Narratives",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Lydia Cockerham",
+        "company": "Creative Assembly"
+      }
+    ],
+    "description": "It's every Narrative Designer's worst nightmare. A quest has been cut, an enemy descoped, or a character nixed. The game narrative makes no sense anymore! This session will explain and explore a tool to help in this situation and many more: “Dream Mode”. By using symbolic archetypes, like the kind we encounter in dreams, we can turn overwhelming narrative complexity and confusion into functional building blocks that can quickly be adapted.",
+    "session_takeaway": [
+      "How to use 'Dream Mode' to transform a complex narrative into its symbolic and functional core.",
+      "How to distill characters, locations, and beats into symbolic, highly flexible archetypes.",
+      "How to work with these building blocks to rapidly adapt a narrative when design shifts occur."
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Shipping S.T.A.L.K.E.R. 2 Our Way: Self-Publishing, Game Pass, and 1 Million in 36 Hours",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Indie"
+    ],
+    "authors": [
+      {
+        "name": "Agostino Simonetta",
+        "company": "GSC Game World"
+      }
+    ],
+    "description": "S.T.A.L.K.E.R. 2: Heart of Chornobyl - a first-person open-world shooter built on Unreal Engine 5 - was released under the extraordinary circumstances of full-scale war in the developers' home country. In this session, Agostino Simonetta, Chief Commercial Officer at GSC Game World, shares the real story behind launching this unique Ukrainian title: self-publishing without a traditional publisher, the pivotal Microsoft partnership, integration with Game Pass and cloud services, and the immense challenges of shipping a major game during wartime.",
+    "session_takeaway": [
+      "How to successfully self-publish a major AAA title, including key decisions on control, risk, and partnerships.",
+      "Real strategies for building and maintaining an authentic, indie-style community marketing voice under pressure.",
+      "Practical ways to keep a major project and team on track during extreme disruptions like war and relocation."
+    ]
+  },
+  {
+    "id": 61,
+    "title": "More Than Games: Unlocking New Funding & Creative Opportunities Outside the Consumer Market",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Brian Baglow",
+        "company": "Scottish Games Network Ltd."
+      }
+    ],
+    "description": "The consumer games market is intensely competitive. However, the UK games industry's core value is boosted by an estimated £1.3 billion in 'spillover' GVA, generated by game skills used in non-traditional sectors. This session introduces the 'More Than Games' Mindset: a strategic framework for senior leaders to leverage their creative and technical expertise in fields like health, education, and cultural heritage.",
+    "session_takeaway": [
+      "Identify three high-growth non-consumer markets (e.g. healthcare, heritage) seeking interactive expertise.",
+      "Translate game development concepts into professional language that builds trust with corporate partners.",
+      "Strategize a pitch process for non-games clients that focuses on mission outcomes rather than just tech features.",
+      "Access alternative funding and grants by positioning development skills as tools for cross-sector innovation."
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Exploring the 80:20 Rule in Concept Art",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 4",
+    "tracks": [
+      "Art"
+    ],
+    "authors": [
+      {
+        "name": "Gargi Roy",
+        "company": "Lab42"
+      }
+    ],
+    "description": "The Pareto Principle suggests that 80% of output comes from just 20% of input. For concept artists, this idea can be a powerful framework for deciding where to focus time, attention, and skill development, especially when working under tight deadlines and shifting project demands. In this session, a working concept artist will share how the 80/20 rule can be applied in practice: from rapidly learning new software and tools, to onboarding onto large, lore-heavy IPs, and prioritising daily tasks for maximum creative impact.",
+    "session_takeaway": [
+      "Using the 80/20 rule to understand complex softwares and identify the crucial features we need to master.",
+      "Creating efficient, repeatable workflows that get high-quality concept results fast.",
+      "Shatter the 'genius' myth and learn how to adapt to new lore and design principles rapidly."
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Skill Buff: Auditions, Agents, and Building a Career in Game Performance",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:30pm",
+    "room": "Room 5",
+    "tracks": [
+      "Performance"
+    ],
+    "authors": [
+      {
+        "name": "Natalie Edwards",
+        "company": "Nordlings"
+      }
+    ],
+    "description": "The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few. Drawing on eight years of hands-on experience representing voice and performance capture talent across the gaming industry, this talk offers a practical, unfiltered look at how actors can build sustainable, future-proof careers in games.",
+    "session_takeaway": [
+      "A realistic understanding of how game voiceover and performance capture careers actually develop.",
+      "Clear insight into current studio expectations and where opportunities are growing.",
+      "Practical guidance on how actors at any stage can adapt and build long term careers."
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Overcoming Barriers to Mental Health Support in the Workplace",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 6",
+    "tracks": [
+      "Roundtables",
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Izzie Micul",
+        "company": "Safe In Our World"
+      }
+    ],
+    "description": "This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices. The types of organisations that make up our fast-paced industry are so diverse that there is no 'one size fits all' approach to getting mental health support at work right.",
+    "session_takeaway": [
+      "Understand the specific barriers to implementing mental health support faced across diverse games companies.",
+      "Gain insight into flexible methods to overcome these barriers according to your studio's make-up.",
+      "Connect with peers to collaborate and share best practices in a supportive, facilitated environment."
+    ]
+  },
+  {
+    "id": 65,
+    "title": "How to Stay Ahead of Cutting Edge Game Technology",
+    "date": "Wednesday 15th July",
+    "time": "3:00pm - 3:45pm",
+    "room": "Room 7",
+    "tracks": [
+      "Free"
+    ],
+    "authors": [
+      {
+        "name": "Dario Jelusic",
+        "company": "Atomhawk"
+      },
+      {
+        "name": "David Smethurst",
+        "company": "Sumo Digital"
+      },
+      {
+        "name": "Terry Goodwin",
+        "company": "Lab42"
+      },
+      {
+        "name": "Dan Wood",
+        "company": "Bastion"
+      }
+    ],
+    "description": "Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation. In this panel, technology leaders from Sumo Digital will look back at how the industry reached this point, examine the realities studios face today, and discuss what the next wave of change could mean for teams, pipelines and leadership.",
+    "session_takeaway": [
+      "A clearer understanding of how past technology decisions continue to influence modern game development.",
+      "Practical insight into the trends currently shaping production and studio operations.",
+      "A more grounded perspective on emerging technologies and how to approach them realistically."
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives",
+    "date": "Wednesday 15th July",
+    "time": "3:30pm - 4:00pm",
+    "room": "Room 5",
+    "tracks": [
+      "Performance"
+    ],
+    "authors": [
+      {
+        "name": "Keith Higinbotham",
+        "company": "Voice with Keith"
+      }
+    ],
+    "description": "With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages. Today's projects need more than a great script or stunning visuals—they need voices that resonate and characters that feel real. In this talk, I'll share how attention to linguistic detail not only boosts actor performance but also helps directors and actors choose voices that are truly authentic and inclusive.",
+    "session_takeaway": [
+      "Understand why breaking free from clichés and stereotypes is crucial for immersive, engaging narratives.",
+      "Get clear, practical methods for using authentic, inclusive accents.",
+      "Learn deep listening techniques that capture natural dialogue, bringing stories to life.",
+      "Explore ways to blend creative and tech insights early on for connected performance."
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Designing Immersive and Explorable Open Worlds with Narrative Encounters",
+    "date": "Wednesday 15th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 1",
+    "tracks": [
+      "Design"
+    ],
+    "authors": [
+      {
+        "name": "Shi-tao Fan (Maverick)",
+        "company": "Cloud Imperium Games"
+      }
+    ],
+    "description": "This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay. It highlights how the encounter framework enhances player exploration, improves immersion, and seamlessly blends gameplay with the project's rich lore and strong IP identity. Through this overview, we explore the design principles, technical solutions, and development workflow.",
+    "session_takeaway": [
+      "Practical methods for designing open world encounters that balance systemic behavior with authored narrative intent.",
+      "Techniques for integrating lore and worldbuilding into moment-to-moment gameplay without disrupting player agency.",
+      "Actionable workflows and cross-discipline practices that help teams build scalable encounter content."
+    ]
+  },
+  {
+    "id": 68,
+    "title": "The Ethics of using AI in Games",
+    "date": "Wednesday 15th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 2",
+    "tracks": [
+      "Business"
+    ],
+    "authors": [
+      {
+        "name": "Ben Byford",
+        "company": "Nuclear Candy Games"
+      }
+    ],
+    "description": "A tour around the uses and pitfalls of using AI technologies in games development.",
+    "session_takeaway": [
+      "How can AI be used responsibly in games development.",
+      "What are the key legal and ethical considerations.",
+      "Clear recommendations and actions going forward in using AI."
+    ]
+  },
+  {
+    "id": 69,
+    "title": "On the Lore Around Art",
+    "date": "Wednesday 15th July",
+    "time": "4:00pm - 4:45pm",
+    "room": "Room 3",
+    "tracks": [
+      "Art"
+    ],
+    "authors": [
+      {
+        "name": "Andrej Horoschun",
+        "company": "Frontier Developments"
+      }
+    ],
+    "description": "This session examines the critical link between art creation and underlying studio lore. Our speaker explores Frontier's methods for ensuring visual assets remain tightly grounded in game mythology and target identity, protecting cohesion throughout long development cycles.",
+    "session_takeaway": [
+      "Understand how to build structured guidelines that keep art teams aligned to project lore.",
+      "Practical insights into Frontier's visual development processes.",
+      "How to navigate artistic independence while protecting brand and world rules."
+    ]
+  }
+]

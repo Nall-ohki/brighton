@@ -300,7 +300,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Jake Habgood', origin: 'Freelance' }],
     index: 36,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry'.`
+    basePrompt: `Build a 'shadowing' simulation mini-game about tacit knowledge transfer in game studios. A senior dev character performs a sequence of actions (shown as glowing gesture icons) and the apprentice player must replicate the sequence from memory — but each round the instructions become slightly less explicit, mimicking how unspoken knowledge fades over remote work. Show a 'knowledge bar' that fills as the apprentice succeeds and depletes when they guess wrong. Clean, warm isometric office illustration style.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -309,7 +309,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Rob Davis', origin: 'Wild Loop Games' }],
     index: 37,
     source: 'Develop 2026',
-    basePrompt: `Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'AI Wants to Play: A Game Designers Guide to AI in Every Stage of Development'. The mechanics should explore how 'The latest wave of AI is reshaping game development — but what actually works in practice? This talk is a hands-on tour through the stages where AI can help, from initial prototyping to runtime gameplay, drawn from the speaker's recent work as a Studio Design Director owning the AI roadmap and a Creative Director using AI to prototype and ship games'. Use a glitchy, cyberpunk aesthetic.`
+    basePrompt: `Build an interactive card game inspired by DeepMind's Agent57 where you train a tiny neural-net agent by playing cards. The player draws hand cards labelled 'Explore', 'Exploit', 'Reward+', 'Penalty', and 'Meta-Learn' and plays them in sequence to shape a small agent sprite navigating a procedural maze on the right side of the screen. The agent's behavior visibly changes based on which cards were played last round. Dark neon cyberpunk style with glowing circuit-board UI.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -318,7 +318,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Marco Colombo', origin: 'Supercell' }],
     index: 38,
     source: 'Develop 2026',
-    basePrompt: `Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Building New Game Teams Before the Game Is Clear', illustrating: 'What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki'.`
+    basePrompt: `Build a trust-building team formation simulation inspired by Supercell's Spark program. Five anonymous silhouetted characters orbit a central 'game idea' node; the player drags constraint tokens (Budget Limit, Time Box, Unclear Brief) onto the team and watches social connections form or break as arrows animate between characters. The goal is to reach 'team cohesion' before the idea node fades. Warm, pastel startup-office aesthetic with hand-drawn doodle edges.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -327,7 +327,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Mark Shaw', origin: 'Flix Interactive' }],
     index: 39,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project'. It should have popups, sounds, and folders that explore: 'It's no great secret that projects overrun, that humans don't always make good plans and even when they do, they are inherently bad at spotting when plans are crumbling around them'.`
+    basePrompt: `Build a sunk-cost fallacy puzzle game where the player manages a doomed game project. Each turn they receive a warning signal card (Budget Overrun, Scope Creep, Morale Drop, Timeline Drift) and must decide: 'Cut scope', 'Pivot', or 'Push On'. Choosing 'Push On' too many times makes the project meter collapse dramatically; correctly triggering the 'kill switch' earns a score bonus. The UI should look like a battered producer spreadsheet — monospace fonts, red/amber/green status cells, dark mode.`
   }),
   new ShowcaseApp({
     categories: ['Coding'],
@@ -336,7 +336,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Ari Arnbjörnsson', origin: 'Epic Games' }],
     index: 40,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'A Frames Life: Frame Timing Synchronization and Latency in UE', especially: 'Every frame in Unreal Engine goes on a long journey before reaching the screen'.`
+    basePrompt: `Build an animated pipeline visualizer where the player can click to fire a single frame and watch it travel in real time through labeled stages: Game Thread → Render Thread → RHI → DirectX → GPU → Display. Each stage has a processing-time slider the player adjusts; if the frame takes too long at any stage, the 'vsync missed' indicator flashes and the display tears visually. Include a VRR toggle that smooths tearing. Dark technical dashboard style with cyan data-flow lines.`
   }),
   new ShowcaseApp({
     categories: ['Games:Edu'],
@@ -349,7 +349,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Louise Andrew', origin: 'd3t – A Keywords Studio' }],
     index: 41,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Developing Tomorrows Talent: Studio Strategies and Solutions'. The user should be able to toss around elements that represent 'This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry' with satisfying bouncy physics.`
+    basePrompt: `Build a tower-defense style talent pipeline game where the player places mentor towers along a conveyor belt of junior developer sprites. Each mentor type (Apprenticeship, Bootcamp, University) has different range and 'skill transfer' speed. Uninstructed juniors fall off the end of the belt; mentored ones graduate and join a 'studio capacity' counter. Waves escalate with more junior devs needing guidance. Clean corporate infographic visual style, bright primary colors.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -359,7 +359,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Annabel Ashalley-Anthony', origin: 'Melanin Gamers' }],
     index: 42,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Develop: FTUE First Time User Experience Tuesday', especially: 'A relaxed and informal roundtable designed to help you get the most out of your time at the conference'.`
+    basePrompt: `Build a conference networking mini-game for first-timers at a game dev event. The player controls a shy avatar in a top-down conference floor and must approach NPC badges to 'connect' — but each NPC has a visible comfort radius. Moving too fast scares them off; hovering at the right distance starts a chat bubble mini-game where the player presses the correct conversation-starter key. Quiet zones refill a social-battery meter. Soft pastel isometric style.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -368,7 +368,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Michael Meaden', origin: 'Athena Worlds' }],
     index: 43,
     source: 'Develop 2026',
-    basePrompt: `Build a cozy, relaxing idle game about building a healthy studio. Inspired by 'Finding the Balance: Big Team Process vs Indie Mindset', the main progression revolves around 'This session looks at how teams can build strong production foundations without losing the creative spark that drives great games'. Use soft, pastel colors.`
+    basePrompt: `Build a balance-beam physics puzzle where one side holds 'Process Boulders' (Sprint Planning, Jira Board, QA Gate) and the other holds 'Creative Sparks' (wild idea lightbulbs). The player drags items onto each side to keep the beam level; if process outweighs creativity the beam tips and the game goes grey; if creativity dominates the beam tips and everything catches fire chaotically. Illustrated indie sticker-art style.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -378,7 +378,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Cari Watterton', origin: 'Scopely' }],
     index: 44,
     source: 'Develop 2026',
-    basePrompt: `Build a satisfying, tactile fidget toy web app inspired by 'Mobile Games: When Approachability Rhymes with Accessibility'. Elements should squish, snap, and pop while teaching the user about: 'This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players'.`
+    basePrompt: `Build an accessibility audit mini-game for a mobile game UI. The player is presented with a mock mobile game screen and must tap through a checklist: 'increase text size', 'add screen reader label', 'raise color contrast', 'enlarge tap targets'. Each fix is applied visually and the 'accessibility score' rises. Failing to fix an issue shows an animated disabled player character struggling to interact. Clean, minimalist flat design with an inclusive color palette.`
   }),
   new ShowcaseApp({
     categories: ['Discoverability'],
@@ -387,7 +387,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Jarvs Tasker', origin: 'Happy Volcano' }],
     index: 45,
     source: 'Develop 2026',
-    basePrompt: `Build a cozy, relaxing idle game about building a healthy studio. Inspired by '5 Easy Steam Store Page Tweaks to Boost Your Visibility', the main progression revolves around 'Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them'. Use soft, pastel colors.`
+    basePrompt: `Build a Steam page optimization drag-and-drop puzzle inspired by the Modulus 100k wishlist story. The player is given a bad Steam capsule with blurry art, a passive description, and wrong tags, plus a toolkit of fixes: sharpen the logo, rewrite the description starting with a verb, swap screenshots, align tags. Each fix adds wishlists to an animated counter that climbs toward 100,000. Retro game-store pixel art aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -399,7 +399,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Eloise Singer', origin: 'Singer Studios' }],
     index: 46,
     source: 'Develop 2026',
-    basePrompt: `Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'The Evolution of Interactive Storytelling' and the struggles of: 'Storytelling is at the heart of what we do and runs across all crafts and mediums'.`
+    basePrompt: `Build a branching narrative explorer visualized as a living story-tree. The player clicks nodes labelled Film, TV, or Game to expand branches of a story concept; choosing an interactive branch splits the story into player-choice forks shown as glowing roots, while linear branches draw straight upward like film frames. The canvas fills with an organic tree that illustrates how interactive and linear storytelling diverge from the same seed idea. Organic ink-on-paper illustration style with subtle animation.`
   }),
   new ShowcaseApp({
     categories: ['Games:Edu'],
@@ -412,7 +412,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Susi Bauer', origin: 'Freelance Coach & Facilitator' }],
     index: 47,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Opportunities For Talent: Workshopping The Foundations Of A Better Future', especially: 'How can we evolve the conversation from talent needs into sustainable growth opportunities? Work alongside education and industry panelists of this and the previous session to raise your own issues and success stories, helping address your challenges and architect the foundations of a more resilient talent ecosystem'.`
+    basePrompt: `Build a collaborative brainstorm simulation inspired by Padlet workshops. The screen shows a shared sticky-note canvas; the player types a barrier phrase (e.g. 'cost', 'no industry contacts') and presses Enter to post it. An AI NPC educator then responds with a sticky-note solution that animates onto the board. Group the stickies into columns (Education / Industry / Government) by dragging. Playful classroom chalkboard aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -421,7 +421,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Rory Martin', origin: 'Giraffe Head Studios Ltd' }],
     index: 48,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Too Many Ideas One Game: ADHD Survival Guide for Game Dev'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'Game development is already a difficult, long, messy marathon'.`
+    basePrompt: `Build an ADHD hyperfocus time-management game for a solo game dev. Ideas fly in from the edges of the screen as glowing thought-bubbles; the player must quickly tap to capture each idea into an 'idea jar' before they drift away, but can only work on one idea at a time shown in a central 'hyperfocus zone'. A momentum bar fills during focused work and drains during multitasking. Energetic, hand-doodled notebook-margin art style with bright highlighter colors.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -430,7 +430,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Tamsin O\'Luanaigh', origin: 'Wise Cat Strategy' }],
     index: 49,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Scaling Without Breaking Your Studio'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'As game studios grow, the biggest risks to performance and long-term value often shift away from the product itself and towards leadership capability, decision-making clarity, and how pressure is handled across the organisation'.`
+    basePrompt: `Build a studio scaling simulation where the player clicks to hire new staff, but each hire secretly adds a hidden 'leadership debt' token. When the debt pile exceeds the leadership capacity bar, a chain reaction of attrition fires start — staff sprites begin drifting off-screen. The player must spend 'org investment' cards to reinforce leadership before breakpoints. Data-driven dashboard visual style, dark background with glowing red/amber warning indicators.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -439,7 +439,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Vladimir Pronin', origin: 'Holland & Barrett' }],
     index: 50,
     source: 'Develop 2026',
-    basePrompt: `Design a frantic, hyper-casual mobile web game. The one-tap objective is to navigate the challenges of 'Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform', incorporating mechanics that reflect: 'Digital products live across mobile, web, desktop — but delivery usually doesn't'.`
+    basePrompt: `Build a self-service platform builder puzzle game inspired by transforming a mobile team from ticket factory to platform. The player lays down API contract tiles on a grid connecting 10 squad icons to a central platform hub; when a valid contract path is complete, that squad's tickets disappear and they turn green. Channel-war conflicts between squads appear as crossing red lines the player must reroute. Clean tech-platform blueprint visual style.`
   }),
   new ShowcaseApp({
     categories: ['Discoverability'],
@@ -448,7 +448,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Najmah Salam', origin: 'Panda Cat Games' }],
     index: 51,
     source: 'Develop 2026',
-    basePrompt: `Create a quirky management simulator where the player acts as a chaotic studio head trying to survive 'How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind'. They must balance resources based on: 'We've all been there - grand plans for multi-channel marketing campaigns that will spread far and wide, and an eager audience across myriad platforms just ready to like, comment and follow our posts'.`
+    basePrompt: `Build a marketing content calendar rhythm game for indie devs. Posts (social, devlog, trailer) fall from the top of the screen to a timeline bar at the bottom; the player must hit the correct lane key (Twitter/Reddit/Steam/YouTube) at the right beat to post on the ideal channel. Posting too frequently on one channel triggers 'audience fatigue'; silence too long triggers 'algorithm penalty'. Lo-fi indie bedroom-producer aesthetic with cassette-tape UI.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -457,7 +457,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Caspar Gray', origin: 'Green Man Gaming' }],
     index: 52,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game', especially: 'Thinking beyond genres and descriptions early in development makes it more likely your game will succeed'.`
+    basePrompt: `Build a 'soul-finding' generative art toy where the player describes their game design in three words and the app generates a shifting abstract visual that morphs based on those words — mechanical words produce sharp geometric patterns, emotional words produce fluid organic shapes, genre words produce recognizable pixel forms. The player keeps tweaking words until the visual 'clicks' and reveals the irreducible core of their idea. Soft watercolor generative style.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -466,7 +466,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Cat Burton', origin: 'Goth Boss Studios' }],
     index: 53,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Burnout: An Honest Chat About the Causes Symptoms and Recovery', especially: 'Burnout is a very common yet often hidden issue in the games industry'.`
+    basePrompt: `Build a burnout recovery visual novel / idle sim hybrid. A founder character's energy, sleep, and passion meters slowly drain as tasks pile up on a desk; the player can pause work to trigger self-care actions (Rest, Talk, Delegate, Walk) each shown as animated vignettes. The key mechanic is that the player must recognize early warning signals (shaking hands, grey color bleed) before the burnout meter maxes out. Muted, intimate watercolor illustration style.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -479,7 +479,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Carl Schmidt', origin: 'Senior Director of External Development, Zynga' }],
     index: 54,
     source: 'Develop 2026',
-    basePrompt: `Build a cozy, relaxing idle game about building a healthy studio. Inspired by 'XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently', the main progression revolves around 'XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation'. Use soft, pastel colors.`
+    basePrompt: `Build a co-creation contract negotiation puzzle game set in external game development outsourcing. Two panels show the client studio and the dev partner; the player drags 'agreement tiles' (Milestones, IP Rights, Feedback Loops, Co-Credit) into a shared contract zone. Imbalanced contracts cause a progress bar to wobble; a perfectly balanced contract unlocks the 'co-creation' mode where both sides animate building the game together. Corporate-sleek UI with soft gradient backgrounds.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -489,7 +489,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Sam Thompson', origin: 'Dead Nice Studio' }],
     index: 55,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Interface as Identity: Designing UI That Complements the Brand'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'UI and branding are often treated like separate jobs'.`
+    basePrompt: `Build a UI brand identity builder toy where the player picks typography, spacing density, motion speed, and color temperature sliders and watches a mock game menu assemble in real time on the right. Each choice shifts the brand personality meter between axes: Playful↔Serious, Loud↔Quiet, Sharp↔Soft. The final composition is labelled with a brand archetype (Rebel, Sage, Jester, etc.). Minimal design-tool aesthetic, white canvas with precise controls.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -498,7 +498,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Antoine Jullemier', origin: 'Gadsme' }],
     index: 56,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Level Up InGame Earnings Without Losing Players'. The user should be able to toss around elements that represent 'Discover how to boost your game's revenue without compromising the player experience' with satisfying bouncy physics.`
+    basePrompt: `Build a non-intrusive in-game advertising placement puzzle. The player is shown a 3D game environment (top-down view of a racing track, city street, sports arena) and must drag ad units onto surfaces — billboards, jerseys, loading screens — while keeping an 'immersion meter' high and an 'revenue meter' rising. Placing ads on HUD or blocking gameplay drops immersion instantly. Bold sports-broadcast visual style with animated crowd reactions.`
   }),
   new ShowcaseApp({
     categories: ['Coding'],
@@ -507,7 +507,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'James Foster', origin: 'Rocket Science Group' }],
     index: 57,
     source: 'Develop 2026',
-    basePrompt: `Build an intense, arcade-style stock trading minigame where the commodity is 'Moving from Engineering To Management'. The market crashes and booms based on: 'This talk will explore the different pathways that an engineer (or IC) can take in order to move into management'.`
+    basePrompt: `Build a career path choice interactive diagram. The player starts as an IC engineer sprite and navigates a branching skill tree where each node is labelled with a management skill (1:1s, Roadmapping, Hiring, Technical Direction) or an engineering skill (Architecture, Code Review, Mentorship). Hovering reveals a real-world impact tooltip; clicking adds the skill. The screen fills over time showing the different manager archetypes the player could become. Clean corporate org-chart visual with subtle animation.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -516,7 +516,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Daph Janssens', origin: 'Day III Digital' }],
     index: 58,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio'. The user should be able to toss around elements that represent 'The most common company value is integrity while the second most common is collaboration' with satisfying bouncy physics.`
+    basePrompt: `Build a transparent salary and power-sharing simulation for a growing studio. The player starts with 2 co-founders and clicks to hire up to 18 people; each hire reveals their salary openly on-screen and votes in a governance mini-game where the team collectively decides on studio policies via majority vote. Decisions made without consensus cause morale to drop. Cooperative, warm cooperative-board-game aesthetic with illustrated character tokens.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -526,7 +526,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Jonas Gawe', origin: 'Limit Break Mentorship / Electric Saint' }],
     index: 59,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Raise the Game Roundtable'. The user should be able to toss around elements that represent 'Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be' with satisfying bouncy physics.`
+    basePrompt: `Build an equity-in-games word puzzle where the player unscrambles industry terms related to diversity and inclusion (Representation, Pay Gap, Safe Space, Allyship) against a timer. Each solved word unlocks a small illustrated vignette of a more inclusive studio moment. The board regenerates with harder compound phrases in later rounds. Bright, celebratory rainbow-gradient visual style with inclusive character illustrations.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -535,7 +535,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Katherine Mould', origin: 'People Can Fly' }],
     index: 60,
     source: 'Develop 2026',
-    basePrompt: `Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers', illustrating: 'Over the last few years, awareness of neurodiversity and mental health in games has grown significantly'.`
+    basePrompt: `Build a manager support allocation simulation for neurodiverse teams in game production. The player is a studio manager with a fixed 'emotional labour' budget each week; neurodivergent team members appear with accommodation requests (flexible deadlines, quiet room, written briefs). The player drags support tokens to each person but can run out — if the manager's own wellbeing meter empties, productivity collapses for everyone. Calm, cool-toned minimal UI.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -544,7 +544,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Alice Bowman', origin: 'Fusebox Games' }],
     index: 61,
     source: 'Develop 2026',
-    basePrompt: `Build a satisfying, tactile fidget toy web app inspired by 'The State of Mobile Creativity in 2026'. Elements should squish, snap, and pop while teaching the user about: 'Join a panel of industry experts to explore the state of creativity in mobile games in 2026'.`
+    basePrompt: `Build a mobile market saturation infinite-runner for a tiny indie game in 2026. The player's game sprite runs left to right along an app store shelf while giant AI-generated competitor games slide in as obstacles. Collecting creativity tokens lets the player jump higher or flash unique art styles; collecting CPI dollar signs weighs the game down. Survival score is measured in 'weeks of attention'. Hyper-saturated neon mobile game aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -553,7 +553,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Stanley W. Baxton', origin: 'Stanwixbuster' }],
     index: 62,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'How to Make Whatever You Want and Still Get Attention'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST'.`
+    basePrompt: `Build a hyper-local narrative game builder toy inspired by Stanley Baxton's BAFTA Breakthrough story. The player picks a very specific real-world location (a bus stop, a laundrette, a chip shop) and three hyper-local character archetypes; the app generates a tiny two-screen interactive story vignette from those inputs. A 'specificity score' rewards unusual, niche combinations over generic settings. Hand-drawn zine aesthetic with limited risograph color palette.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -562,7 +562,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Caroline Clark', origin: 'Liney Games' }],
     index: 63,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'No Puzzle Games Arent Dead You Just Didnt Realise Theyre Emotional Experiences Too'. It should have popups, sounds, and folders that explore: 'Games are emotional experiences, this is very clear in genres like first person shooters or adventure games'.`
+    basePrompt: `Build an emotion-driven puzzle game where the player solves deduction logic grids but the real score is their emotional response — hovering over cells reveals a subtle heartbeat animation, and solving the grid triggers an emotional impact label (Satisfaction, Relief, Epiphany, Frustration). Mechanics include nonogram-style binary deduction and a post-solve reflection card. Understated, gallery-white minimal aesthetic with soft sound-wave animations.`
   }),
   new ShowcaseApp({
     categories: ['Games:Edu', 'Roundtables'],
@@ -578,7 +578,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Jake Habgood', origin: 'Freelance' }],
     index: 64,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides'. It should have popups, sounds, and folders that explore: 'This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways'.`
+    basePrompt: `Build a mentorship timeline game inspired by the education-to-industry journey. Two parallel timelines scroll upward — one for a fresh graduate, one for their studio mentor — and the player must drag 'connection events' (Portfolio Review, Industry Talk, Trial Project, Feedback Session) to link the timelines at the right moments. Gaps in connection cause the graduate's progress to stall. Graduation-cap-and-blueprint illustrated style.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -587,7 +587,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Imre Jele', origin: 'Atypical Types / Bossa Studios' }],
     index: 65,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Scheduled Serendipity: Manufacturing Creative Aha Moments'. It should have popups, sounds, and folders that explore: 'Inspiration is treated like lightning: an unpredictable and uncontrollable moment'.`
+    basePrompt: `Build a 'scheduled serendipity' constraint-based idea generator toy. The player spins two wheels — one of constraints (10-minute timer, single color, no dialogue) and one of transformations (reverse it, scale it up, make it sad) — and the app generates a randomized game concept card from the combination. The player can lock in a constraint and keep re-spinning the transformation wheel, simulating the creative loop the talk describes. Vintage lottery-machine retro aesthetic with spinning drum animation.`
   }),
   new ShowcaseApp({
     categories: ['Mobile'],
@@ -597,7 +597,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Sachin Sunil', origin: 'SpecialEffect' }],
     index: 66,
     source: 'Develop 2026',
-    basePrompt: `Build a satisfying, tactile fidget toy web app inspired by 'Mobile Gaming: The Next Frontier for Accessibility'. Elements should squish, snap, and pop while teaching the user about: 'Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities'.`
+    basePrompt: `Build an eye-tracking accessibility controller simulator for mobile games. The player navigates a simple platformer level using only mouse cursor movement (simulating eye tracking) — moving the cursor toward a platform makes the character walk that direction; dwelling on a jump button triggers a jump. Speed and sensitivity sliders let the player tune the assistive controls. The game celebrates successful accessibility setups with confetti. Clean white medical-meets-playful UI design.`
   }),
   new ShowcaseApp({
     categories: ['Coding'],
@@ -606,7 +606,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Tyson Roberts', origin: 'Deepmind' }],
     index: 67,
     source: 'Develop 2026',
-    basePrompt: `Build a quirky virtual pet game where the pet is an AI trying to understand 'Vibe Coding: Build an App in 60 Minutes with GenAI'. It asks the player questions and visually evolves based on: 'Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'—intuitive, conversational instructions—to build a working application from scratch'.`
+    basePrompt: `Build a 60-minute vibe-coding challenge simulator where the player types conversational GenAI-style prompts into a chat input and watches a mock app assemble piece by piece — each message adds a UI component (button, form, chart) to a phone wireframe on the right. Vague prompts produce broken components shown in red; specific prompts snap clean components into place. A 60-minute countdown adds tension. Glassmorphism dark UI with animated code-rain background.`
   }),
   new ShowcaseApp({
     categories: ['Discoverability'],
@@ -615,7 +615,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Gary Burchell', origin: 'Fireblade Software' }],
     index: 68,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Steam Events in 2026 And Why You Want To Be a Part Of Them', revealing insights about: 'Getting visibility is tough and a constant battle'.`
+    basePrompt: `Build a Steam Events visibility bubble simulation. The player is a game dev who clicks to register for Steam events shown as incoming event cards (Next Fest, Publisher Sale, Themed Weekend); joining an event adds the game to a bubble cluster of 10 million player dots that are visually drawn toward featured games. Running a custom event spawns your own bubble zone. The score is total unique player touches over a simulated 30-day calendar. Clean Valve-blue minimalist UI.`
   }),
   new ShowcaseApp({
     categories: ['Games:Edu', 'Roundtables'],
@@ -625,7 +625,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Tom Cole', origin: 'University of Greenwich' }],
     index: 69,
     source: 'Develop 2026',
-    basePrompt: `Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'Fixing The Talent Crisis: Moving From Conversation To Action', reflecting on the idea that 'This Roundtable is focused on the learnings from today's Games Edu track'.`
+    basePrompt: `Build a talent pipeline gap-mapping relay race game. Educator runners on one side carry skill baton tokens (Portfolio, Soft Skills, Tool Knowledge, Industry Awareness) toward industry finish lines on the other side of a track. The player must build bridge tiles across gaps to connect education to industry before the runners fall into the gap. Each completed bridge unlocks a new junior hire icon. Bright, collaborative whiteboard illustration style.`
   }),
   new ShowcaseApp({
     categories: ['Keynote'],
@@ -637,7 +637,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Sam Loveridge', origin: 'GamesRadar' }],
     index: 70,
     source: 'Develop 2026',
-    basePrompt: `Create a quirky management simulator where the player acts as a chaotic studio head trying to survive 'ustwo games: A Positively Playful Business'. They must balance resources based on: 'ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London'.`
+    basePrompt: `Build a generative nature exploration toy inspired by ustwo games' Alba: A Wildlife Adventure and B-Corp values. The player wanders a small procedurally generated island using arrow keys, photographing wildlife by pressing space near animals; each photo contributes to an 'environmental impact score'. A carbon footprint meter in the corner tracks how the island's health changes based on which species are photographed and preserved. Hand-painted watercolor nature illustration style.`
   }),
   new ShowcaseApp({
     categories: ['Performance', 'Keynote'],
@@ -646,7 +646,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Adele Cutting', origin: 'Soundcuts' }],
     index: 71,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Pixels To Performance'. The user should be able to toss around elements that represent 'As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters' with satisfying bouncy physics.`
+    basePrompt: `Build a dialogue performance director mini-game. A script line appears on screen and the player must set three sliders (Pace, Tone, Subtext) to direct a character's delivery; an animated character then performs the line with a corresponding vocal waveform. Players score based on how well the performance matches the emotional stage direction shown above the script. Multiple takes let players iterate. Film-production clapperboard aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -659,7 +659,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Ruthie Nielsen', origin: 'TT Games' }],
     index: 72,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Building a Hit: LEGO Batman: Legacy of the Dark Knight'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever'.`
+    basePrompt: `Build a LEGO brick-based UE5 level construction toy inspired by LEGO Batman: Legacy of the Dark Knight. The player snaps LEGO-style bricks onto a grid to assemble a Gotham City rooftop; each brick has a license tag (DC or LEGO) and the player must keep the ratio of DC-licensed to LEGO-licensed elements balanced or the licensor approval meter drops. Completing the level unlocks a mini cinematic. Bright primary-color LEGO plastic aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Art'],
@@ -668,7 +668,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Erol Kentli', origin: 'Flix Interactive' }],
     index: 73,
     source: 'Develop 2026',
-    basePrompt: `Develop a 'vibe-coded' generative art tool. Users can tweak sliders related to 'Defining  Achieving Visual Quality' to paint beautiful, abstract patterns that represent: 'As John Lasseter put it, “Quality is the best business plan”'.`
+    basePrompt: `Build a visual quality benchmarking toy inspired by John Lasseter's 'quality is the best business plan'. The player is shown two versions of a game scene side by side and must spot the quality differences (aliased edges, flat lighting, off-palette colors, inconsistent textures) by clicking them. Each correct find adds to a 'finesse score'; the game then regenerates with harder comparisons. Clean art-director clipboard aesthetic with magnifying glass cursor.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -677,7 +677,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Liz Prince', origin: 'Amiqus' }],
     index: 74,
     source: 'Develop 2026',
-    basePrompt: `Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'Hiring for Success Under the New UK Employment Rights Act', reflecting on the idea that 'The new UK Employment Rights Act represents one of the most significant shifts in employment protection in recent years, with shorter qualifying periods for unfair dismissal and increased scrutiny on hiring decisions'.`
+    basePrompt: `Build a structured interview simulation game about the new UK Employment Rights Act. The player is a hiring manager who must conduct a legally compliant interview by selecting pre-approved questions from a question bank; choosing an unlawful question (age, family plans, health) triggers a red legal risk flash and docks compliance points. The player must fill all interview slots and document each decision before time runs out. Formal corporate HR-system UI aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Coding'],
@@ -686,7 +686,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Paul Stefanescu', origin: 'Electronic Arts' }],
     index: 75,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Inside F1 Game Development: Dynamic Objectives'. The user should be able to toss around elements that represent 'This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1' with satisfying bouncy physics.`
+    basePrompt: `Build a dynamic F1 race objectives mini-game. The player's car races around a simple oval track and contextual objective cards appear mid-race: 'Overtake 3 cars in 10 seconds', 'Hold position for 5 laps', 'Save tyres for 8 turns'. Completing objectives triggers a voice-acted radio message and adds XP; rewinding time (a special mechanic) to retry a missed objective costs a time token. High-speed racing HUD aesthetic with carbon-fiber textures.`
   }),
   new ShowcaseApp({
     categories: ['Performance'],
@@ -695,7 +695,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Nathaniel Marten', origin: 'Lucky 13 Action Ltd' }],
     index: 76,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'Action Design and Stunt Coordination for Cinematics and Gameplay  QA'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay'.`
+    basePrompt: `Build a cinematic stunt choreography puzzle. The player is given a stunt sequence — character A punches, character B dodges, character C catches — and must arrange action beat tiles in the correct order on a timeline, choosing safe camera angles (shown as thumbnail previews) for each beat. Incorrect ordering or unsafe angles triggers a 'safety halt' animation. Gritty film-set slate-board aesthetic with dramatic spot-lighting.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -705,7 +705,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Annabel Ashalley-Anthony', origin: 'Melanin Gamers' }],
     index: 77,
     source: 'Develop 2026',
-    basePrompt: `Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'Develop: FTUE First Time User Experience Wednesday', reflecting on the idea that 'A relaxed and informal roundtable designed to help you get the most out of your time at the conference'.`
+    basePrompt: `Build a conference first-timer bingo game for Wednesday attendees. The player gets a 5×5 bingo card populated with typical Develop:Brighton experiences (Swapped a business card, Found the quiet room, Sat front row, Got starstruck, Snuck out of a session). The player clicks squares as they complete them and must get bingo before an in-game conference clock ticks down. Friendly conference-badge sticker art style.`
   }),
   new ShowcaseApp({
     categories: ['Other'],
@@ -715,7 +715,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Cinzia Musio', origin: 'Ukie' }],
     index: 78,
     source: 'Develop 2026',
-    basePrompt: `Make an interactive, animated manifesto page for 'UK Games Industry Census  What have we learned'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'Join Mark Taylor, University of Sheffield, and Cinzia Musio, Equity, Diversity & Inclusion expert at Ukie, who will exclusively reveal the findings of the UK Games Industry Census, and the UK Games Industry's action plan to address the results'.`
+    basePrompt: `Build an interactive UK Games Industry Census data visualization explorer. Animated bar and donut charts appear with census findings (diversity percentages, layoff impact by demographic, salary bands). The player can click any chart segment to drill into sub-data shown as animated flowing Sankey diagrams. A 'take action' button at the end converts findings into pledge cards the player signs. Clean think-tank report aesthetic with UK flag accents.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -724,7 +724,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Rikki Vitello', origin: 'Freelance' }],
     index: 79,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'How to Work with your Ex Dev Partners to Resolve Blockers', revealing insights about: 'Deadlines, insufficient documentation, repetitive feedback loops, and compressed timelines can all be avoided through effective communication, collaboration, and internal readiness'.`
+    basePrompt: `Build a conflict resolution puzzle game for external dev partnerships. Two studio panels face each other with a message queue between them; the player must match 'issue cards' (Insufficient Documentation, Missed Milestone, Unclear Scope) with the correct resolution action (Schedule Call, Share Wiki, Escalate, Compromise). Wrong matches cause the communication channel to degrade visually with static. Professional B2B SaaS UI aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Discoverability'],
@@ -733,7 +733,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Ravi Vijh', origin: 'Bastion' }],
     index: 80,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'The Recommendation Era: What AIDriven Discovery Means for Video Games PR'. It should have popups, sounds, and folders that explore: 'There has been a quiet but persistent conversation as to whether PR still matters in games'.`
+    basePrompt: `Build an AI recommendation signal strategy game for game PR. The player manages a PR campaign and must allocate a budget between Influencer Spend, Earned Media, and AI-Optimization tactics; a simulated ChatGPT/Perplexity recommendation engine then generates a text snippet recommending (or not recommending) the game based on the signals the player fed it. The player iterates until the AI's recommendation becomes enthusiastic. Dark editorial PR-agency aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -743,7 +743,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Amy Pejic', origin: 'Criterion' }],
     index: 81,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio'. It should have popups, sounds, and folders that explore: 'Join Criterion - the studio behind Burnout, Need For Speed and BLACK - for a session focused on their 30 years of continuous evolution, their place as a modern British creative powerhouse, and how it has navigated genres and developed for multiple platforms'.`
+    basePrompt: `Build a 30-year arcade racing evolution timeline game inspired by Criterion's history. The player drives through five eras (2000s Burnout era, NFS era, open world era, Battlefield era, 2026) on a scrolling side-view race track where the environment and car model visually update each era. Collecting milestone badges (Burnout 3, NFS: Hot Pursuit, Battlefield 6) along the road adds to a legacy score. Bold, speed-blur racing arcade aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -752,7 +752,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Arseniy Klishin', origin: 'Party for Introverts' }],
     index: 82,
     source: 'Develop 2026',
-    basePrompt: `Create a whimsical, interactive physics playground inspired by 'Pitching to Publishers Sucks  What We Learned Pitching Cabernet'. The user should be able to toss around elements that represent 'Arseniy Klishin from Party for Introverts shares the tips and tricks he wishes he knew while securing funding and a publishing deal for their recent narrative RPG Cabernet' with satisfying bouncy physics.`
+    basePrompt: `Build a publisher pitch simulation game inspired by pitching the narrative RPG Cabernet. The player presents a 3-slide pitch deck to an animated publisher panel; after each slide the publishers react with feedback cards ('Needs more market data', 'Love the tone', 'What's the hook?'). The player must drag adjustment tiles (shorter description, clearer USP, add demo link) onto the pitch to satisfy the feedback before the meeting timer runs out. Rich dark narrative RPG aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Performance'],
@@ -761,7 +761,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Gareth Taylor', origin: 'Freelance & The Mocap Vaults' }],
     index: 83,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers'. It should have popups, sounds, and folders that explore: 'This talk centres around the collaboration between the Game Developer and the Performer'.`
+    basePrompt: `Build a motion capture director's shot-list builder. The player is given a list of performance moments (hero walks into frame, villain threatens, sidekick reacts) and must cast actors by dragging character profiles (physique, vocal type, stunt rating) into each role, then sequence the shots on a daily schedule grid to stay within a 10-hour shoot window. Overloading any actor's stamina bar causes performance quality to drop. Industrial mocap-stage blueprint aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -770,7 +770,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Lorna McFall', origin: 'Freelance UI UX Designer' }],
     index: 84,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'How Does One Freelance', especially: 'Are you someone who is new to the games industry looking for your first client, or have you been in the industry for quite some time as an employee but are now looking to take the freelancer plunge? When we first take that step, it feels like there are so many unknowns'.`
+    basePrompt: `Build a freelance games industry business simulator. The player manages a solo freelance studio: sets day rates on a pricing slider, negotiates contracts by choosing clauses (kill fee, IP ownership, revision limit), tracks income vs HMRC self-assessment tax liability on a running ledger, and queues client projects on a Kanban board. Overloading the queue burns out the freelancer character. Friendly self-employed accountancy app aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Other'],
@@ -779,7 +779,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Liam Wiltshire', origin: 'Tebex' }],
     index: 85,
     source: 'Develop 2026',
-    basePrompt: `Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'D2Cs Biggest Opportunity Has Nothing to Do With Platform Fees', reflecting on the idea that 'The D2C conversation in games has been dominated by one number: saving 25-30% on legacy platform fees by monetizing directly to players'.`
+    basePrompt: `Build a direct-to-consumer game store builder toy inspired by data from 45,000 gaming stores. The player configures a storefront — pricing, bundles, email capture, loyalty rewards — and watches a simulated sales funnel fill with customer dots. Each configuration decision reveals a data stat (conversion rate, LTV, churn). The goal is to maximize 'financial control score' beyond just saving on platform fees. Clean Shopify-meets-gaming-store aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -788,7 +788,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Ayobami Aderemi', origin: 'ReAssure' }],
     index: 86,
     source: 'Develop 2026',
-    basePrompt: `Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'Design for Change: Should Designers Be Letting AI Make Product Decisions'. The mechanics should explore how 'This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams'. Use a glitchy, cyberpunk aesthetic.`
+    basePrompt: `Build an ethical AI design decision framework quiz game. The player is shown a UX design scenario (e.g. 'AI auto-generates onboarding flow') and must drag it to one of three zones: 'AI Enhances', 'Human Must Decide', or 'Ethically Risky'. Correct placement earns trust tokens; wrong placement triggers an animated consequence (dark pattern activates, user leaves). A final score generates a 'design ethics archetype'. Thoughtful editorial design with muted tones.`
   }),
   new ShowcaseApp({
     categories: ['Art'],
@@ -797,7 +797,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Nader Alikhani', origin: 'Innovecs Games' }],
     index: 87,
     source: 'Develop 2026',
-    basePrompt: `Develop a 'vibe-coded' generative art tool. Users can tweak sliders related to 'pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry' to paint beautiful, abstract patterns that represent: 'Every game needs art, but not every game needs the same artists, at the same time, in the same proportions'.`
+    basePrompt: `Build an RPG party composition builder for art teams using the D&D party metaphor. The player assembles a 4-person art team by choosing roles from a class list: Art Director (Tank/vision), Concept Artist (DPS/ideation), Production Artist (Healer/execution), Technical Artist (Rogue/pipeline). Each combination is then tested against a 'game dev encounter' card (e.g. 'Art style pivot in week 8') and the team's stats determine if they survive. Fantasy RPG character-sheet aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -806,7 +806,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Murray Pannell', origin: 'BIG DUMB GAMES' }],
     index: 88,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission'. It should have popups, sounds, and folders that explore: 'The games industry is facing many challenges, but it is full of experienced, talented people who still want to make great games'.`
+    basePrompt: `Build a cooperative indie collective credit allocation game inspired by BIG DUMB GAMES and STARSHIP BLOOPERS. Multiple contributor sprites each do work (design, code, art, sound) shown as progress bars filling in parallel; when a milestone is reached, the player distributes contribution credit tokens proportionally across all contributors using sliders that must sum to 100%. Imbalanced splits cause contributor morale to drop. Punk zine collective aesthetic with bold type.`
   }),
   new ShowcaseApp({
     categories: ['Coding'],
@@ -816,7 +816,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Đorđe Đurđević', origin: 'Nordeus' }],
     index: 89,
     source: 'Develop 2026',
-    basePrompt: `Design a frantic, hyper-casual mobile web game. The one-tap objective is to navigate the challenges of 'From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device', incorporating mechanics that reflect: 'Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device'.`
+    basePrompt: `Build a mobile device performance profiling game inspired by Nordeus Top Goal on potato phones. The player is given a simulated frame budget (16ms for 60fps) and must optimize a set of expensive render calls — dragging LOD sliders, toggling shadow quality, batching draw calls — to fit within budget on a low-end device profile. A real-time frame graph updates as adjustments are made. Clean developer profiler tool aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Performance'],
@@ -827,7 +827,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Kirsty Gillmore', origin: 'Freelance Voice & Performance Director' }],
     index: 90,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Press Start Mind the Gap: Bridging US and UK Game Casting  Production pipelines', revealing insights about: 'As video game production increasingly spans borders, casting and voice recording across the US and UK has become less of a novelty and more of a necessity'.`
+    basePrompt: `Build a US/UK voice casting cross-border scheduling puzzle. The player is a casting director with actors in Los Angeles and London; they must schedule remote recording sessions across time zones on a 24-hour dual-clock interface, matching actor contracts (SAG-AFTRA vs Equity) to session slots and ensuring pay rates don't conflict. Overlapping sessions cause a 'union dispute' alert. Professional broadcast scheduling UI aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -836,7 +836,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'James Dodd', origin: 'Out Making Games' }],
     index: 91,
     source: 'Develop 2026',
-    basePrompt: `Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'One Year On: Progress Gaps and Possibilities for LGBTQ Inclusion', reflecting on the idea that 'This year's LGBTQ+ roundtable will compare where we were at last year's roundtable, where we are now, and tackle key issues LGBTQ+ professionals are facing in the ever-changing social and political landscape'.`
+    basePrompt: `Build an LGBTQ+ inclusion progress tracker interactive timeline. The player scrolls through a fictional studio's 5-year arc and clicks on policy moments (pronoun fields added, trans health cover extended, pride ERG formed) to reveal their impact on a community wellbeing score. Social/political headwind events slide in from the right requiring the player to enact a protective policy before the wellbeing score drops. Warm rainbow-gradient pride aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Other'],
@@ -847,7 +847,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Rich Barnwell', origin: 'Entity' }],
     index: 92,
     source: 'Develop 2026',
-    basePrompt: `Develop a 'vibe-coded' generative art tool. Users can tweak sliders related to 'Stop Surveying Start Listening: Why RealTime Player Intelligence is Replacing How we Listen to Players' to paint beautiful, abstract patterns that represent: 'How studios turn player signal into better products, faster decisions and stronger games without being captured by the loudest voices'.`
+    basePrompt: `Build a real-time player signal listening dashboard simulation inspired by Jagex and Levellr. Streams of player comments scroll in from the left (forum posts, chat messages, review snippets); the player must click to tag each as 'signal' (actionable feedback) or 'noise' (loudest voice, edge case, troll). A running 'voice of the player' bar fills with tagged signals and the team's next sprint is generated from top signals. Data journalism dashboard aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -856,7 +856,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Lydia Cockerham', origin: 'Creative Assembly' }],
     index: 93,
     source: 'Develop 2026',
-    basePrompt: `Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'Games as Dreams: Using Symbolic Archetypes to Craft Powerful Flexible Narratives' and the struggles of: 'It's every Narrative Designer's worst nightmare'.`
+    basePrompt: `Build a symbolic archetype narrative puzzle game inspired by 'Dream Mode' storytelling. The player is given a set of Jungian archetype tokens (Shadow, Hero, Trickster, Anima, Sage) and must connect them with narrative arc tiles (Call, Descent, Return) to form a complete story structure on a canvas. When a quest tile is removed, the remaining archetypes must rearrange to still form a coherent arc. Dreamlike surrealist illustration style with soft glow and shifting colors.`
   }),
   new ShowcaseApp({
     categories: ['Indie'],
@@ -865,7 +865,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Agostino Simonetta', origin: 'GSC Game World' }],
     index: 94,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Shipping STALKER 2 Our Way: SelfPublishing Game Pass and 1 Million in 36 Hours', especially: 'S'.`
+    basePrompt: `Build a wartime indie self-publishing survival game inspired by STALKER 2's 1-million-players-in-36-hours story. The player manages a tiny studio under extreme stress — power cuts, team evacuation alerts, and server outages arrive as random events while a launch countdown ticks. The player must make triage decisions (delay launch, push patch, communicate with players) to reach 1 million players before the chaos meter maxes out. Grim atmospheric dark UI with Ukrainian flag accent colors.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -874,7 +874,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Brian Baglow', origin: 'Scottish Games Network Ltd.' }],
     index: 95,
     source: 'Develop 2026',
-    basePrompt: `Build an intense, arcade-style stock trading minigame where the commodity is 'More Than Games: Unlocking New Funding  Creative Opportunities Outside the Consumer Market'. The market crashes and booms based on: 'The consumer games market is intensely competitive'.`
+    basePrompt: `Build a cross-sector pitch deck builder toy for game developers selling skills to health and education clients. The player is given a game-dev skill card (narrative design, real-time simulation, player behavior analysis) and must drag it into a non-games client brief (NHS training, museum exhibit, school curriculum). Matching the right skill to the right client brief unlocks a 'GVA spillover' coin reward. The running total climbs toward £1.3 billion. Clean think-tank policy-doc aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Art'],
@@ -883,7 +883,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Gargi Roy', origin: 'Lab42' }],
     index: 96,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Exploring the 80:20 Rule in Concept Art', revealing insights about: 'The Pareto Principle suggests that 80% of output comes from just 20% of input'.`
+    basePrompt: `Build an 80:20 Pareto concept art speed-challenge game. The player has 2 minutes to create a character concept using only the most impactful 20% of art decisions: silhouette shape, primary color, one texture, one detail. A complexity meter penalizes adding more than four decisions. After time is up, the concept is rated on 'impact per effort' and the player unlocks a harder brief for a new IP. Sketchbook and marker art style with timer tension.`
   }),
   new ShowcaseApp({
     categories: ['Roundtables'],
@@ -892,7 +892,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Izzie Micul', origin: 'Safe In Our World' }],
     index: 97,
     source: 'Develop 2026',
-    basePrompt: `Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Overcoming Barriers to Mental Health Support in the Workplace', illustrating: 'This roundtable will open a vital discussion about the barriers many games industry employers face to implementing positive mental health and wellbeing practices'.`
+    basePrompt: `Build a workplace mental health barrier maze game. A worker character navigates a top-down office maze where walls are labelled mental health barriers (Stigma, No EAP, Manager Unaware, No Time). The player must find and activate support beacons (Safe In Our World signs, Wellbeing Champion, Anonymous Helpline) to dissolve the walls. Each studio type (indie, AA, AAA) generates a different maze layout. Soft safe-space color palette with warm amber and teal tones.`
   }),
   new ShowcaseApp({
     categories: ['Other'],
@@ -904,7 +904,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Dan Wood', origin: 'Bastion' }],
     index: 98,
     source: 'Develop 2026',
-    basePrompt: `Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'How to Stay Ahead of Cutting Edge Game Technology', especially: 'Over the last two decades, videogame technology has evolved dramatically, from tightly constrained hardware and bespoke engines to globally connected platforms, shared toolsets and rapid innovation'.`
+    basePrompt: `Build a 20-year game technology evolution quiz show. Technology trend cards appear one at a time (ray tracing, procedural gen, neural rendering, haptics) and the player must drag each to its correct decade on a horizontal timeline. Correct placements unlock a brief tooltip about that tech's game-dev impact. A final 'emerging tech' round asks the player to predict which 2026+ technologies will matter. Retro quiz-show TV-set aesthetic with spinning wheel graphic.`
   }),
   new ShowcaseApp({
     categories: ['Performance'],
@@ -913,7 +913,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Natalie Edwards', origin: 'Nordlings' }],
     index: 99,
     source: 'Develop 2026',
-    basePrompt: `Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Skill Buff: Auditions Agents and Building a Career in Game Performance'. It should have popups, sounds, and folders that explore: 'The video game performance landscape has evolved rapidly - voiceover is no longer the final stop, and performance capture is no longer a mystery reserved for a select few'.`
+    basePrompt: `Build a game voice acting audition simulator. A script line appears with an emotional direction tag (Weary Veteran, Cocky Rogue, Terrified Civilian); the player types their interpretation of the delivery note into a text box, then clicks 'Perform' and an animated character delivers a procedurally-varied version of the line. The casting director NPC scores each take on Clarity, Emotion, and Character Fit. Three takes per script, best take advances. Retro casting-studio booth aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Performance'],
@@ -922,7 +922,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Keith Higinbotham', origin: 'Voice with Keith' }],
     index: 100,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Dungeons and Dialects: Implementing Authentic Accents  Artistic Tropes for Inclusive Narratives', revealing insights about: 'With several video game titles under my belt as both a voice/dialect coach and a director, my session focuses on levelling up storytelling through authentic accent work, dialect creation, and constructed languages'.`
+    basePrompt: `Build an accent and dialect decoding audio-visual puzzle game inspired by 'Dungeons and Dialects'. Phonetic notation cards fall from the top of the screen labelled with fantasy accent clichés (Dwarves = Scottish, Elves = RP English); the player must break these clichés by dragging authentic regional dialect cards onto character portraits to replace them, then preview the result as an animated speech bubble. A 'stereotype meter' drops as authentic choices are made. Dark fantasy illustrated style.`
   }),
   new ShowcaseApp({
     categories: ['Design'],
@@ -931,7 +931,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Shi-tao Fan', origin: 'Maverick) (Cloud Imperium Games' }],
     index: 101,
     source: 'Develop 2026',
-    basePrompt: `Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'Designing Immersive and Explorable Open Worlds with Narrative Encounters' and the struggles of: 'This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay'.`
+    basePrompt: `Build an open-world narrative encounter placement designer. The player is given a top-down procedural terrain map and must place authored narrative encounter tokens (NPC camp, hidden note, ambush, lore shrine) at positions that balance density — too clustered and the 'systemic feel' meter drops; too sparse and the 'narrative richness' meter drops. Systemic behavior events then randomly fire between encounters and the player watches emergent stories play out. Sci-fi holographic map aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Business'],
@@ -940,7 +940,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Ben Byford', origin: 'Nuclear Candy Games' }],
     index: 102,
     source: 'Develop 2026',
-    basePrompt: `Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'The Ethics of using AI in Games'. The mechanics should explore how 'A tour around the uses and pitfalls of using AI technologies in games development'. Use a glitchy, cyberpunk aesthetic.`
+    basePrompt: `Build an AI ethics risk assessment card game for game studios. Players draw AI use-case scenario cards (AI-generated NPC voices, procedural content replacing artists, player behavior prediction) and must assign each a risk level (Low/Medium/High) by weighing Legal, Creative, and Ethical sliders. The game reveals the industry consensus score after each card and explains the delta. A final 'studio ethics charter' is generated from the player's choices. Clean legal-document meets game-UI aesthetic.`
   }),
   new ShowcaseApp({
     categories: ['Art'],
@@ -949,7 +949,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Andrej Horoschun', origin: 'Frontier Developments' }],
     index: 103,
     source: 'Develop 2026',
-    basePrompt: `Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'On the Lore Around Art', revealing insights about: 'This session examines the critical link between art creation and underlying studio lore'.`
+    basePrompt: `Build a lore-consistency visual puzzle inspired by Frontier Developments' art-mythology pipeline. The player is shown an art asset (a creature, a building, a symbol) and must match it to one of three lore fragments shown as text blurbs. Correct matches add the asset to a growing visual lore codex on the right; incorrect matches 'taint' the world art and add visual inconsistencies. As the codex fills, the game world rendered in the background becomes richer and more cohesive. Epic fantasy compendium aesthetic.`
   })];
 
 
