@@ -1,13 +1,14 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
+import InspirationLayout from './InspirationLayout.tsx';
 import Layout from './Layout.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Layout>
-      <App />
+      <InspirationLayout><App /></InspirationLayout>
     </Layout>
   </StrictMode>,
 );
