@@ -1,0 +1,4 @@
+{
+  "title": "Interface as Identity: Designing UI That Complements the Brand",
+  "prompt": "Build a UI brand identity builder toy where the player picks typography, spacing density, motion speed, and color temperature sliders and watches a mock game menu assemble in real time on the right. Each choice shifts the brand personality meter between axes: Playful↔Serious, Loud↔Quiet, Sharp↔Soft. The final composition is labelled with a brand archetype (Rebel, Sage, Jester, etc.). Minimal design-tool aesthetic, white canvas with precise controls."
+}
