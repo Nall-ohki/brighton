@@ -1,0 +1,4 @@
+{
+  "title": "Develop: FTUE (First Time User Experience) Tuesday",
+  "prompt": "Build a conference networking mini-game for first-timers at a game dev event. The player controls a shy avatar in a top-down conference floor and must approach NPC badges to 'connect' \u2014 but each NPC has a visible comfort radius. Moving too fast scares them off; hovering at the right distance starts a chat bubble mini-game where the player presses the correct conversation-starter key. Quiet zones refill a social-battery meter. Soft pastel isometric style."
+}
