@@ -1,0 +1,4 @@
+{
+  "title": "The Ethics of using AI in Games",
+  "prompt": "Build an AI ethics risk assessment card game for game studios. Players draw AI use-case scenario cards (AI-generated NPC voices, procedural content replacing artists, player behavior prediction) and must assign each a risk level (Low/Medium/High) by weighing Legal, Creative, and Ethical sliders. The game reveals the industry consensus score after each card and explains the delta. A final 'studio ethics charter' is generated from the player's choices. Clean legal-document meets game-UI aesthetic."
+}
