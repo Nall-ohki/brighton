@@ -1,0 +1,4 @@
+{
+  "title": "Designing Immersive and Explorable Open Worlds with Narrative Encounters",
+  "prompt": "Build an open-world narrative encounter placement designer. The player is given a top-down procedural terrain map and must place authored narrative encounter tokens (NPC camp, hidden note, ambush, lore shrine) at positions that balance density — too clustered and the 'systemic feel' meter drops; too sparse and the 'narrative richness' meter drops. Systemic behavior events then randomly fire between encounters and the player watches emergent stories play out. Sci-fi holographic map aesthetic."
+}
