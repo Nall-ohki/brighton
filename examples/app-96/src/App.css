@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Permanent+Marker&display=swap');
+
+:root {
+  --bg-paper: #f4f1ea;
+  --ink-color: #2c2c2c;
+  --marker-red: #e63946;
+  --marker-blue: #1d3557;
+  --marker-green: #2a9d8f;
+  --marker-yellow: #e9c46a;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-paper);
+  background-image: 
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Kalam', cursive;
+  color: var(--ink-color);
+  overflow-x: hidden;
+}
+
+.marker-font {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.sketch-border {
+  border: 3px solid var(--ink-color);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.sketch-button {
+  border: 2px solid var(--ink-color);
+  border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Permanent Marker', cursive;
+  transition: all 0.2s;
+}
+
+.sketch-button:hover {
+  background-color: rgba(0,0,0,0.05);
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.sketch-button.active {
+  background-color: var(--ink-color);
+  color: var(--bg-paper);
+}
+
+/* Textures */
+.texture-gritty {
+  background-image: radial-gradient(rgba(0,0,0,0.4) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+.texture-scaly {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.3) 20%, transparent 20%);
+  background-size: 15px 15px;
+}
+
+.texture-metallic {
+  background: linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+}
+
+.texture-fleshy {
+  background-image: radial-gradient(circle, rgba(255,0,0,0.15) 30%, transparent 30%);
+  background-size: 10px 10px;
+}
+
+/* Animations */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.timer-urgent {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: var(--marker-red);
+}
+
+.complexity-warning {
+  color: var(--marker-red);
+  font-weight: bold;
+}
