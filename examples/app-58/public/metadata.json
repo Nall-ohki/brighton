@@ -1,0 +1,4 @@
+{
+  "title": "How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio",
+  "prompt": "Build a transparent salary and power-sharing simulation for a growing studio. The player starts with 2 co-founders and clicks to hire up to 18 people; each hire reveals their salary openly on-screen and votes in a governance mini-game where the team collectively decides on studio policies via majority vote. Decisions made without consensus cause morale to drop. Cooperative, warm cooperative-board-game aesthetic with illustrated character tokens."
+}
