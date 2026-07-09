@@ -1,0 +1,4 @@
+{
+  "title": "Developing Tomorrow's Talent: Studio Strategies and Solutions",
+  "prompt": "Build a tower-defense style talent pipeline game where the player places mentor towers along a conveyor belt of junior developer sprites. Each mentor type (Apprenticeship, Bootcamp, University) has different range and 'skill transfer' speed. Uninstructed juniors fall off the end of the belt; mentored ones graduate and join a 'studio capacity' counter. Waves escalate with more junior devs needing guidance. Clean corporate infographic visual style, bright primary colors."
+}
