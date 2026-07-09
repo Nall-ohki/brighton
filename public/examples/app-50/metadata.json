@@ -1,0 +1,4 @@
+{
+  "title": "Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform",
+  "prompt": "Build a self-service platform builder puzzle game inspired by transforming a mobile team from ticket factory to platform. The player lays down API contract tiles on a grid connecting 10 squad icons to a central platform hub; when a valid contract path is complete, that squad's tickets disappear and they turn green. Channel-war conflicts between squads appear as crossing red lines the player must reroute. Clean tech-platform blueprint visual style."
+}
