@@ -24,7 +24,13 @@ export class ShowcaseApp {
     this.id = `app-${index}`;
     this.categories = categories || (category ? [category] : ['Other']);
     this.category = this.categories[0];
-    this.url = url || null;
+    if (url) {
+      this.url = url;
+    } else if (this.source === 'Develop 2026' && basePrompt) {
+      this.url = `/examples/${this.id}/index.html`;
+    } else {
+      this.url = null;
+    }
     this.source = source;
     this.basePrompt = basePrompt;
     
