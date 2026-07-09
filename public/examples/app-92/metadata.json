@@ -1,0 +1,4 @@
+{
+  "title": "Stop Surveying, Start Listening: Why Real-Time Player Intelligence is Replacing How we Listen to Players",
+  "prompt": "Build a real-time player signal listening dashboard simulation inspired by Jagex and Levellr. Streams of player comments scroll in from the left (forum posts, chat messages, review snippets); the player must click to tag each as 'signal' (actionable feedback) or 'noise' (loudest voice, edge case, troll). A running 'voice of the player' bar fills with tagged signals and the team's next sprint is generated from top signals. Data journalism dashboard aesthetic."
+}
