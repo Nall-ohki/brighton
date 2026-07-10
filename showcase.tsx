@@ -44,7 +44,7 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
         </div>
         <div style={{ flexShrink: 0 }}>
           {url ? (
-            <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
+            <a href={url} className="view-app-button" style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
               View App
             </a>
           ) : basePrompt ? (
