@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+body {
+    background-color: #e8dcc4;
+    background-image: radial-gradient(circle, #f0e6d2, #d5c3a1);
+    font-family: 'Cormorant Garamond', serif;
+    color: #2c1a0e;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+.parchment {
+    background-color: #f0e6d2;
+    background-image: 
+        linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%),
+        radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.05) 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2), inset 0 0 20px rgba(100,60,20,0.2);
+    border: 2px solid #8b6b45;
+    position: relative;
+}
+
+.parchment::before {
+    content: '';
+    position: absolute;
+    top: 4px; bottom: 4px; left: 4px; right: 4px;
+    border: 1px solid #c2a683;
+    pointer-events: none;
+}
+
+.rpg-border {
+    border: 2px solid #5a3c1e;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.btn-rpg {
+    background: linear-gradient(to bottom, #724e2c, #4a3018);
+    color: #f4e8d3;
+    border: 2px solid #2b1f14;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.2);
+    text-shadow: 1px 1px 2px #000;
+}
+.btn-rpg:hover:not(:disabled) {
+    background: linear-gradient(to bottom, #8a6036, #5c3b1e);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.3);
+}
+.btn-rpg:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+.btn-rpg:disabled {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.stat-bar-container {
+    background: #3e2a1b;
+    border: 1px solid #1a1009;
+    height: 12px;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.stat-bar-fill {
+    height: 100%;
+    transition: width 0.5s ease-out;
+    background: linear-gradient(to bottom, #d4af37, #997a00);
+}
+.stat-bar-fill.vision { background: linear-gradient(to bottom, #8b5cf6, #5b21b6); }
+.stat-bar-fill.ideation { background: linear-gradient(to bottom, #ef4444, #991b1b); }
+.stat-bar-fill.execution { background: linear-gradient(to bottom, #10b981, #047857); }
+.stat-bar-fill.pipeline { background: linear-gradient(to bottom, #3b82f6, #1d4ed8); }
+
+.encounter-card {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+.encounter-card.flip {
+    transform: rotateY(180deg);
+}
