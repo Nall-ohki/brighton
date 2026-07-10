@@ -42,12 +42,8 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
             <span key={cat} className={`category-tag category-tag--inverse category-tag--${cat.toLowerCase().replace(/[\s/.:]+/g, '-')}`}>{cat}</span>
           ))}
         </div>
-        <div style={{ flexShrink: 0 }}>
-          {url ? (
-            <a href={url} className="view-app-button" style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
-              View App
-            </a>
-          ) : basePrompt ? (
+        <div style={{ flexShrink: 0, display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          {basePrompt && (
             <div className="prompt-tooltip-container">
               <button 
                 className="view-app-button" 
@@ -63,7 +59,13 @@ const Card = ({ categories, url, id, basePrompt, source, cardInfo }: ShowcaseApp
                 {basePrompt}
               </div>
             </div>
-          ) : (
+          )}
+          {url && (
+            <a href={url} className="view-app-button" style={{ textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" aria-label={`View the app: ${displayTitle}`}>
+              View App
+            </a>
+          )}
+          {!url && !basePrompt && (
             <span className="view-app-disabled" aria-label={`App coming soon: ${displayTitle}`}>
               Coming Soon
             </span>
