@@ -26,7 +26,7 @@ export class ShowcaseApp {
     this.category = this.categories[0];
     if (url) {
       this.url = url;
-    } else if (this.source === 'Develop 2026' && basePrompt) {
+    } else if (source === 'Develop 2026' && basePrompt) {
       this.url = `/examples/${this.id}/index.html`;
     } else {
       this.url = null;
