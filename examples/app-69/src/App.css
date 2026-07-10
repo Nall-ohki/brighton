@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+  background-color: #eef2f5;
+  color: #222;
+  overflow: hidden;
+  user-select: none;
+}
+
+.whiteboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.whiteboard {
+  background: #ffffff;
+  border: 5px solid #2c3e50;
+  border-radius: 10px 15px 8px 20px / 15px 10px 20px 8px;
+  box-shadow: 8px 10px 15px rgba(0,0,0,0.05), inset 0 0 20px rgba(0,0,0,0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(#d1d8e0 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #3498db;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  margin: 5px 0 0 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 10px 20px;
+  border: 3px solid #2c3e50;
+  border-radius: 8px 12px 10px 8px / 10px 8px 12px 10px;
+  box-shadow: 4px 4px 0 #3498db;
+}
+
+.stat-box.hires {
+  box-shadow: 4px 4px 0 #2ecc71;
+}
+
+.track-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-bottom: 4px dashed #bdc3c7;
+  z-index: 1;
+}
+
+.education-zone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background: rgba(52, 152, 219, 0.05);
+  border-right: 4px solid #3498db;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.industry-zone {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background: rgba(46, 204, 113, 0.05);
+  border-left: 4px solid #2ecc71;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 20px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.zone-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0.3;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 5px;
+}
+
+.industry-zone .zone-title {
+  transform: none;
+}
+
+.gap-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(231, 76, 60, 0.05),
+    rgba(231, 76, 60, 0.05) 10px,
+    rgba(231, 76, 60, 0.1) 10px,
+    rgba(231, 76, 60, 0.1) 20px
+  );
+  z-index: 0;
+}
+
+.bridge-tile {
+  position: absolute;
+  height: 60px;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s;
+}
+
+.bridge-tile-inner {
+  width: 90%;
+  height: 80%;
+  background: #f1c40f;
+  border: 3px solid #d35400;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 #d35400;
+}
+
+.bridge-tile:hover .bridge-tile-empty {
+  background: rgba(241, 196, 15, 0.3);
+  border: 3px dashed #f1c40f;
+}
+
+.bridge-tile-empty {
+  width: 90%;
+  height: 80%;
+  border: 3px dashed rgba(44, 62, 80, 0.2);
+  border-radius: 5px;
+}
+
+.runner {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  z-index: 3;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.runner-body {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid #2c3e50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.baton-badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+@keyframes run {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(5deg) translateY(-3px); }
+  100% { transform: rotate(-5deg) translateY(0); }
+}
+
+.running-anim {
+  animation: run 0.4s infinite linear;
+}
+
