@@ -3411,8 +3411,8 @@ export const adviceData: Advice[] = [
   },
   {
     id: 8,
-    title: "AI Studio: Give it a Nudge",
-    description: "If the model outlines a plan but doesn't write the code, it might be waiting for confirmation. A simple 'Go' or 'Proceed' prompt is often all that's needed.",
+    title: "AI Studio: Use a Laundry List",
+    description: "AI Studio can do a lot in a single prompt if you have a laundry list, put them all together.",
     target: 'AI Studio'
   },
   {
