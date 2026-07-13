@@ -27,7 +27,7 @@ export class ShowcaseApp {
     if (url) {
       this.url = url;
     } else if (source === 'Develop 2026' && basePrompt) {
-      this.url = `/examples/${this.id}/index.html`;
+      this.url = `./examples/${this.id}/index.html`;
     } else {
       this.url = null;
     }
@@ -295,7 +295,7 @@ export const appData: ShowcaseApp[] = [
       { name: 'Joseph Garrett', origin: '4J Studios' }],
     index: 35,
     source: 'Develop 2026',
-    url: '/examples/app-35/index.html',
+    url: './examples/app-35/index.html',
     basePrompt: `Create a WebGL cellular automaton voxel simulator inspired by 4J Studios' Elements Engine. The demo features a 3D isometric chunk where users can place blocks of different elements (e.g., magma, water, sand, flora). Each element reacts procedurally in real-time—water flowing over magma creates steam and solidifies into obsidian, sand falls with gravity, and flora spreads on dirt when hydrated. The UI should allow tweaking the 'tick rate' and element interaction rules, showcasing the infinite procedural dynamics discussed by Chris van der Kuyl and Joe Garrett.`,
   }),
   new ShowcaseApp({
@@ -3407,12 +3407,6 @@ export const adviceData: Advice[] = [
     id: 6,
     title: "Gemini Canvas: Select the Canvas Tool",
     description: "Be sure you have the 'Canvas' button selected in the tools, not 'Code' or 'Web', to enable interactive web app generation.",
-    target: 'Gemini Canvas'
-  },
-  {
-    id: 7,
-    title: "Gemini Canvas: Use Gemini 2.5 Flash",
-    description: "For the best results, use the 'gemini-2.5-flash' model. It is optimized for this type of creative task, especially for free-tier users.",
     target: 'Gemini Canvas'
   },
   {
