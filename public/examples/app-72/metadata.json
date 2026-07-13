@@ -1,0 +1,32 @@
+{
+  "title": "Building a Hit: LEGO Batman: Legacy of the Dark Knight",
+  "authors": [
+    {
+      "name": "Jonathan Smith",
+      "origin": "TT Games"
+    },
+    {
+      "name": "Mark Green",
+      "origin": "TT Games"
+    },
+    {
+      "name": "Dave Woodman",
+      "origin": "TT Games"
+    },
+    {
+      "name": "Rian Walters",
+      "origin": "TT Games"
+    },
+    {
+      "name": "Ruthie Nielsen",
+      "origin": "TT Games"
+    }
+  ],
+  "description": "TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever. A panel of Directors from the team share insights into the decisions made through development to deliver on TT's ambition to create 'the definitive Batman game'.",
+  "session_takeaway": [
+    "High-level project planning and workflows for large projects in Unreal Engine 5.",
+    "Tips for effective cross-discipline collaboration inside a major AAA studio.",
+    "Best practices for working with massive global licensors like DC and LEGO."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Building a Hit: LEGO Batman: Legacy of the Dark Knight'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'TT Games celebrates the launch of LEGO Batman: Legacy of the Dark Knight - the highest-rated LEGO game ever'."
+}

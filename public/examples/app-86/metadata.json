@@ -1,0 +1,16 @@
+{
+  "title": "Design for Change: Should Designers Be Letting AI Make Product Decisions?",
+  "authors": [
+    {
+      "name": "Ayobami Aderemi",
+      "origin": "ReAssure"
+    }
+  ],
+  "description": "This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams. Rather than accepting AI recommendations at face value, I will explore where AI genuinely enhances research, prototyping, and design decisions, and where it subtly shifts responsibility away from human designers. Attendees will discover practical frameworks for using AI in ways that strengthen product quality, user insight, and ethical outcomes.",
+  "session_takeaway": [
+    "How to evaluate when AI adds true value to UX and product design decisions.",
+    "A simple framework for balancing human design judgment with AI support.",
+    "Practical ways to keep ethical design and user needs at the center of AI-assisted workflows."
+  ],
+  "prompt": "Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'Design for Change: Should Designers Be Letting AI Make Product Decisions'. The mechanics should explore how 'This talk questions the growing assumption that Artificial Intelligence should guide key product or UX decisions in product teams'. Use a glitchy, cyberpunk aesthetic."
+}

@@ -378,20 +378,20 @@ const HUD = ({ uiState, handleRewind, radioMsg }) => {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center justify-center pointer-events-none z-10 relative">
+      <div className="flex-1 flex items-start justify-center pt-4 pointer-events-none z-10 relative">
         <AnimatePresence>
           {uiState.objective && (
             <motion.div
               initial={{ opacity: 0, y: -50, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 50, scale: 0.8 }}
-              className="carbon-fiber p-8 rounded-2xl border-l-4 border-red-500 shadow-[0_0_50px_rgba(255,0,0,0.2)] text-center min-w-[350px]"
+              className="carbon-fiber p-4 rounded-xl border-l-4 border-red-500 shadow-[0_0_50px_rgba(255,0,0,0.2)] text-center min-w-[300px]"
             >
-              <div className="flex justify-center mb-3">
-                <Target className="text-red-500 animate-pulse" size={40} />
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Target className="text-red-500 animate-pulse" size={24} />
+                <h2 className="text-red-500 text-xs font-black uppercase tracking-widest">New Objective</h2>
               </div>
-              <h2 className="text-red-500 text-xs font-black uppercase tracking-widest mb-2">New Objective</h2>
-              <p className="text-white text-2xl font-black mb-6 italic">{uiState.objective.text}</p>
+              <p className="text-white text-xl font-black mb-3 italic">{uiState.objective.text}</p>
               
               <div className="bg-gray-900 rounded-full h-4 w-full overflow-hidden mb-3 border border-gray-700">
                 <motion.div 

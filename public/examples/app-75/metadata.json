@@ -1,0 +1,18 @@
+{
+  "title": "Inside F1 Game Development: Dynamic Objectives",
+  "authors": [
+    {
+      "name": "Paul Stefanescu",
+      "origin": "Electronic Arts"
+    }
+  ],
+  "description": "This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1. The talk will include concrete implementation examples with gameplay footage and behind-the-scenes formulas as well as highlighting challenges, performance considerations, and insights into how the team integrated voice acting to create an immersive experience.",
+  "session_takeaway": [
+    "Designing adaptive gameplay systems that enhance player experience in racing settings.",
+    "Balancing realism with the arcade nature of dynamic game systems.",
+    "Accounting for time manipulation systems (rewinding) when inventing new live features.",
+    "Designing a modular system to account for tight annual schedules and scope creep.",
+    "Using speech and voice cues to create natural-feeling objectives."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'Inside F1 Game Development: Dynamic Objectives'. The user should be able to toss around elements that represent 'This session will explore how a small team from Formula 1 game series developed a lightweight yet dynamic objectives system that provides players with contextual goals and feedback during races, meaning to help players tangibly improve their racing performance while feeling fun and authentic to Formula 1' with satisfying bouncy physics."
+}

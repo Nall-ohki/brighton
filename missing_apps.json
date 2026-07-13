@@ -1,0 +1,127 @@
+[
+  {
+    "id": 66,
+    "title": "Mobile Gaming: The Next Frontier for Accessibility",
+    "prompt": "Build an eye-tracking accessibility controller simulator for mobile games. The player navigates a simple platformer level using only mouse cursor movement (simulating eye tracking) \u2014 moving the cursor toward a platform makes the character walk that direction; dwelling on a jump button triggers a jump. Speed and sensitivity sliders let the player tune the assistive controls. The game celebrates successful accessibility setups with confetti. Clean white medical-meets-playful UI design."
+  },
+  {
+    "id": 67,
+    "title": "Vibe Coding: Build an App in 60 Minutes with GenAI",
+    "prompt": "Build a 60-minute vibe-coding challenge simulator where the player types conversational GenAI-style prompts into a chat input and watches a mock app assemble piece by piece \u2014 each message adds a UI component (button, form, chart) to a phone wireframe on the right. Vague prompts produce broken components shown in red; specific prompts snap clean components into place. A 60-minute countdown adds tension. Glassmorphism dark UI with animated code-rain background."
+  },
+  {
+    "id": 68,
+    "title": "Steam Events in 2026 (And Why You Want To Be a Part Of Them)",
+    "prompt": "Build a Steam Events visibility bubble simulation. The player is a game dev who clicks to register for Steam events shown as incoming event cards (Next Fest, Publisher Sale, Themed Weekend); joining an event adds the game to a bubble cluster of 10 million player dots that are visually drawn toward featured games. Running a custom event spawns your own bubble zone. The score is total unique player touches over a simulated 30-day calendar. Clean Valve-blue minimalist UI."
+  },
+  {
+    "id": 69,
+    "title": "Fixing The Talent Crisis: Moving From Conversation To Action",
+    "prompt": "Build a talent pipeline gap-mapping relay race game. Educator runners on one side carry skill baton tokens (Portfolio, Soft Skills, Tool Knowledge, Industry Awareness) toward industry finish lines on the other side of a track. The player must build bridge tiles across gaps to connect education to industry before the runners fall into the gap. Each completed bridge unlocks a new junior hire icon. Bright, collaborative whiteboard illustration style."
+  },
+  {
+    "id": 70,
+    "title": "ustwo games: A Positively Playful Business",
+    "prompt": "Build a generative nature exploration toy inspired by ustwo games' Alba: A Wildlife Adventure and B-Corp values. The player wanders a small procedurally generated island using arrow keys, photographing wildlife by pressing space near animals; each photo contributes to an 'environmental impact score'. A carbon footprint meter in the corner tracks how the island's health changes based on which species are photographed and preserved. Hand-painted watercolor nature illustration style."
+  },
+  {
+    "id": 71,
+    "title": "Pixels To Performance",
+    "prompt": "Build a dialogue performance director mini-game. A script line appears on screen and the player must set three sliders (Pace, Tone, Subtext) to direct a character's delivery; an animated character then performs the line with a corresponding vocal waveform. Players score based on how well the performance matches the emotional stage direction shown above the script. Multiple takes let players iterate. Film-production clapperboard aesthetic."
+  },
+  {
+    "id": 72,
+    "title": "Building a Hit: LEGO Batman: Legacy of the Dark Knight",
+    "prompt": "Build a LEGO brick-based UE5 level construction toy inspired by LEGO Batman: Legacy of the Dark Knight. The player snaps LEGO-style bricks onto a grid to assemble a Gotham City rooftop; each brick has a license tag (DC or LEGO) and the player must keep the ratio of DC-licensed to LEGO-licensed elements balanced or the licensor approval meter drops. Completing the level unlocks a mini cinematic. Bright primary-color LEGO plastic aesthetic."
+  },
+  {
+    "id": 73,
+    "title": "Defining & Achieving Visual Quality!",
+    "prompt": "Build a visual quality benchmarking toy inspired by John Lasseter's 'quality is the best business plan'. The player is shown two versions of a game scene side by side and must spot the quality differences (aliased edges, flat lighting, off-palette colors, inconsistent textures) by clicking them. Each correct find adds to a 'finesse score'; the game then regenerates with harder comparisons. Clean art-director clipboard aesthetic with magnifying glass cursor."
+  },
+  {
+    "id": 74,
+    "title": "Hiring for Success Under the New UK Employment Rights Act",
+    "prompt": "Build a structured interview simulation game about the new UK Employment Rights Act. The player is a hiring manager who must conduct a legally compliant interview by selecting pre-approved questions from a question bank; choosing an unlawful question (age, family plans, health) triggers a red legal risk flash and docks compliance points. The player must fill all interview slots and document each decision before time runs out. Formal corporate HR-system UI aesthetic."
+  },
+  {
+    "id": 75,
+    "title": "Inside F1 Game Development: Dynamic Objectives",
+    "prompt": "Build a dynamic F1 race objectives mini-game. The player's car races around a simple oval track and contextual objective cards appear mid-race: 'Overtake 3 cars in 10 seconds', 'Hold position for 5 laps', 'Save tyres for 8 turns'. Completing objectives triggers a voice-acted radio message and adds XP; rewinding time (a special mechanic) to retry a missed objective costs a time token. High-speed racing HUD aesthetic with carbon-fiber textures."
+  },
+  {
+    "id": 76,
+    "title": "Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A",
+    "prompt": "Build a cinematic stunt choreography puzzle. The player is given a stunt sequence \u2014 character A punches, character B dodges, character C catches \u2014 and must arrange action beat tiles in the correct order on a timeline, choosing safe camera angles (shown as thumbnail previews) for each beat. Incorrect ordering or unsafe angles triggers a 'safety halt' animation. Gritty film-set slate-board aesthetic with dramatic spot-lighting."
+  },
+  {
+    "id": 77,
+    "title": "Develop: FTUE (First Time User Experience) Wednesday",
+    "prompt": "Build a conference first-timer bingo game for Wednesday attendees. The player gets a 5\u00d75 bingo card populated with typical Develop:Brighton experiences (Swapped a business card, Found the quiet room, Sat front row, Got starstruck, Snuck out of a session). The player clicks squares as they complete them and must get bingo before an in-game conference clock ticks down. Friendly conference-badge sticker art style."
+  },
+  {
+    "id": 78,
+    "title": "UK Games Industry Census \u2013 What have we learned?",
+    "prompt": "Build an interactive UK Games Industry Census data visualization explorer. Animated bar and donut charts appear with census findings (diversity percentages, layoff impact by demographic, salary bands). The player can click any chart segment to drill into sub-data shown as animated flowing Sankey diagrams. A 'take action' button at the end converts findings into pledge cards the player signs. Clean think-tank report aesthetic with UK flag accents."
+  },
+  {
+    "id": 79,
+    "title": "How to Work with your Ex Dev Partners to Resolve Blockers",
+    "prompt": "Build a conflict resolution puzzle game for external dev partnerships. Two studio panels face each other with a message queue between them; the player must match 'issue cards' (Insufficient Documentation, Missed Milestone, Unclear Scope) with the correct resolution action (Schedule Call, Share Wiki, Escalate, Compromise). Wrong matches cause the communication channel to degrade visually with static. Professional B2B SaaS UI aesthetic."
+  },
+  {
+    "id": 80,
+    "title": "The Recommendation Era: What AI-Driven Discovery Means for Video Games PR",
+    "prompt": "Build an AI recommendation signal strategy game for game PR. The player manages a PR campaign and must allocate a budget between Influencer Spend, Earned Media, and AI-Optimization tactics; a simulated ChatGPT/Perplexity recommendation engine then generates a text snippet recommending (or not recommending) the game based on the signals the player fed it. The player iterates until the AI's recommendation becomes enthusiastic. Dark editorial PR-agency aesthetic."
+  },
+  {
+    "id": 81,
+    "title": "Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio",
+    "prompt": "Build a 30-year arcade racing evolution timeline game inspired by Criterion's history. The player drives through five eras (2000s Burnout era, NFS era, open world era, Battlefield era, 2026) on a scrolling side-view race track where the environment and car model visually update each era. Collecting milestone badges (Burnout 3, NFS: Hot Pursuit, Battlefield 6) along the road adds to a legacy score. Bold, speed-blur racing arcade aesthetic."
+  },
+  {
+    "id": 82,
+    "title": "Pitching to Publishers Sucks (& What We Learned Pitching Cabernet)",
+    "prompt": "Build a publisher pitch simulation game inspired by pitching the narrative RPG Cabernet. The player presents a 3-slide pitch deck to an animated publisher panel; after each slide the publishers react with feedback cards ('Needs more market data', 'Love the tone', 'What's the hook?'). The player must drag adjustment tiles (shorter description, clearer USP, add demo link) onto the pitch to satisfy the feedback before the meeting timer runs out. Rich dark narrative RPG aesthetic."
+  },
+  {
+    "id": 83,
+    "title": "How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers",
+    "prompt": "Build a motion capture director's shot-list builder. The player is given a list of performance moments (hero walks into frame, villain threatens, sidekick reacts) and must cast actors by dragging character profiles (physique, vocal type, stunt rating) into each role, then sequence the shots on a daily schedule grid to stay within a 10-hour shoot window. Overloading any actor's stamina bar causes performance quality to drop. Industrial mocap-stage blueprint aesthetic."
+  },
+  {
+    "id": 84,
+    "title": "How Does One Freelance?",
+    "prompt": "Build a freelance games industry business simulator. The player manages a solo freelance studio: sets day rates on a pricing slider, negotiates contracts by choosing clauses (kill fee, IP ownership, revision limit), tracks income vs HMRC self-assessment tax liability on a running ledger, and queues client projects on a Kanban board. Overloading the queue burns out the freelancer character. Friendly self-employed accountancy app aesthetic."
+  },
+  {
+    "id": 85,
+    "title": "D2C\\",
+    "prompt": "Build a direct-to-consumer game store builder toy inspired by data from 45,000 gaming stores. The player configures a storefront \u2014 pricing, bundles, email capture, loyalty rewards \u2014 and watches a simulated sales funnel fill with customer dots. Each configuration decision reveals a data stat (conversion rate, LTV, churn). The goal is to maximize 'financial control score' beyond just saving on platform fees. Clean Shopify-meets-gaming-store aesthetic."
+  },
+  {
+    "id": 86,
+    "title": "Design for Change: Should Designers Be Letting AI Make Product Decisions?",
+    "prompt": "Build an ethical AI design decision framework quiz game. The player is shown a UX design scenario (e.g. 'AI auto-generates onboarding flow') and must drag it to one of three zones: 'AI Enhances', 'Human Must Decide', or 'Ethically Risky'. Correct placement earns trust tokens; wrong placement triggers an animated consequence (dark pattern activates, user leaves). A final score generates a 'design ethics archetype'. Thoughtful editorial design with muted tones."
+  },
+  {
+    "id": 87,
+    "title": "pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry",
+    "prompt": "Build an RPG party composition builder for art teams using the D&D party metaphor. The player assembles a 4-person art team by choosing roles from a class list: Art Director (Tank/vision), Concept Artist (DPS/ideation), Production Artist (Healer/execution), Technical Artist (Rogue/pipeline). Each combination is then tested against a 'game dev encounter' card (e.g. 'Art style pivot in week 8') and the team's stats determine if they survive. Fantasy RPG character-sheet aesthetic."
+  },
+  {
+    "id": 88,
+    "title": "BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission",
+    "prompt": "Build a cooperative indie collective credit allocation game inspired by BIG DUMB GAMES and STARSHIP BLOOPERS. Multiple contributor sprites each do work (design, code, art, sound) shown as progress bars filling in parallel; when a milestone is reached, the player distributes contribution credit tokens proportionally across all contributors using sliders that must sum to 100%. Imbalanced splits cause contributor morale to drop. Punk zine collective aesthetic with bold type."
+  },
+  {
+    "id": 89,
+    "title": "From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device",
+    "prompt": "Build a mobile device performance profiling game inspired by Nordeus Top Goal on potato phones. The player is given a simulated frame budget (16ms for 60fps) and must optimize a set of expensive render calls \u2014 dragging LOD sliders, toggling shadow quality, batching draw calls \u2014 to fit within budget on a low-end device profile. A real-time frame graph updates as adjustments are made. Clean developer profiler tool aesthetic."
+  },
+  {
+    "id": 90,
+    "title": "Press Start, Mind the Gap: Bridging US and UK Game Casting & Production pipelines",
+    "prompt": "Build a US/UK voice casting cross-border scheduling puzzle. The player is a casting director with actors in Los Angeles and London; they must schedule remote recording sessions across time zones on a 24-hour dual-clock interface, matching actor contracts (SAG-AFTRA vs Equity) to session slots and ensuring pay rates don't conflict. Overlapping sessions cause a 'union dispute' alert. Professional broadcast scheduling UI aesthetic."
+  }
+]

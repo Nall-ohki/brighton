@@ -1,0 +1,64 @@
+{
+  "Subagents": [
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 79\nTitle: How to Work with your Ex Dev Partners to Resolve Blockers\nBase Prompt: Build a conflict resolution puzzle game for external dev partnerships. Two studio panels face each other with a message queue between them; the player must match 'issue cards' (Insufficient Documentation, Missed Milestone, Unclear Scope) with the correct resolution action (Schedule Call, Share Wiki, Escalate, Compromise). Wrong matches cause the communication channel to degrade visually with static. Professional B2B SaaS UI aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 80\nTitle: The Recommendation Era: What AI-Driven Discovery Means for Video Games PR\nBase Prompt: Build an AI recommendation signal strategy game for game PR. The player manages a PR campaign and must allocate a budget between Influencer Spend, Earned Media, and AI-Optimization tactics; a simulated ChatGPT/Perplexity recommendation engine then generates a text snippet recommending (or not recommending) the game based on the signals the player fed it. The player iterates until the AI's recommendation becomes enthusiastic. Dark editorial PR-agency aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 81\nTitle: Criterion: 30 Years of Continuous Evolution and our Future as a Battlefield Studio\nBase Prompt: Build a 30-year arcade racing evolution timeline game inspired by Criterion's history. The player drives through five eras (2000s Burnout era, NFS era, open world era, Battlefield era, 2026) on a scrolling side-view race track where the environment and car model visually update each era. Collecting milestone badges (Burnout 3, NFS: Hot Pursuit, Battlefield 6) along the road adds to a legacy score. Bold, speed-blur racing arcade aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 82\nTitle: Pitching to Publishers Sucks (& What We Learned Pitching Cabernet)\nBase Prompt: Build a publisher pitch simulation game inspired by pitching the narrative RPG Cabernet. The player presents a 3-slide pitch deck to an animated publisher panel; after each slide the publishers react with feedback cards ('Needs more market data', 'Love the tone', 'What's the hook?'). The player must drag adjustment tiles (shorter description, clearer USP, add demo link) onto the pitch to satisfy the feedback before the meeting timer runs out. Rich dark narrative RPG aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 83\nTitle: How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers\nBase Prompt: Build a motion capture director's shot-list builder. The player is given a list of performance moments (hero walks into frame, villain threatens, sidekick reacts) and must cast actors by dragging character profiles (physique, vocal type, stunt rating) into each role, then sequence the shots on a daily schedule grid to stay within a 10-hour shoot window. Overloading any actor's stamina bar causes performance quality to drop. Industrial mocap-stage blueprint aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 84\nTitle: How Does One Freelance?\nBase Prompt: Build a freelance games industry business simulator. The player manages a solo freelance studio: sets day rates on a pricing slider, negotiates contracts by choosing clauses (kill fee, IP ownership, revision limit), tracks income vs HMRC self-assessment tax liability on a running ledger, and queues client projects on a Kanban board. Overloading the queue burns out the freelancer character. Friendly self-employed accountancy app aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 85\nTitle: D2C\\\nBase Prompt: Build a direct-to-consumer game store builder toy inspired by data from 45,000 gaming stores. The player configures a storefront \u2014 pricing, bundles, email capture, loyalty rewards \u2014 and watches a simulated sales funnel fill with customer dots. Each configuration decision reveals a data stat (conversion rate, LTV, churn). The goal is to maximize 'financial control score' beyond just saving on platform fees. Clean Shopify-meets-gaming-store aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 86\nTitle: Design for Change: Should Designers Be Letting AI Make Product Decisions?\nBase Prompt: Build an ethical AI design decision framework quiz game. The player is shown a UX design scenario (e.g. 'AI auto-generates onboarding flow') and must drag it to one of three zones: 'AI Enhances', 'Human Must Decide', or 'Ethically Risky'. Correct placement earns trust tokens; wrong placement triggers an animated consequence (dark pattern activates, user leaves). A final score generates a 'design ethics archetype'. Thoughtful editorial design with muted tones."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 87\nTitle: pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry\nBase Prompt: Build an RPG party composition builder for art teams using the D&D party metaphor. The player assembles a 4-person art team by choosing roles from a class list: Art Director (Tank/vision), Concept Artist (DPS/ideation), Production Artist (Healer/execution), Technical Artist (Rogue/pipeline). Each combination is then tested against a 'game dev encounter' card (e.g. 'Art style pivot in week 8') and the team's stats determine if they survive. Fantasy RPG character-sheet aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 88\nTitle: BIG DUMB GAMES: Building an Indie Studio Without Waiting for Permission\nBase Prompt: Build a cooperative indie collective credit allocation game inspired by BIG DUMB GAMES and STARSHIP BLOOPERS. Multiple contributor sprites each do work (design, code, art, sound) shown as progress bars filling in parallel; when a milestone is reached, the player distributes contribution credit tokens proportionally across all contributors using sliders that must sum to 100%. Imbalanced splits cause contributor morale to drop. Punk zine collective aesthetic with bold type."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 89\nTitle: From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device\nBase Prompt: Build a mobile device performance profiling game inspired by Nordeus Top Goal on potato phones. The player is given a simulated frame budget (16ms for 60fps) and must optimize a set of expensive render calls \u2014 dragging LOD sliders, toggling shadow quality, batching draw calls \u2014 to fit within budget on a low-end device profile. A real-time frame graph updates as adjustments are made. Clean developer profiler tool aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 90\nTitle: Press Start, Mind the Gap: Bridging US and UK Game Casting & Production pipelines\nBase Prompt: Build a US/UK voice casting cross-border scheduling puzzle. The player is a casting director with actors in Los Angeles and London; they must schedule remote recording sessions across time zones on a 24-hour dual-clock interface, matching actor contracts (SAG-AFTRA vs Equity) to session slots and ensuring pay rates don't conflict. Overlapping sessions cause a 'union dispute' alert. Professional broadcast scheduling UI aesthetic."
+    }
+  ]
+}

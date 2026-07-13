@@ -1,0 +1,16 @@
+{
+  "title": "Pixels To Performance",
+  "authors": [
+    {
+      "name": "Adele Cutting",
+      "origin": "Soundcuts"
+    }
+  ],
+  "description": "As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters.",
+  "session_takeaway": [
+    "Deep dive into the 20-year history of performance and dialogue in gaming.",
+    "Understand the interdisciplinary dynamics required to deliver compelling digital performances.",
+    "Tips and practices to align writers, directors, and developers around character design."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'Pixels To Performance'. The user should be able to toss around elements that represent 'As Develop celebrates its 20th anniversary, we'll explore how game dialogue has evolved and examine the importance of cross-disciplinary influences in shaping compelling characters' with satisfying bouncy physics."
+}

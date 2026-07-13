@@ -1,0 +1,16 @@
+{
+  "title": "The State of Mobile Creativity in 2026",
+  "authors": [
+    {
+      "name": "Alice Bowman",
+      "origin": "Fusebox Games"
+    }
+  ],
+  "description": "Join a panel of industry experts to explore the state of creativity in mobile games in 2026. As the mobile market becomes more saturated and competitive than ever, AI continues to reshape development, and success is increasingly defined by CPI, where does creativity fit? Our panel interrogates the role of creativity in today's mobile games industry.",
+  "session_takeaway": [
+    "Explore the conflict and alignment of commercial parameters (like CPI) and creative expression.",
+    "Understand how major mobile teams are keeping creative risk-taking alive in 2026.",
+    "A clear view of AI's current impact on design and speed of asset creation in active teams."
+  ],
+  "prompt": "Build a satisfying, tactile fidget toy web app inspired by 'The State of Mobile Creativity in 2026'. Elements should squish, snap, and pop while teaching the user about: 'Join a panel of industry experts to explore the state of creativity in mobile games in 2026'."
+}

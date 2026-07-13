@@ -1,0 +1,69 @@
+{
+  "Subagents": [
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 66\nTitle: Mobile Gaming: The Next Frontier for Accessibility\nBase Prompt: Build an eye-tracking accessibility controller simulator for mobile games. The player navigates a simple platformer level using only mouse cursor movement (simulating eye tracking) \u2014 moving the cursor toward a platform makes the character walk that direction; dwelling on a jump button triggers a jump. Speed and sensitivity sliders let the player tune the assistive controls. The game celebrates successful accessibility setups with confetti. Clean white medical-meets-playful UI design."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 67\nTitle: Vibe Coding: Build an App in 60 Minutes with GenAI\nBase Prompt: Build a 60-minute vibe-coding challenge simulator where the player types conversational GenAI-style prompts into a chat input and watches a mock app assemble piece by piece \u2014 each message adds a UI component (button, form, chart) to a phone wireframe on the right. Vague prompts produce broken components shown in red; specific prompts snap clean components into place. A 60-minute countdown adds tension. Glassmorphism dark UI with animated code-rain background."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 68\nTitle: Steam Events in 2026 (And Why You Want To Be a Part Of Them)\nBase Prompt: Build a Steam Events visibility bubble simulation. The player is a game dev who clicks to register for Steam events shown as incoming event cards (Next Fest, Publisher Sale, Themed Weekend); joining an event adds the game to a bubble cluster of 10 million player dots that are visually drawn toward featured games. Running a custom event spawns your own bubble zone. The score is total unique player touches over a simulated 30-day calendar. Clean Valve-blue minimalist UI."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 69\nTitle: Fixing The Talent Crisis: Moving From Conversation To Action\nBase Prompt: Build a talent pipeline gap-mapping relay race game. Educator runners on one side carry skill baton tokens (Portfolio, Soft Skills, Tool Knowledge, Industry Awareness) toward industry finish lines on the other side of a track. The player must build bridge tiles across gaps to connect education to industry before the runners fall into the gap. Each completed bridge unlocks a new junior hire icon. Bright, collaborative whiteboard illustration style."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 70\nTitle: ustwo games: A Positively Playful Business\nBase Prompt: Build a generative nature exploration toy inspired by ustwo games' Alba: A Wildlife Adventure and B-Corp values. The player wanders a small procedurally generated island using arrow keys, photographing wildlife by pressing space near animals; each photo contributes to an 'environmental impact score'. A carbon footprint meter in the corner tracks how the island's health changes based on which species are photographed and preserved. Hand-painted watercolor nature illustration style."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 71\nTitle: Pixels To Performance\nBase Prompt: Build a dialogue performance director mini-game. A script line appears on screen and the player must set three sliders (Pace, Tone, Subtext) to direct a character's delivery; an animated character then performs the line with a corresponding vocal waveform. Players score based on how well the performance matches the emotional stage direction shown above the script. Multiple takes let players iterate. Film-production clapperboard aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 72\nTitle: Building a Hit: LEGO Batman: Legacy of the Dark Knight\nBase Prompt: Build a LEGO brick-based UE5 level construction toy inspired by LEGO Batman: Legacy of the Dark Knight. The player snaps LEGO-style bricks onto a grid to assemble a Gotham City rooftop; each brick has a license tag (DC or LEGO) and the player must keep the ratio of DC-licensed to LEGO-licensed elements balanced or the licensor approval meter drops. Completing the level unlocks a mini cinematic. Bright primary-color LEGO plastic aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 73\nTitle: Defining & Achieving Visual Quality!\nBase Prompt: Build a visual quality benchmarking toy inspired by John Lasseter's 'quality is the best business plan'. The player is shown two versions of a game scene side by side and must spot the quality differences (aliased edges, flat lighting, off-palette colors, inconsistent textures) by clicking them. Each correct find adds to a 'finesse score'; the game then regenerates with harder comparisons. Clean art-director clipboard aesthetic with magnifying glass cursor."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 74\nTitle: Hiring for Success Under the New UK Employment Rights Act\nBase Prompt: Build a structured interview simulation game about the new UK Employment Rights Act. The player is a hiring manager who must conduct a legally compliant interview by selecting pre-approved questions from a question bank; choosing an unlawful question (age, family plans, health) triggers a red legal risk flash and docks compliance points. The player must fill all interview slots and document each decision before time runs out. Formal corporate HR-system UI aesthetic."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 75\nTitle: Inside F1 Game Development: Dynamic Objectives\nBase Prompt: Build a dynamic F1 race objectives mini-game. The player's car races around a simple oval track and contextual objective cards appear mid-race: 'Overtake 3 cars in 10 seconds', 'Hold position for 5 laps', 'Save tyres for 8 turns'. Completing objectives triggers a voice-acted radio message and adds XP; rewinding time (a special mechanic) to retry a missed objective costs a time token. High-speed racing HUD aesthetic with carbon-fiber textures."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 76\nTitle: Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A\nBase Prompt: Build a cinematic stunt choreography puzzle. The player is given a stunt sequence \u2014 character A punches, character B dodges, character C catches \u2014 and must arrange action beat tiles in the correct order on a timeline, choosing safe camera angles (shown as thumbnail previews) for each beat. Incorrect ordering or unsafe angles triggers a 'safety halt' animation. Gritty film-set slate-board aesthetic with dramatic spot-lighting."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 77\nTitle: Develop: FTUE (First Time User Experience) Wednesday\nBase Prompt: Build a conference first-timer bingo game for Wednesday attendees. The player gets a 5\u00d75 bingo card populated with typical Develop:Brighton experiences (Swapped a business card, Found the quiet room, Sat front row, Got starstruck, Snuck out of a session). The player clicks squares as they complete them and must get bingo before an in-game conference clock ticks down. Friendly conference-badge sticker art style."
+    },
+    {
+      "TypeName": "app_builder_v3",
+      "Role": "App Builder",
+      "Prompt": "ID: 78\nTitle: UK Games Industry Census \u2013 What have we learned?\nBase Prompt: Build an interactive UK Games Industry Census data visualization explorer. Animated bar and donut charts appear with census findings (diversity percentages, layoff impact by demographic, salary bands). The player can click any chart segment to drill into sub-data shown as animated flowing Sankey diagrams. A 'take action' button at the end converts findings into pledge cards the player signs. Clean think-tank report aesthetic with UK flag accents."
+    }
+  ]
+}
