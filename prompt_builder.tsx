@@ -41,7 +41,13 @@ const PromptBuilderPage = () => {
     return initialLuckyIdea.category;
   });
   
-  const [target, setTarget] = useState<Target>('Gemini Canvas');
+  const [target, setTarget] = useState<Target>(() => {
+    if (typeof window !== 'undefined') {
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      return isMobile ? 'Gemini Canvas' : 'AI Studio';
+    }
+    return 'AI Studio';
+  });
   
   const [idea, setIdea] = useState(() => {
     const pending = window.sessionStorage.getItem('pendingIdea');
@@ -240,7 +246,7 @@ Technical implementation details:
   const getTargetLink = () => {
       const encodedPrompt = encodeURIComponent(synthesizedPrompt);
       if (target === 'Gemini Canvas') {
-          return `https://g.co/gemini/canvas`;
+          return `https://gemini.google.com/`;
       }
       return `https://aistudio.google.com/apps`;
   };
