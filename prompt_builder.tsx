@@ -181,7 +181,7 @@ Technical implementation details:
     if (techDetails.length > 0) {
         prompt += techDetails.join('\n');
     } else {
-        prompt += '- Use standard HTML, CSS, and JavaScript with no external libraries.';
+        prompt += '- Let the system decide the best approach and libraries.';
     }
 
 
