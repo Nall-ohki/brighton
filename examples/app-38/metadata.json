@@ -1,0 +1,16 @@
+{
+  "title": "Building New Game Teams Before the Game Is Clear",
+  "authors": [
+    {
+      "name": "Marco Colombo",
+      "origin": "Supercell"
+    }
+  ],
+  "description": "What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki. The talk will look at the messy, practical reality of early team formation: how small teams build trust quickly, make decisions with limited information, use constraints to create momentum, and learn fast enough to know whether they are moving in the right direction. Rather than focusing on a specific game or presenting a polished \u201cSupercell formula,\u201d the session will explore the conditions, habits, and trade-offs that help early teams work better when almost everything is still uncertain. Attendees can expect an honest, practical perspective on team formation, creative ownership, feedback, and learning speed in new game development.",
+  "session_takeaway": [
+    "A practical look at how early game teams form, learn, and make decisions.",
+    "Reflections on what helps small teams move through uncertainty.",
+    "Clear questions developers and leaders can bring back to their own teams."
+  ],
+  "prompt": "Create a collaborative puzzle toy where multiple on-screen cursors must work together to solve challenges related to 'Building New Game Teams Before the Game Is Clear', illustrating: 'What makes an early game team worth believing in before the game itself is fully known? In this session, Marco, Client Programmer and New Game Founder at Supercell, shares reflections from joining Supercell through Spark, the company's program for forming and validating new game teams, and moving into one of its early new game projects in Helsinki'."
+}

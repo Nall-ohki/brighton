@@ -1,0 +1,16 @@
+{
+  "title": "5 Easy Steam Store Page Tweaks to Boost Your Visibility",
+  "authors": [
+    {
+      "name": "Jarvs Tasker",
+      "origin": "Happy Volcano"
+    }
+  ],
+  "description": "Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them. In this session, I'll walk you through five dead-simple tweaks you can make right now to boost your CTR, increase wishlists, and get your game recommended to the right players. We'll look at capsule art clarity, the \u201cverbs first\u201d short description rule, choosing screenshots that actually sell your game, tag alignment, and a couple of keyword tricks that helped Modulus hit 100k wishlists. Attendees will walk away with a clear checklist, real examples from Modulus and other indie titles, and a better understanding of how small, thoughtful changes can dramatically increase your visibility, wishlist velocity, and long-tail discovery on Steam.",
+  "session_takeaway": [
+    "How to apply five quick store page improvements that increase click-through rates and wishlist conversion on Steam.",
+    "Useful benchmarks using proven data from marketing experts like Chris Zukowski.",
+    "How to evaluate and iterate on your own Steam page using a simple checklist that any team can implement immediately."
+  ],
+  "prompt": "Build a cozy, relaxing idle game about building a healthy studio. Inspired by '5 Easy Steam Store Page Tweaks to Boost Your Visibility', the main progression revolves around 'Your Steam page is the most important marketing asset you have, but most devs unintentionally make it harder for the algorithm to help them'. Use soft, pastel colors."
+}

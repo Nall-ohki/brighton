@@ -1,0 +1,16 @@
+{
+  "title": "pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry",
+  "authors": [
+    {
+      "name": "Nader Alikhani",
+      "origin": "Innovecs Games"
+    }
+  ],
+  "description": "Every game needs art, but not every game needs the same artists, at the same time, in the same proportions. Whether you're a solo developer wearing every hat, an indie team deciding where to spend a limited budget, or a studio leader planning department growth, success often comes down to understanding which art problems need solving now\u2014and which can wait. Using RPG party composition as a framework, this talk explores how art direction, concept art, production art and technical art create value throughout development.",
+  "session_takeaway": [
+    "Understand which classes of art problems to prioritize at various stages of production.",
+    "Using the RPG party framework to plan, scale, and balance art department capabilities.",
+    "Smarter decisions on where to invest limited art budgets for maximum return."
+  ],
+  "prompt": "Develop a 'vibe-coded' generative art tool. Users can tweak sliders related to 'pARTy Composition: Building Balanced Art Teams in an Unbalanced Industry' to paint beautiful, abstract patterns that represent: 'Every game needs art, but not every game needs the same artists, at the same time, in the same proportions'."
+}

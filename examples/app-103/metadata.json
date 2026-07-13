@@ -1,0 +1,16 @@
+{
+  "title": "On the Lore Around Art",
+  "authors": [
+    {
+      "name": "Andrej Horoschun",
+      "origin": "Frontier Developments"
+    }
+  ],
+  "description": "This session examines the critical link between art creation and underlying studio lore. Our speaker explores Frontier's methods for ensuring visual assets remain tightly grounded in game mythology and target identity, protecting cohesion throughout long development cycles.",
+  "session_takeaway": [
+    "Understand how to build structured guidelines that keep art teams aligned to project lore.",
+    "Practical insights into Frontier's visual development processes.",
+    "How to navigate artistic independence while protecting brand and world rules."
+  ],
+  "prompt": "Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'On the Lore Around Art', revealing insights about: 'This session examines the critical link between art creation and underlying studio lore'."
+}

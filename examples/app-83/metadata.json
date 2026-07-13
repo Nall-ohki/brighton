@@ -1,0 +1,16 @@
+{
+  "title": "How to Enhance your Mocap/P-Cap Shoot: A Collaborative Guide for Game Devs and Performers",
+  "authors": [
+    {
+      "name": "Gareth Taylor",
+      "origin": "Freelance & The Mocap Vaults"
+    }
+  ],
+  "description": "This talk centres around the collaboration between the Game Developer and the Performer. Drawing on almost 25 years working in Motion and Performance Capture in over 50 AAA titles, I share my experience on how developers and actors alike can get the most out of their time in the volume. From choosing actors and auditioning, to preparing shot-lists and streamlining schedules.",
+  "session_takeaway": [
+    "Learn how to prepare for and execute a motion capture shoot to achieve optimal data.",
+    "How to structure and plan a mocap day that is both actor-friendly and budget-efficient.",
+    "Deep dive into acting in the digital realm and communication techniques between devs and actors."
+  ],
+  "prompt": "Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'How to Enhance your MocapPCap Shoot: A Collaborative Guide for Game Devs and Performers'. It should have popups, sounds, and folders that explore: 'This talk centres around the collaboration between the Game Developer and the Performer'."
+}

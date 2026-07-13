@@ -1,0 +1,32 @@
+{
+  "title": "Developing Tomorrow's Talent: Studio Strategies and Solutions",
+  "authors": [
+    {
+      "name": "Laurence Oldham",
+      "origin": "Digital Impact Incubator"
+    },
+    {
+      "name": "James Shepherd",
+      "origin": "Cypherdelic"
+    },
+    {
+      "name": "Grant Clark",
+      "origin": "Double Eleven"
+    },
+    {
+      "name": "Caroline Marchal",
+      "origin": "INTERIOR/NIGHT"
+    },
+    {
+      "name": "Louise Andrew",
+      "origin": "d3t \u2013 A Keywords Studio"
+    }
+  ],
+  "description": "This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry. The panel will draw from their deep and varied experience and approaches, providing insights into the challenges and successes they've encountered. Attendees will gain a practical understanding of the diverse strategies studios use to develop talent, the real-world obstacles faced, and the benefits of investing in future professionals. The panel is especially relevant for studio leaders and educators seeking actionable strategies for talent development.",
+  "session_takeaway": [
+    "Gain real-world insights into how studios are actively addressing talent pipeline challenges.",
+    "Understand the practical challenges, costs, and successes of different approaches to talent development.",
+    "Learn what studios see as the key benefits and future directions for building and sustaining talent in the games industry."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'Developing Tomorrows Talent: Studio Strategies and Solutions'. The user should be able to toss around elements that represent 'This expert panel brings together leaders from a broad range of studios to share how they build and nurture talent in the games industry' with satisfying bouncy physics."
+}

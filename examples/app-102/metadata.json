@@ -1,0 +1,16 @@
+{
+  "title": "The Ethics of using AI in Games",
+  "authors": [
+    {
+      "name": "Ben Byford",
+      "origin": "Nuclear Candy Games"
+    }
+  ],
+  "description": "A tour around the uses and pitfalls of using AI technologies in games development.",
+  "session_takeaway": [
+    "How can AI be used responsibly in games development.",
+    "What are the key legal and ethical considerations.",
+    "Clear recommendations and actions going forward in using AI."
+  ],
+  "prompt": "Create a rogue-like hacking minigame where you command an unpredictable AI to infiltrate 'The Ethics of using AI in Games'. The mechanics should explore how 'A tour around the uses and pitfalls of using AI technologies in games development'. Use a glitchy, cyberpunk aesthetic."
+}

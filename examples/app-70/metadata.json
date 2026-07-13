@@ -1,0 +1,28 @@
+{
+  "title": "ustwo games: A Positively Playful Business",
+  "authors": [
+    {
+      "name": "Maria Sayans",
+      "origin": "ustwo"
+    },
+    {
+      "name": "Daniel Gray",
+      "origin": "ustwo"
+    },
+    {
+      "name": "Peter Pashley",
+      "origin": "ustwo"
+    },
+    {
+      "name": "Sam Loveridge",
+      "origin": "GamesRadar"
+    }
+  ],
+  "description": "ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London. Fourteen years later, they have carved their path as an independent company and a certified B-Corp. Their award-winning games like the Monument Valley series and the inspiring eco-adventure Alba: A Wildlife Adventure, have reached millions of players worldwide. In this fireside chat, Maria Sayans, CEO, Daniel Gray, Chief Creative Officer, and Peter Pashley, Chief Development Officer, will discuss the origins of the studio and how they've made games with a lasting impact.",
+  "session_takeaway": [
+    "Discover how an agency project evolved into a certified B-Corp independent company.",
+    "Learn the philosophy behind Monument Valley and Alba.",
+    "Understand how to run a gaming business that entertains while also making a difference."
+  ],
+  "prompt": "Create a quirky management simulator where the player acts as a chaotic studio head trying to survive 'ustwo games: A Positively Playful Business'. They must balance resources based on: 'ustwo games was born in 2012 inside ustwo studios, a digital design agency in East London'."
+}

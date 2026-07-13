@@ -1,0 +1,20 @@
+{
+  "title": "Powered by Players: Reforjing 4J Studios",
+  "authors": [
+    {
+      "name": "Chris van der Kuyl",
+      "origin": "4J Studios"
+    },
+    {
+      "name": "Joseph Garrett",
+      "origin": "4J Studios"
+    }
+  ],
+  "description": "From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped\u2014at every stage\u2014by players. In this candid and forward-looking keynote, Joe Garrett and Chris van der Kuyl take the stage to unpack the journey of 4J Studios: from its early history and over fifteen years working on Minecraft, through its bold evolution into a creator of original technology and its new IP, Reforj. This talk explores how 4J is building Reforj to be a modern game ecosystem\u2014one shaped not behind closed doors, but in partnership with its community. From early experiments through to key update milestones, Joe and Chris will reveal how direct player feedback has actively informed systems, features, and design direction. Looking ahead, they will share what's next for Reforj, including a preview of Title Update 8 and the unique fully custom Elements Engine powering it.",
+  "session_takeaway": [
+    "The importance of listening to your community and how to harness their feedback.",
+    "Insight into 4J Studio's story and how the company has evolved over 21 years.",
+    "The choice to commit to a custom engine and the impact of its constant evolution."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'Powered by Players: Reforjing 4J Studios'. The user should be able to toss around elements that represent 'From its roots as a trusted development partner to becoming a studio defined by innovation and community-first thinking, 4J Studios has been shaped\u2014at every stage\u2014by players' with satisfying bouncy physics."
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Develop: FTUE (First Time User Experience) Tuesday",
+  "authors": [
+    {
+      "name": "Jazeena McCallum",
+      "origin": "CRITICAL REFLEX"
+    },
+    {
+      "name": "Annabel Ashalley-Anthony",
+      "origin": "Melanin Gamers"
+    }
+  ],
+  "description": "A relaxed and informal roundtable designed to help you get the most out of your time at the conference. A diverse panel of friendly and experienced devs from across the whole industry spectrum want to help anyone who feels shy, awkward, a little out of place, on the outside, or just unable to really squeeze all the goodness out of this amazing show. You'll feel positive, empowered and fully equipped to have an absolutely smashing time, with tips on how to be productive, tools to network, and commitments from volunteers to be your safety net should things get a little too much! Finally, should you feel like it would help, we'll match people up with Show Mentors to ensure however long you're in Brighton, you go back to your studio feeling invigorated and inspired!",
+  "session_takeaway": [
+    "Shared experiences that will give you some ideas on best practice plus do's and don'ts for networking at every event.",
+    "Recommendations for talks to attend and delegates to meet, plus practical help to do so!",
+    "Knowledge of safe and quiet spaces to help manage your experience at the show.",
+    "Introductions to helpers who you can approach throughout your visit if you need a friendly face!"
+  ],
+  "prompt": "Make a frantic, WarioWare-style microgame collection! Each 5-second minigame should be a hilarious literal interpretation of concepts from 'Develop: FTUE First Time User Experience Tuesday', especially: 'A relaxed and informal roundtable designed to help you get the most out of your time at the conference'."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Too Many Ideas, One Game: ADHD Survival Guide for Game Dev",
+  "authors": [
+    {
+      "name": "Rory Martin",
+      "origin": "Giraffe Head Studios Ltd"
+    }
+  ],
+  "description": "Game development is already a difficult, long, messy marathon. Add ADHD traits like novelty chasing, time blindness, and idea overload, and it can feel like you are constantly fighting your own brain. This light hearted talk is a practical, real world look at how to work with ADHD in game development and turn common pain points into strengths. Instead of trying to force a \u201cnormal\u201d workflow, I will share approaches that harness what ADHD can be good at: creative problem solving, momentum bursts, rapid iteration, and high energy finishing pushes. It is not a medical talk or about motivation hacks. It is an overview of strategies, habits, and production choices that help you ship, stay sane, and use your brain the way it actually works.",
+  "session_takeaway": [
+    "A simple way to capture ideas without derailing the main project.",
+    "A method for choosing the next task when focus is inconsistent.",
+    "A repeatable approach for turning hyperfocus into finished work."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Too Many Ideas One Game: ADHD Survival Guide for Game Dev'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'Game development is already a difficult, long, messy marathon'."
+}

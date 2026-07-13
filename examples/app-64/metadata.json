@@ -1,0 +1,44 @@
+{
+  "title": "Graduate Journeys: Experiences, Breakthroughs and Insights From Both Sides",
+  "authors": [
+    {
+      "name": "Eva Kioseoglou",
+      "origin": "The Chinese Room"
+    },
+    {
+      "name": "Gilbert McGirr",
+      "origin": "Supercell"
+    },
+    {
+      "name": "Sam Miller",
+      "origin": "Supercell"
+    },
+    {
+      "name": "Alfie Wright",
+      "origin": "Moss Monkey Games"
+    },
+    {
+      "name": "Chris Filip",
+      "origin": "UK Global Screen Fund (BFI)"
+    },
+    {
+      "name": "Sandrine le Comte",
+      "origin": "Studio Gobo"
+    },
+    {
+      "name": "Javi Galvan",
+      "origin": "Studio Gobo"
+    },
+    {
+      "name": "Jake Habgood",
+      "origin": "Freelance"
+    }
+  ],
+  "description": "This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways. It provides an opportunity to participate in an open discussion about those experiences and their lessons. In this open, organic conversation, the students and the path builders will share the positive impact of studio-led mentorship and dedicated incubation. We'll explore the gaps they found and how the support structures helped them overcome those challenges.",
+  "session_takeaway": [
+    "Gain first\u2011hand knowledge from those that have made the transition from education to industry.",
+    "Learn how studios and programmes support graduates through mentorship and pathways.",
+    "Gain clarity on practical next steps for moving from education into professional practice."
+  ],
+  "prompt": "Design a satirical, retro-OS style interface (like Windows 95) that acts as a tool for 'Graduate Journeys: Experiences Breakthroughs and Insights From Both Sides'. It should have popups, sounds, and folders that explore: 'This Free Roundtable gives the opportunity to hear firsthand from those who have made the journey from education to industry and those who build the pathways'."
+}

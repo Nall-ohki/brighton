@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples Launcher</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; background: #f8fafc; color: #0f172a; max-width: 1200px; margin: 0 auto; }
+        h1 { margin-top: 0; }
+        .example-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+        .example-card { display: flex; flex-direction: column; padding: 1.5rem; background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; text-decoration: none; color: inherit; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s; }
+        .example-card:hover { border-color: #94a3b8; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .title { font-size: 1.15rem; font-weight: bold; margin-bottom: 0.5rem; color: #3b82f6; }
+        .desc { font-size: 0.9rem; color: #64748b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .id-badge { font-size: 0.75rem; background: #e2e8f0; padding: 0.2rem 0.5rem; border-radius: 1rem; align-self: flex-start; margin-bottom: 0.5rem; color: #475569; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>Develop 2026: Subagent Examples</h1>
+    <p>A collection of standalone React applications generated as "single prompt examples" by Jetski subagents.</p>
+    
+    <div class="example-list">
+        <a href="/examples/app-35/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-35</span>
+            <div class="title">Powered by Players: Reforjing 4J Studios</div>
+            <div class="desc">Create a WebGL cellular automaton voxel simulator inspired by 4J Studios' Elements Engine. The demo features a 3D isometric chunk where users can place blocks of different elements (e.g., magma, water, sand, flora). Each element reacts procedurally in real-time—water flowing over magma creates steam and solidifies into obsidian, sand falls with gravity, and flora spreads on dirt when hydrated. The UI should allow tweaking the 'tick rate' and element interaction rules, showcasing the infinite procedural dynamics discussed by Chris van der Kuyl and Joe Garrett.</div>
+        </a>
+        <a href="/examples/app-36/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-36</span>
+            <div class="title">Games:Edu Track Intro & Keynote: Apprenticeships & the Tacit Knowledge of Game Development</div>
+            <div class="desc">Build a 'shadowing' simulation mini-game about tacit knowledge transfer in game studios. A senior dev character performs a sequence of actions (shown as glowing gesture icons) and the apprentice player must replicate the sequence from memory — but each round the instructions become slightly less explicit, mimicking how unspoken knowledge fades over remote work. Show a 'knowledge bar' that fills as the apprentice succeeds and depletes when they guess wrong. Clean, warm isometric office illustration style.</div>
+        </a>
+        <a href="/examples/app-37/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-37</span>
+            <div class="title">AI Wants to Play: A Game Designer's Guide to AI in Every Stage of Development</div>
+            <div class="desc">Build an interactive card game inspired by DeepMind's Agent57 where you train a tiny neural-net agent by playing cards. The player draws hand cards labelled 'Explore', 'Exploit', 'Reward+', 'Penalty', and 'Meta-Learn' and plays them in sequence to shape a small agent sprite navigating a procedural maze on the right side of the screen. The agent's behavior visibly changes based on which cards were played last round. Dark neon cyberpunk style with glowing circuit-board UI.</div>
+        </a>
+        <a href="/examples/app-38/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-38</span>
+            <div class="title">Building New Game Teams Before the Game Is Clear</div>
+            <div class="desc">Build a trust-building team formation simulation inspired by Supercell's Spark program. Five anonymous silhouetted characters orbit a central 'game idea' node; the player drags constraint tokens (Budget Limit, Time Box, Unclear Brief) onto the team and watches social connections form or break as arrows animate between characters. The goal is to reach 'team cohesion' before the idea node fades. Warm, pastel startup-office aesthetic with hand-drawn doodle edges.</div>
+        </a>
+        <a href="/examples/app-39/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-39</span>
+            <div class="title">The Power of Stopping: Spotting a Sunk Cost Fallacy Before it Sinks your Project</div>
+            <div class="desc">Build a sunk-cost fallacy puzzle game where the player manages a doomed game project. Each turn they receive a warning signal card (Budget Overrun, Scope Creep, Morale Drop, Timeline Drift) and must decide: 'Cut scope', 'Pivot', or 'Push On'. Choosing 'Push On' too many times makes the project meter collapse dramatically; correctly triggering the 'kill switch' earns a score bonus. The UI should look like a battered producer spreadsheet — monospace fonts, red/amber/green status cells, dark mode.</div>
+        </a>
+        <a href="/examples/app-40/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-40</span>
+            <div class="title">A Frame's Life: Frame Timing, Synchronization, and Latency in UE</div>
+            <div class="desc">Build an animated pipeline visualizer where the player can click to fire a single frame and watch it travel in real time through labeled stages: Game Thread → Render Thread → RHI → DirectX → GPU → Display. Each stage has a processing-time slider the player adjusts; if the frame takes too long at any stage, the 'vsync missed' indicator flashes and the display tears visually. Include a VRR toggle that smooths tearing. Dark technical dashboard style with cyan data-flow lines.</div>
+        </a>
+        <a href="/examples/app-41/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-41</span>
+            <div class="title">Developing Tomorrow's Talent: Studio Strategies and Solutions</div>
+            <div class="desc">Build a tower-defense style talent pipeline game where the player places mentor towers along a conveyor belt of junior developer sprites. Each mentor type (Apprenticeship, Bootcamp, University) has different range and 'skill transfer' speed. Uninstructed juniors fall off the end of the belt; mentored ones graduate and join a 'studio capacity' counter. Waves escalate with more junior devs needing guidance. Clean corporate infographic visual style, bright primary colors.</div>
+        </a>
+        <a href="/examples/app-42/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-42</span>
+            <div class="title">Develop: FTUE (First Time User Experience) Tuesday</div>
+            <div class="desc">Build a conference networking mini-game for first-timers at a game dev event. The player controls a shy avatar in a top-down conference floor and must approach NPC badges to 'connect' — but each NPC has a visible comfort radius. Moving too fast scares them off; hovering at the right distance starts a chat bubble mini-game where the player presses the correct conversation-starter key. Quiet zones refill a social-battery meter. Soft pastel isometric style.</div>
+        </a>
+        <a href="/examples/app-43/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-43</span>
+            <div class="title">Finding the Balance: Big Team Process vs Indie Mindset</div>
+            <div class="desc">Build a balance-beam physics puzzle where one side holds 'Process Boulders' (Sprint Planning, Jira Board, QA Gate) and the other holds 'Creative Sparks' (wild idea lightbulbs). The player drags items onto each side to keep the beam level; if process outweighs creativity the beam tips and the game goes grey; if creativity dominates the beam tips and everything catches fire chaotically. Illustrated indie sticker-art style.</div>
+        </a>
+        <a href="/examples/app-44/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-44</span>
+            <div class="title">Mobile Games: When Approachability Rhymes with Accessibility</div>
+            <div class="desc">Build an accessibility audit mini-game for a mobile game UI. The player is presented with a mock mobile game screen and must tap through a checklist: 'increase text size', 'add screen reader label', 'raise color contrast', 'enlarge tap targets'. Each fix is applied visually and the 'accessibility score' rises. Failing to fix an issue shows an animated disabled player character struggling to interact. Clean, minimalist flat design with an inclusive color palette.</div>
+        </a>
+        <a href="/examples/app-45/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-45</span>
+            <div class="title">5 Easy Steam Store Page Tweaks to Boost Your Visibility</div>
+            <div class="desc">Build a Steam page optimization drag-and-drop puzzle inspired by the Modulus 100k wishlist story. The player is given a bad Steam capsule with blurry art, a passive description, and wrong tags, plus a toolkit of fixes: sharpen the logo, rewrite the description starting with a verb, swap screenshots, align tags. Each fix adds wishlists to an animated counter that climbs toward 100,000. Retro game-store pixel art aesthetic.</div>
+        </a>
+        <a href="/examples/app-46/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-46</span>
+            <div class="title">The Evolution of Interactive Storytelling</div>
+            <div class="desc">Build a branching narrative explorer visualized as a living story-tree. The player clicks nodes labelled Film, TV, or Game to expand branches of a story concept; choosing an interactive branch splits the story into player-choice forks shown as glowing roots, while linear branches draw straight upward like film frames. The canvas fills with an organic tree that illustrates how interactive and linear storytelling diverge from the same seed idea. Organic ink-on-paper illustration style with subtle animation.</div>
+        </a>
+        <a href="/examples/app-47/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-47</span>
+            <div class="title">Opportunities For Talent: Workshopping The Foundations Of A Better Future</div>
+            <div class="desc">Build a collaborative brainstorm simulation inspired by Padlet workshops. The screen shows a shared sticky-note canvas; the player types a barrier phrase (e.g. 'cost', 'no industry contacts') and presses Enter to post it. An AI NPC educator then responds with a sticky-note solution that animates onto the board. Group the stickies into columns (Education / Industry / Government) by dragging. Playful classroom chalkboard aesthetic.</div>
+        </a>
+        <a href="/examples/app-48/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-48</span>
+            <div class="title">Too Many Ideas, One Game: ADHD Survival Guide for Game Dev</div>
+            <div class="desc">Build an ADHD hyperfocus time-management game for a solo game dev. Ideas fly in from the edges of the screen as glowing thought-bubbles; the player must quickly tap to capture each idea into an 'idea jar' before they drift away, but can only work on one idea at a time shown in a central 'hyperfocus zone'. A momentum bar fills during focused work and drains during multitasking. Energetic, hand-doodled notebook-margin art style with bright highlighter colors.</div>
+        </a>
+        <a href="/examples/app-49/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-49</span>
+            <div class="title">Scaling Without Breaking Your Studio</div>
+            <div class="desc">Build a studio scaling simulation where the player clicks to hire new staff, but each hire secretly adds a hidden 'leadership debt' token. When the debt pile exceeds the leadership capacity bar, a chain reaction of attrition fires start — staff sprites begin drifting off-screen. The player must spend 'org investment' cards to reinforce leadership before breakpoints. Data-driven dashboard visual style, dark background with glowing red/amber warning indicators.</div>
+        </a>
+        <a href="/examples/app-50/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-50</span>
+            <div class="title">Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform</div>
+            <div class="desc">Build a self-service platform builder puzzle game inspired by transforming a mobile team from ticket factory to platform. The player lays down API contract tiles on a grid connecting 10 squad icons to a central platform hub; when a valid contract path is complete, that squad's tickets disappear and they turn green. Channel-war conflicts between squads appear as crossing red lines the player must reroute. Clean tech-platform blueprint visual style.</div>
+        </a>
+        <a href="/examples/app-51/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-51</span>
+            <div class="title">How to Develop and Execute a Marketing Content Strategy Without Losing Your Mind</div>
+            <div class="desc">Build a marketing content calendar rhythm game for indie devs. Posts (social, devlog, trailer) fall from the top of the screen to a timeline bar at the bottom; the player must hit the correct lane key (Twitter/Reddit/Steam/YouTube) at the right beat to post on the ideal channel. Posting too frequently on one channel triggers 'audience fatigue'; silence too long triggers 'algorithm penalty'. Lo-fi indie bedroom-producer aesthetic with cassette-tape UI.</div>
+        </a>
+        <a href="/examples/app-52/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-52</span>
+            <div class="title">Your Game is Better Than You Think: How to Find and Nurture the Soul of Your Game</div>
+            <div class="desc">Build a 'soul-finding' generative art toy where the player describes their game design in three words and the app generates a shifting abstract visual that morphs based on those words — mechanical words produce sharp geometric patterns, emotional words produce fluid organic shapes, genre words produce recognizable pixel forms. The player keeps tweaking words until the visual 'clicks' and reveals the irreducible core of their idea. Soft watercolor generative style.</div>
+        </a>
+        <a href="/examples/app-53/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-53</span>
+            <div class="title">Burnout: An Honest Chat About the Causes, Symptoms and Recovery</div>
+            <div class="desc">Build a burnout recovery visual novel / idle sim hybrid. A founder character's energy, sleep, and passion meters slowly drain as tasks pile up on a desk; the player can pause work to trigger self-care actions (Rest, Talk, Delegate, Walk) each shown as animated vignettes. The key mechanic is that the player must recognize early warning signals (shaking hands, grey color bleed) before the burnout meter maxes out. Muted, intimate watercolor illustration style.</div>
+        </a>
+        <a href="/examples/app-54/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-54</span>
+            <div class="title">XDS Ignite (2 PM): XDEV at a Crossroads: What the Best Teams are Doing Differently</div>
+            <div class="desc">Build a co-creation contract negotiation puzzle game set in external game development outsourcing. Two panels show the client studio and the dev partner; the player drags 'agreement tiles' (Milestones, IP Rights, Feedback Loops, Co-Credit) into a shared contract zone. Imbalanced contracts cause a progress bar to wobble; a perfectly balanced contract unlocks the 'co-creation' mode where both sides animate building the game together. Corporate-sleek UI with soft gradient backgrounds.</div>
+        </a>
+        <a href="/examples/app-55/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-55</span>
+            <div class="title">Interface as Identity: Designing UI That Complements the Brand</div>
+            <div class="desc">Build a UI brand identity builder toy where the player picks typography, spacing density, motion speed, and color temperature sliders and watches a mock game menu assemble in real time on the right. Each choice shifts the brand personality meter between axes: Playful↔Serious, Loud↔Quiet, Sharp↔Soft. The final composition is labelled with a brand archetype (Rebel, Sage, Jester, etc.). Minimal design-tool aesthetic, white canvas with precise controls.</div>
+        </a>
+        <a href="/examples/app-56/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-56</span>
+            <div class="title">Level Up In-Game Earnings Without Losing Players</div>
+            <div class="desc">Build a non-intrusive in-game advertising placement puzzle. The player is shown a 3D game environment (top-down view of a racing track, city street, sports arena) and must drag ad units onto surfaces — billboards, jerseys, loading screens — while keeping an 'immersion meter' high and an 'revenue meter' rising. Placing ads on HUD or blocking gameplay drops immersion instantly. Bold sports-broadcast visual style with animated crowd reactions.</div>
+        </a>
+        <a href="/examples/app-57/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-57</span>
+            <div class="title">Moving from Engineering To Management</div>
+            <div class="desc">Build a career path choice interactive diagram. The player starts as an IC engineer sprite and navigates a branching skill tree where each node is labelled with a management skill (1:1s, Roadmapping, Hiring, Technical Direction) or an engineering skill (Architecture, Code Review, Mentorship). Hovering reveals a real-world impact tooltip; clicking adds the skill. The screen fills over time showing the different manager archetypes the player could become. Clean corporate org-chart visual with subtle animation.</div>
+        </a>
+        <a href="/examples/app-58/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-58</span>
+            <div class="title">How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio</div>
+            <div class="desc">Build a transparent salary and power-sharing simulation for a growing studio. The player starts with 2 co-founders and clicks to hire up to 18 people; each hire reveals their salary openly on-screen and votes in a governance mini-game where the team collectively decides on studio policies via majority vote. Decisions made without consensus cause morale to drop. Cooperative, warm cooperative-board-game aesthetic with illustrated character tokens.</div>
+        </a>
+        <a href="/examples/app-59/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-59</span>
+            <div class="title">Raise the Game Roundtable</div>
+            <div class="desc">Build an equity-in-games word puzzle where the player unscrambles industry terms related to diversity and inclusion (Representation, Pay Gap, Safe Space, Allyship) against a timer. Each solved word unlocks a small illustrated vignette of a more inclusive studio moment. The board regenerates with harder compound phrases in later rounds. Bright, celebratory rainbow-gradient visual style with inclusive character illustrations.</div>
+        </a>
+        <a href="/examples/app-60/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-60</span>
+            <div class="title">Beyond Awareness: Supporting Neurodiverse Teams Without Burning Out Managers</div>
+            <div class="desc">Build a manager support allocation simulation for neurodiverse teams in game production. The player is a studio manager with a fixed 'emotional labour' budget each week; neurodivergent team members appear with accommodation requests (flexible deadlines, quiet room, written briefs). The player drags support tokens to each person but can run out — if the manager's own wellbeing meter empties, productivity collapses for everyone. Calm, cool-toned minimal UI.</div>
+        </a>
+        <a href="/examples/app-61/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-61</span>
+            <div class="title">Unknown Title</div>
+            <div class="desc"></div>
+        </a>
+        <a href="/examples/app-62/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-62</span>
+            <div class="title">How to Make Whatever You Want and Still Get Attention</div>
+            <div class="desc">Build a hyper-local narrative game builder toy inspired by Stanley Baxton's BAFTA Breakthrough story. The player picks a very specific real-world location (a bus stop, a laundrette, a chip shop) and three hyper-local character archetypes; the app generates a tiny two-screen interactive story vignette from those inputs. A 'specificity score' rewards unusual, niche combinations over generic settings. Hand-drawn zine aesthetic with limited risograph color palette.</div>
+        </a>
+        <a href="/examples/app-63/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-63</span>
+            <div class="title">Unknown Title</div>
+            <div class="desc"></div>
+        </a>
+        <a href="/examples/app-64/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-64</span>
+            <div class="title">Graduate Journeys: Experiences, Breakthroughs and Insights From Both Sides</div>
+            <div class="desc">Build a mentorship timeline game inspired by the education-to-industry journey. Two parallel timelines scroll upward — one for a fresh graduate, one for their studio mentor — and the player must drag 'connection events' (Portfolio Review, Industry Talk, Trial Project, Feedback Session) to link the timelines at the right moments. Gaps in connection cause the graduate's progress to stall. Graduation-cap-and-blueprint illustrated style.</div>
+        </a>
+        <a href="/examples/app-65/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-65</span>
+            <div class="title">Scheduled Serendipity: Manufacturing Creative Aha Moments</div>
+            <div class="desc">Build a 'scheduled serendipity' constraint-based idea generator toy. The player spins two wheels — one of constraints (10-minute timer, single color, no dialogue) and one of transformations (reverse it, scale it up, make it sad) — and the app generates a randomized game concept card from the combination. The player can lock in a constraint and keep re-spinning the transformation wheel, simulating the creative loop the talk describes. Vintage lottery-machine retro aesthetic with spinning drum animation.</div>
+        </a>
+        <a href="/examples/app-91/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-91</span>
+            <div class="title">One Year On: Progress, Gaps, and Possibilities for LGBTQ+ Inclusion</div>
+            <div class="desc">Build an LGBTQ+ inclusion progress tracker interactive timeline. The player scrolls through a fictional studio's 5-year arc and clicks on policy moments (pronoun fields added, trans health cover extended, pride ERG formed) to reveal their impact on a community wellbeing score. Social/political headwind events slide in from the right requiring the player to enact a protective policy before the wellbeing score drops. Warm rainbow-gradient pride aesthetic.</div>
+        </a>
+        <a href="/examples/app-92/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-92</span>
+            <div class="title">Stop Surveying, Start Listening: Why Real-Time Player Intelligence is Replacing How we Listen to Players</div>
+            <div class="desc">Build a real-time player signal listening dashboard simulation inspired by Jagex and Levellr. Streams of player comments scroll in from the left (forum posts, chat messages, review snippets); the player must click to tag each as 'signal' (actionable feedback) or 'noise' (loudest voice, edge case, troll). A running 'voice of the player' bar fills with tagged signals and the team's next sprint is generated from top signals. Data journalism dashboard aesthetic.</div>
+        </a>
+        <a href="/examples/app-93/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-93</span>
+            <div class="title">Games as Dreams: Using Symbolic Archetypes to Craft Powerful, Flexible Narratives</div>
+            <div class="desc">Build a symbolic archetype narrative puzzle game inspired by 'Dream Mode' storytelling. The player is given a set of Jungian archetype tokens (Shadow, Hero, Trickster, Anima, Sage) and must connect them with narrative arc tiles (Call, Descent, Return) to form a complete story structure on a canvas. When a quest tile is removed, the remaining archetypes must rearrange to still form a coherent arc. Dreamlike surrealist illustration style with soft glow and shifting colors.</div>
+        </a>
+        <a href="/examples/app-94/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-94</span>
+            <div class="title">Unknown Title</div>
+            <div class="desc"></div>
+        </a>
+        <a href="/examples/app-95/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-95</span>
+            <div class="title">More Than Games: Unlocking New Funding & Creative Opportunities Outside the Consumer Market</div>
+            <div class="desc">Build a cross-sector pitch deck builder toy for game developers selling skills to health and education clients. The player is given a game-dev skill card (narrative design, real-time simulation, player behavior analysis) and must drag it into a non-games client brief (NHS training, museum exhibit, school curriculum). Matching the right skill to the right client brief unlocks a 'GVA spillover' coin reward. The running total climbs toward £1.3 billion. Clean think-tank policy-doc aesthetic.</div>
+        </a>
+        <a href="/examples/app-96/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-96</span>
+            <div class="title">Exploring the 80:20 Rule in Concept Art</div>
+            <div class="desc">Build an 80:20 Pareto concept art speed-challenge game. The player has 2 minutes to create a character concept using only the most impactful 20% of art decisions: silhouette shape, primary color, one texture, one detail. A complexity meter penalizes adding more than four decisions. After time is up, the concept is rated on 'impact per effort' and the player unlocks a harder brief for a new IP. Sketchbook and marker art style with timer tension.</div>
+        </a>
+        <a href="/examples/app-97/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-97</span>
+            <div class="title">Overcoming Barriers to Mental Health Support in the Workplace</div>
+            <div class="desc">Build a workplace mental health barrier maze game. A worker character navigates a top-down office maze where walls are labelled mental health barriers (Stigma, No EAP, Manager Unaware, No Time). The player must find and activate support beacons (Safe In Our World signs, Wellbeing Champion, Anonymous Helpline) to dissolve the walls. Each studio type (indie, AA, AAA) generates a different maze layout. Soft safe-space color palette with warm amber and teal tones.</div>
+        </a>
+        <a href="/examples/app-98/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-98</span>
+            <div class="title">How to Stay Ahead of Cutting Edge Game Technology</div>
+            <div class="desc">Build a 20-year game technology evolution quiz show. Technology trend cards appear one at a time (ray tracing, procedural gen, neural rendering, haptics) and the player must drag each to its correct decade on a horizontal timeline. Correct placements unlock a brief tooltip about that tech's game-dev impact. A final 'emerging tech' round asks the player to predict which 2026+ technologies will matter. Retro quiz-show TV-set aesthetic with spinning wheel graphic.</div>
+        </a>
+        <a href="/examples/app-99/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-99</span>
+            <div class="title">Unknown Title</div>
+            <div class="desc"></div>
+        </a>
+        <a href="/examples/app-100/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-100</span>
+            <div class="title">Dungeons and Dialects: Implementing Authentic Accents & Artistic Tropes for Inclusive Narratives</div>
+            <div class="desc">Build an accent and dialect decoding audio-visual puzzle game inspired by 'Dungeons and Dialects'. Phonetic notation cards fall from the top of the screen labelled with fantasy accent clichés (Dwarves = Scottish, Elves = RP English); the player must break these clichés by dragging authentic regional dialect cards onto character portraits to replace them, then preview the result as an animated speech bubble. A 'stereotype meter' drops as authentic choices are made. Dark fantasy illustrated style.</div>
+        </a>
+        <a href="/examples/app-101/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-101</span>
+            <div class="title">Designing Immersive and Explorable Open Worlds with Narrative Encounters</div>
+            <div class="desc">Build an open-world narrative encounter placement designer. The player is given a top-down procedural terrain map and must place authored narrative encounter tokens (NPC camp, hidden note, ambush, lore shrine) at positions that balance density — too clustered and the 'systemic feel' meter drops; too sparse and the 'narrative richness' meter drops. Systemic behavior events then randomly fire between encounters and the player watches emergent stories play out. Sci-fi holographic map aesthetic.</div>
+        </a>
+        <a href="/examples/app-102/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-102</span>
+            <div class="title">The Ethics of using AI in Games</div>
+            <div class="desc">Build an AI ethics risk assessment card game for game studios. Players draw AI use-case scenario cards (AI-generated NPC voices, procedural content replacing artists, player behavior prediction) and must assign each a risk level (Low/Medium/High) by weighing Legal, Creative, and Ethical sliders. The game reveals the industry consensus score after each card and explains the delta. A final 'studio ethics charter' is generated from the player's choices. Clean legal-document meets game-UI aesthetic.</div>
+        </a>
+        <a href="/examples/app-103/index.html" class="example-card" target="_blank">
+            <span class="id-badge">app-103</span>
+            <div class="title">On the Lore Around Art</div>
+            <div class="desc">A visual inspection and art-curation game where the player acts as an Art Director maintaining project cohesion over a long development cycle. The player is presented with incoming concept art pieces and 3D model renders on a virtual desk. They must cross-reference the art against the 'Studio Lore Bible' and 'Target Identity Guidelines.' Using a red marker tool, the player circles elements that break the established mythology (e.g., an incorrect architectural motif, or anachronistic armor materials) and sends feedback. The core mechanic relies on attention to detail and progressive difficulty as the game's lore bible expands with new factions and rules.</div>
+        </a>
+    </div>
+</body>
+</html>

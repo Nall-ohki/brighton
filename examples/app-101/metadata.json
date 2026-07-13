@@ -1,0 +1,16 @@
+{
+  "title": "Designing Immersive and Explorable Open Worlds with Narrative Encounters",
+  "authors": [
+    {
+      "name": "Shi-tao Fan",
+      "origin": "Maverick) (Cloud Imperium Games"
+    }
+  ],
+  "description": "This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay. It highlights how the encounter framework enhances player exploration, improves immersion, and seamlessly blends gameplay with the project's rich lore and strong IP identity. Through this overview, we explore the design principles, technical solutions, and development workflow.",
+  "session_takeaway": [
+    "Practical methods for designing open world encounters that balance systemic behavior with authored narrative intent.",
+    "Techniques for integrating lore and worldbuilding into moment-to-moment gameplay without disrupting player agency.",
+    "Actionable workflows and cross-discipline practices that help teams build scalable encounter content."
+  ],
+  "prompt": "Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'Designing Immersive and Explorable Open Worlds with Narrative Encounters' and the struggles of: 'This session examines the development of the Open World Encounter in Project Avatar, covering the design domains of systems, narrative, and gameplay'."
+}

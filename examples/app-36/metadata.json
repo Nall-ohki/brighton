@@ -1,0 +1,25 @@
+{
+  "title": "Games:Edu Track Intro & Keynote: Apprenticeships & the Tacit Knowledge of Game Development",
+  "authors": [
+    {
+      "name": "Laurence Oldham",
+      "origin": "Digital Impact Incubator"
+    },
+    {
+      "name": "Tom Cole",
+      "origin": "University of Greenwich"
+    },
+    {
+      "name": "Jake Habgood",
+      "origin": "Freelance"
+    }
+  ],
+  "description": "Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry. Drawing on experience from his own early career at Gremlin Graphics and 20 years of leading training initiatives across industry and academia, the session examines how much of what defines an effective developer is not easily codified, but instead acquired through observation, collaboration, and participation in real production environments. The talk focuses on tacit knowledge, the practical understanding of workflows, judgement, and team dynamics that emerges through close interaction with experienced colleagues. It argues that this form of learning is central to game development, where rapid iteration, cross-disciplinary collaboration, and shared problem-solving are essential. The session also considers how changes in working patterns, particularly the shift toward remote working, affect the transmission of this knowledge by reducing opportunities for informal exchange, mentorship, and apprenticeship-style learning. The keynote reflects on the implications for studios seeking to build capability, maintain cultural cohesion, and support early career development, particularly where traditional learning pathways are disrupted. It outlines considerations for sustaining effective knowledge transfer and team development in modern production contexts, before concluding with a Q&A.",
+  "session_takeaway": [
+    "Understand the role of apprenticeship, both formal and informal, in developing games industry skills.",
+    "Recognise the importance of tacit knowledge in production environments.",
+    "Identify the challenges remote working presents for knowledge transfer and team development.",
+    "Consider approaches to sustaining effective learning and cultural cohesion within studios."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Games:Edu Track Intro  Keynote: Apprenticeships  the Tacit Knowledge of Game Development'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'Following a brief introduction and welcome to the day's events by track hosts Laurence Oldham and Dr Tom Cole, in this keynote, Jake Habgood explores the role of formal and informal apprenticeship in the games industry'."
+}

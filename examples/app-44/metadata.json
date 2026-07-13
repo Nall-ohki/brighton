@@ -1,0 +1,21 @@
+{
+  "title": "Mobile Games: When Approachability Rhymes with Accessibility",
+  "authors": [
+    {
+      "name": "Am\u00e9liane F. Chiasson",
+      "origin": "Player Research (Keywords Studios)"
+    },
+    {
+      "name": "Cari Watterton",
+      "origin": "Scopely"
+    }
+  ],
+  "description": "This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players. Discover the meaningful overlap: customizable controls help both casual players and those with motor impairments, clear audio/visual cues serve new players and those with various disabilities from cognitive to visual and hearing. See how you can properly support OS-level accessibility settings like screen readers and text scaling, while also designing accessible mobile gaming experiences through inclusive design and accessibility-aware development in commonly used engines. Learn from expert game accessibility specialists Cari Watterton (Scopely) and Am\u00e9liane F. Chiasson (Player Research) and make your next mobile game (or patch!) more accessible.",
+  "session_takeaway": [
+    "Learn how to make your mobile game reach a wider audience of people who use mobile devices daily for their accessibility needs.",
+    "Know how to leverage and efficiently support iOS and Android's accessibility settings.",
+    "Learn how to cleverly align accessibility efforts with your studio goals.",
+    "Get tips on how to prevent accessibility barriers at the design level to avoid needing to do extra work."
+  ],
+  "prompt": "Build a satisfying, tactile fidget toy web app inspired by 'Mobile Games: When Approachability Rhymes with Accessibility'. Elements should squish, snap, and pop while teaching the user about: 'This talk explores how mobile games often excel at approachability but often miss accessibility, which excludes disabled players'."
+}

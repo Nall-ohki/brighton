@@ -1,0 +1,20 @@
+{
+  "title": "Raise the Game Roundtable",
+  "authors": [
+    {
+      "name": "Cinzia Musio",
+      "origin": "Ukie"
+    },
+    {
+      "name": "Jonas Gawe",
+      "origin": "Limit Break Mentorship / Electric Saint"
+    }
+  ],
+  "description": "Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be. Through this roundtable, we'll aim to discuss actionable takeaways to make your studio or company a more inclusive place to work for, and share tips on how to do so sustainably. You will also learn what Raise the Game and their partners are up to, and how you can get involved.",
+  "session_takeaway": [
+    "How to make your studio a more equitable, diverse, and inclusive place.",
+    "Take action sustainably to make long-lasting changes in your studio culture.",
+    "Learn how to guide your studio toward organizational and culture maturity."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'Raise the Game Roundtable'. The user should be able to toss around elements that represent 'Join us to talk about how to make the games industry a more equitable, diverse and inclusive place to be' with satisfying bouncy physics."
+}

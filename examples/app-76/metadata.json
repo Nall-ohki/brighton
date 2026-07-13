@@ -1,0 +1,16 @@
+{
+  "title": "Action Design and Stunt Coordination for Cinematics and Gameplay - Q&A",
+  "authors": [
+    {
+      "name": "Nathaniel Marten",
+      "origin": "Lucky 13 Action Ltd"
+    }
+  ],
+  "description": "A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay. Please feel free to bring questions regarding any element of the process - from the key safety requirements developers should expect a coordinator to manage through to the creative elements that factor into producing great action content.",
+  "session_takeaway": [
+    "Answer key questions and give practical advice regarding the process of creating and capturing action content.",
+    "Explore how action content is created and how it can enhance and support Cinematic and Gameplay production.",
+    "Understand how a coordinator can help developers manage, predict, and mitigate risk."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'Action Design and Stunt Coordination for Cinematics and Gameplay  QA'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'A question and answer session focusing on the process of designing action content and coordinating stunt shoots within Game Development, for both cinematics and Gameplay'."
+}

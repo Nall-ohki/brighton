@@ -1,0 +1,16 @@
+{
+  "title": "Vibe Coding: Build an App in 60 Minutes with GenAI",
+  "authors": [
+    {
+      "name": "Tyson Roberts",
+      "origin": "Deepmind"
+    }
+  ],
+  "description": "Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'\u2014intuitive, conversational instructions\u2014to build a working application from scratch. Newcomers will discover how to turn plain English into functional code, while experienced coders can test the limits of GenAI for rapid prototyping, bypass standard boilerplate, or mentor a beginner.",
+  "session_takeaway": [
+    "Learn how to guide and prompt GenAI tools to generate functional software from conversational English.",
+    "A clearer understanding of rapid prototyping limits and capabilities of standard tools.",
+    "Walk away with a working project built from scratch."
+  ],
+  "prompt": "Build a quirky virtual pet game where the pet is an AI trying to understand 'Vibe Coding: Build an App in 60 Minutes with GenAI'. It asks the player questions and visually evolves based on: 'Curious about how AI is changing software development? Join us for a rapid-fire, hands-on workshop where we use 'vibe coding'\u2014intuitive, conversational instructions\u2014to build a working application from scratch'."
+}

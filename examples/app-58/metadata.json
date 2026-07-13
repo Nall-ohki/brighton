@@ -1,0 +1,16 @@
+{
+  "title": "How Rethinking Pay and Power Helped Us Build a Resilient Co-Dev Studio",
+  "authors": [
+    {
+      "name": "Daph Janssens",
+      "origin": "Day III Digital"
+    }
+  ],
+  "description": "The most common company value is integrity while the second most common is collaboration. But how many truly live by those values when pay structures reward competition and the most important decisions are made behind closed doors? Values alone don't shape studio culture. This talk is a case study of what happened when an industry veteran and an outsider founded a co-dev studio where pay is transparent, power is shared and the company culture is built within the studio structure. Daph walks you through the original hypothesis, what rethinking pay and power meant, and their observations as the studio grew from 2 to 18 people over two years, contributing to multiple AAA co-dev projects.",
+  "session_takeaway": [
+    "An honest case study of how transparent and aligned pay structures influence collaboration and retention.",
+    "An understanding of how studio culture can be shaped by structural decisions, and not just values.",
+    "A new perspective on industry norms related to pay, power, and business resilience."
+  ],
+  "prompt": "Create a whimsical, interactive physics playground inspired by 'How Rethinking Pay and Power Helped Us Build a Resilient CoDev Studio'. The user should be able to toss around elements that represent 'The most common company value is integrity while the second most common is collaboration' with satisfying bouncy physics."
+}

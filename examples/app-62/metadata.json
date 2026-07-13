@@ -1,0 +1,17 @@
+{
+  "title": "How to Make Whatever You Want and Still Get Attention",
+  "authors": [
+    {
+      "name": "Stanley W. Baxton",
+      "origin": "Stanwixbuster"
+    }
+  ],
+  "description": "In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST. In this talk, he's going to break down how he did it, making a case for abandoning the \u201cnormal\u201d way to develop games, and how the industry is ignoring vital talent at the fringes.",
+  "session_takeaway": [
+    "Why we need to look beyond \u201cgetting into\u201d the industry as a means to make meaningful games.",
+    "Why making \u201chyper-local\u201d games for very specific audiences should be pursued and can be culturally impactful.",
+    "How someone can start striking out into making \u201cnon-commercial\u201d games using non-traditional game tools.",
+    "An honest look at privilege and why we need more systems to support artists on the economic fringes."
+  ],
+  "prompt": "Make an interactive, animated manifesto page for 'How to Make Whatever You Want and Still Get Attention'. As the user scrolls, typography and 3D elements should dynamically shift to illustrate: 'In absence of any sort of studio backing, funding grants, publishers, or doing anything the industry tells him to do, Stanley Baxton has managed to develop several award-winning narrative games, and went on to be part of BAFTA Breakthrough 2025 with his game LATEX, LEATHER, LIPSTICK, LOVE, LUST'."
+}

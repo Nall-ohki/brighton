@@ -1,0 +1,29 @@
+{
+  "title": "The Evolution of Interactive Storytelling",
+  "authors": [
+    {
+      "name": "Jane Millichip",
+      "origin": "BAFTA"
+    },
+    {
+      "name": "Veronique Lallier",
+      "origin": "IO Interactive"
+    },
+    {
+      "name": "Abubaker Salim",
+      "origin": "Surgent Studios"
+    },
+    {
+      "name": "Eloise Singer",
+      "origin": "Singer Studios"
+    }
+  ],
+  "description": "Storytelling is at the heart of what we do and runs across all crafts and mediums. This session will explore how storytelling and narrative is developing in a creative landscape with increasing overlap between film, games and television. The panel will discuss their creative approaches, how they get inspiration, how ideas are generated and how they shape narratives across channels.",
+  "session_takeaway": [
+    "Understand why storytelling remains the connective tissue across film, television and games despite differences in format.",
+    "Explore how audiences increasingly expect to engage with stories across multiple platforms and mediums.",
+    "Learn why games are now influencing the broader entertainment industry creatively, not just commercially.",
+    "Trace where ideas originate (character, world, mechanics, emotion or theme) and how narrative development differs between linear and interactive models."
+  ],
+  "prompt": "Build an interactive, animated comic book. The panels should animate as the user clicks, telling a dramatic, over-the-top story about 'The Evolution of Interactive Storytelling' and the struggles of: 'Storytelling is at the heart of what we do and runs across all crafts and mediums'."
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Mobile Gaming: The Next Frontier for Accessibility",
+  "authors": [
+    {
+      "name": "Michael Nelson",
+      "origin": "SpecialEffect"
+    },
+    {
+      "name": "Sachin Sunil",
+      "origin": "SpecialEffect"
+    }
+  ],
+  "description": "Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities. SpecialEffect sees opening up the world of mobile games as the next frontier in its mission to make gaming more accessible for physically disabled players around the world. We aim to use our own mobile games as 'proof of concept' to share with the wider-industry what we consider to be best practice for this growing audience of potential players.",
+  "session_takeaway": [
+    "Key lessons learned from creating SpecialEffect's own mobile games for Android and iOS.",
+    "Positive and practical suggestions for things to incorporate into mobile game design to ease access.",
+    "An overview of the different assistive control devices now available for mobile and tablet, including eye-tracking."
+  ],
+  "prompt": "Build a satisfying, tactile fidget toy web app inspired by 'Mobile Gaming: The Next Frontier for Accessibility'. Elements should squish, snap, and pop while teaching the user about: 'Playing games on mobile devices is more popular globally than any other platform, yet to date, less is known about how to make these games more accessible for people with physical disabilities'."
+}

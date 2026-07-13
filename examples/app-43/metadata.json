@@ -1,0 +1,16 @@
+{
+  "title": "Finding the Balance: Big Team Process vs Indie Mindset",
+  "authors": [
+    {
+      "name": "Michael Meaden",
+      "origin": "Athena Worlds"
+    }
+  ],
+  "description": "This session looks at how teams can build strong production foundations without losing the creative spark that drives great games. Through lessons learned in both small indie teams and larger studio environments, Michael will share insights into different workflows, team structures, and approaches to sustaining both people and creativity.",
+  "session_takeaway": [
+    "Practical strategies for balancing sustainable workloads with efficient production pipelines.",
+    "Clear approaches to structuring teams and workflows that support both accountability and creative experimentation.",
+    "Actionable methods for maintaining team well-being while delivering innovative, high-quality games."
+  ],
+  "prompt": "Build a cozy, relaxing idle game about building a healthy studio. Inspired by 'Finding the Balance: Big Team Process vs Indie Mindset', the main progression revolves around 'This session looks at how teams can build strong production foundations without losing the creative spark that drives great games'. Use soft, pastel colors."
+}

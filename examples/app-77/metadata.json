@@ -1,0 +1,20 @@
+{
+  "title": "Develop: FTUE (First Time User Experience) Wednesday",
+  "authors": [
+    {
+      "name": "Jazeena McCallum",
+      "origin": "CRITICAL REFLEX"
+    },
+    {
+      "name": "Annabel Ashalley-Anthony",
+      "origin": "Melanin Gamers"
+    }
+  ],
+  "description": "A relaxed and informal roundtable designed to help you get the most out of your time at the conference. A diverse panel of friendly and experienced devs from across the whole industry spectrum want to help anyone who feels shy, awkward, a little out of place, on the outside, or just unable to really squeeze all the goodness out of this amazing show.",
+  "session_takeaway": [
+    "Shared experiences that will give you some ideas on best practice plus do's and don'ts for networking.",
+    "Recommendations for talks to attend and delegates to meet, plus practical help to do so!",
+    "Knowledge of safe and quiet spaces to help manage your experience at the show."
+  ],
+  "prompt": "Build a Zen garden interactive experience. The user rakes sand and places stones that represent the concepts of 'Develop: FTUE First Time User Experience Wednesday', reflecting on the idea that 'A relaxed and informal roundtable designed to help you get the most out of your time at the conference'."
+}

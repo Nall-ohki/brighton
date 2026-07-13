@@ -1,0 +1,16 @@
+{
+  "title": "Exploring the 80:20 Rule in Concept Art",
+  "authors": [
+    {
+      "name": "Gargi Roy",
+      "origin": "Lab42"
+    }
+  ],
+  "description": "The Pareto Principle suggests that 80% of output comes from just 20% of input. For concept artists, this idea can be a powerful framework for deciding where to focus time, attention, and skill development, especially when working under tight deadlines and shifting project demands. In this session, a working concept artist will share how the 80/20 rule can be applied in practice: from rapidly learning new software and tools, to onboarding onto large, lore-heavy IPs, and prioritising daily tasks for maximum creative impact.",
+  "session_takeaway": [
+    "Using the 80/20 rule to understand complex softwares and identify the crucial features we need to master.",
+    "Creating efficient, repeatable workflows that get high-quality concept results fast.",
+    "Shatter the 'genius' myth and learn how to adapt to new lore and design principles rapidly."
+  ],
+  "prompt": "Build a gorgeous, interactive 3D gallery. The gallery exhibits floating sculptures that visually metaphorize 'Exploring the 80:20 Rule in Concept Art', revealing insights about: 'The Pareto Principle suggests that 80% of output comes from just 20% of input'."
+}

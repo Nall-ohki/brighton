@@ -1,0 +1,16 @@
+{
+  "title": "Scaling Cross-Platform Delivery: From Mobile Bottleneck to Self-Service Platform",
+  "authors": [
+    {
+      "name": "Vladimir Pronin",
+      "origin": "Holland & Barrett"
+    }
+  ],
+  "description": "Digital products live across mobile, web, desktop \u2014 but delivery usually doesn't. One central mobile team becomes a ticket factory for everyone else, web prioritises desktop, and releases turn into cross-team coordination hell. In this talk, Vladimir Pronin shares a production case where a mobile app transformed from single-team bottleneck into a self-service platform enabling parallel delivery from 10+ squads. Vladimir unpacks the shift from 'mobile as channel' to 'mobile as platform': defining crisp platform boundaries that enable instead of constrain, guardrails that let squads ship safely without central approval, and shared observability that makes incidents solvable instead of mysterious. He shows how platform contracts replaced ad-hoc tickets, how outcome alignment stopped channel wars (app vs web vs desktop), and how delivery cadence went from monthly heroics to weekly business-as-usual.",
+  "session_takeaway": [
+    "Mental model for platform boundaries that scale cross-platform delivery.",
+    "Team topology patterns to escape centralised mobile ownership.",
+    "Decision framework to align mobile/web/desktop around outcomes, not channels."
+  ],
+  "prompt": "Design a frantic, hyper-casual mobile web game. The one-tap objective is to navigate the challenges of 'Scaling CrossPlatform Delivery: From Mobile Bottleneck to SelfService Platform', incorporating mechanics that reflect: 'Digital products live across mobile, web, desktop \u2014 but delivery usually doesn't'."
+}

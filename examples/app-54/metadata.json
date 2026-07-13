@@ -1,0 +1,32 @@
+{
+  "title": "XDS Ignite (2 PM): XDEV at a Crossroads: What the Best Teams are Doing Differently",
+  "authors": [
+    {
+      "name": "Sam Carlisle",
+      "origin": "Moderator) (Co-Founder, XDS Spark"
+    },
+    {
+      "name": "Claude Bordeleau",
+      "origin": "CRO, Winking & CEO, Ampera"
+    },
+    {
+      "name": "Dave Sanderson",
+      "origin": "Director of External Development, Interleave"
+    },
+    {
+      "name": "Rikki-Lynn Vitello",
+      "origin": "Director of External Development, EA Full Circle"
+    },
+    {
+      "name": "Carl Schmidt",
+      "origin": "Senior Director of External Development, Zynga"
+    }
+  ],
+  "description": "XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation. In this 2:00pm - 3:30pm session, members of the XDS Advisory Committee share what they're seeing across the industry right now: what's working, what's changing, and where teams are getting left behind.",
+  "session_takeaway": [
+    "Understand the current trends and realities of external development across the industry.",
+    "Discover what successful teams are doing differently to optimize developer-partner co-creation.",
+    "Insights into emerging practices and models for sustainable external development."
+  ],
+  "prompt": "Build a cozy, relaxing idle game about building a healthy studio. Inspired by 'XDS Ignite 2 PM: XDEV at a Crossroads: What the Best Teams are Doing Differently', the main progression revolves around 'XDS Ignite is a developer-only event that brings together developers and publishers in a curated program focused on furthering the advancement of external development (or outsourcing), as this becomes a critical component in sustainable game creation'. Use soft, pastel colors."
+}

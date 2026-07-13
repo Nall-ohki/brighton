@@ -1,0 +1,20 @@
+{
+  "title": "From Potatoes to Super-chips: Optimising Player Experiences Whatever the Mobile Device",
+  "authors": [
+    {
+      "name": "Ian Bolton",
+      "origin": "Arm Ltd"
+    },
+    {
+      "name": "\u0110or\u0111e \u0110ur\u0111evi\u0107",
+      "origin": "Nordeus"
+    }
+  ],
+  "description": "Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device. In this talk, Nordeus share practical lessons from developing and optimising Top Goal, a football title currently in soft launch. Arm will complement this with insights into on-device profiling techniques that empowered the Nordeus team to make performance improvements.",
+  "session_takeaway": [
+    "Why you must profile on real devices early and often, since emulators don't reflect CPU, GPU, or thermal behavior.",
+    "How to optimize for frame stability and responsiveness, not just bare FPS.",
+    "How to scale features intelligently to preserve gameplay feel across low and high-end devices alike."
+  ],
+  "prompt": "Design a frantic, hyper-casual mobile web game. The one-tap objective is to navigate the challenges of 'From Potatoes to Superchips: Optimising Player Experiences Whatever the Mobile Device', incorporating mechanics that reflect: 'Mobile players expect smooth, responsive gameplay regardless of whether they're playing on an older phone/tablet or on a modern flagship device'."
+}
