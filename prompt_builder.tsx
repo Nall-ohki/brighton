@@ -33,15 +33,23 @@ const recommendedModifiers: Record<AppType, Modifier[]> = {
 };
 
 const PromptBuilderPage = () => {
-  const [appType, setAppType] = useState<AppType>('Tool');
+  const [initialLuckyIdea] = useState(() => promptIdeas[Math.floor(Math.random() * promptIdeas.length)]);
+
+  const [appType, setAppType] = useState<AppType>(() => {
+    const pending = window.sessionStorage.getItem('pendingIdea');
+    if (pending) return 'Game';
+    return initialLuckyIdea.category;
+  });
+  
   const [target, setTarget] = useState<Target>('Gemini Canvas');
+  
   const [idea, setIdea] = useState(() => {
     const pending = window.sessionStorage.getItem('pendingIdea');
     if (pending) {
       window.sessionStorage.removeItem('pendingIdea');
       return pending;
     }
-    return 'A simple breakout-style game where the paddle is controlled by your hand.';
+    return initialLuckyIdea.prompt;
   });
   const [modifiers, setModifiers] = useState<SelectedModifiers>(initialModifiers);
   const [isOtherModifierActive, setIsOtherModifierActive] = useState(false);
