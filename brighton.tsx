@@ -4,7 +4,6 @@ const BrightonPage = () => {
   return (
     <>
 <div className="submission-links">
-        {/* Share Section */}
         <div className="card-grid">
             <article className="card" aria-labelledby="session-heading">
                 <div className="card-content">
@@ -17,12 +16,7 @@ const BrightonPage = () => {
                     </a>
                 </footer>
             </article>
-        </div>
 
-        <hr className="section-divider" />
-
-        {/* Slides & Feedback Section */}
-        <div className="card-grid">
             <article className="card" aria-labelledby="slides-heading">
                 <div className="card-content">
                     <h2 id="slides-heading">Presentation Slides</h2>
@@ -34,23 +28,7 @@ const BrightonPage = () => {
                     </a>
                 </footer>
             </article>
-            <article className="card" aria-labelledby="feedback-heading">
-                <div className="card-content">
-                    <h2 id="feedback-heading">Session Feedback</h2>
-                    <p>Please share your feedback on the sessions to help us improve.</p>
-                </div>
-                <footer className="card-footer">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoWA2hQPl_cV5fdv_FTQ9sigd6zUeOWdWL05F_O2_JFQYaRA/viewform?usp=sharing&ouid=105005710423946377208" target="_blank" rel="noopener noreferrer">
-                        Open Feedback Form
-                    </a>
-                </footer>
-            </article>
-        </div>
-        
-        <hr className="section-divider" />
 
-        {/* Presenter Section */}
-        <div>
             <article className="card" aria-labelledby="presenter-heading">
                 <div className="card-content">
                     <h2 id="presenter-heading">Presenter</h2>
